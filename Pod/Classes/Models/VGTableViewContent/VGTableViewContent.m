@@ -8,8 +8,6 @@
 
 #import "VGTableViewContent.h"
 
-#import "UIView+Identifier.h"
-
 @interface VGTableViewContent ()
 
 @property (nonatomic, readonly, strong) UIActivityIndicatorView *activityIndicator;

@@ -10,6 +10,8 @@
 
 #import "UICollectionViewCell+Setup.h"
 
+#import "UIView+Identifier.h"
+
 @interface VGCollectionViewContent : VGURLContent <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, assign) UICollectionView *collectionView;

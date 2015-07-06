@@ -8,10 +8,6 @@
 
 #import "VGCollectionViewContent.h"
 
-#import "UICollectionViewCell+Setup.h"
-
-#import "UIView+Identifier.h"
-
 @implementation VGCollectionViewContent
 
 #pragma mark - VGCollectionViewContent lifecycle

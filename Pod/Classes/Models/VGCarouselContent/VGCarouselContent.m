@@ -8,8 +8,6 @@
 
 #import "VGCarouselContent.h"
 
-#import "UIView+Setup.h"
-
 #ifdef ICAROUSEL_H
 
 #import "VGCarouselContentView.h"

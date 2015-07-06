@@ -10,6 +10,8 @@
 
 #import "UITableViewCell+Setup.h"
 
+#import "UIView+Identifier.h"
+
 @interface VGTableViewContent : VGURLContent <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) UITableView *tableView;

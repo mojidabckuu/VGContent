@@ -10,6 +10,8 @@
 
 #ifdef ICAROUSEL_H
 
+#import "UIView+Setup.h"
+
 #import <iCarousel/iCarousel.h>
 
 @protocol VGCarouselContentDelegate <FTContentDelegate>
