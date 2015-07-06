@@ -1,23 +1,23 @@
 //
-//  FTTableViewContent.m
-//  ALJ
+//  VGTableViewContent.m
+//  VGContent
 //
-//  Created by vlad gorbenko on 5/6/15.
-//  Copyright (c) 2015 Alex Zdorovets. All rights reserved.
+//  Created by Vlad Gorbenko on 5/6/15.
+//  Copyright (c) 2015 Vlad Gorbenko. All rights reserved.
 //
 
-#import "FTTableViewContent.h"
+#import "VGTableViewContent.h"
 
 #import "UIView+Identifier.h"
 
-@interface FTTableViewContent ()
+@interface VGTableViewContent ()
 
 @property (nonatomic, readonly, strong) UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, strong) UIView *tableFooterView;
 
 @end
 
-@implementation FTTableViewContent
+@implementation VGTableViewContent
 
 #pragma mark - FTTableViewContent lifecycle
 

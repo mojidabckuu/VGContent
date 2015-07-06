@@ -10,7 +10,7 @@
 
 #import "UITableViewCell+Setup.h"
 
-@interface FTTableViewContent : VGURLContent <UITableViewDataSource, UITableViewDelegate>
+@interface VGTableViewContent : VGURLContent <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) UITableView *tableView;
 

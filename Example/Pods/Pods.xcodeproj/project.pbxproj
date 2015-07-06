@@ -15,8 +15,8 @@
 		4F5A9D921B49A1E200E90D8C /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D7C1B49A1E200E90D8C /* VGCarouselContentView.m */; };
 		4F5A9D931B49A1E200E90D8C /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D7E1B49A1E200E90D8C /* UIView+Setup.h */; };
 		4F5A9D941B49A1E200E90D8C /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D7F1B49A1E200E90D8C /* UIView+Setup.m */; };
-		4F5A9D9D1B49A1E200E90D8C /* FTTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D8B1B49A1E200E90D8C /* FTTableViewContent.h */; };
-		4F5A9D9E1B49A1E200E90D8C /* FTTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D8C1B49A1E200E90D8C /* FTTableViewContent.m */; };
+		4F5A9D9D1B49A1E200E90D8C /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D8B1B49A1E200E90D8C /* VGTableViewContent.h */; };
+		4F5A9D9E1B49A1E200E90D8C /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D8C1B49A1E200E90D8C /* VGTableViewContent.m */; };
 		4F5A9D9F1B49A1E200E90D8C /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D8D1B49A1E200E90D8C /* UITableViewCell+Setup.h */; };
 		4F5A9DA01B49A1E200E90D8C /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D8E1B49A1E200E90D8C /* UITableViewCell+Setup.m */; };
 		4F5A9DA61B49A20B00E90D8C /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9DA21B49A20B00E90D8C /* VGContent.h */; };
@@ -67,8 +67,8 @@
 		4F5A9D7C1B49A1E200E90D8C /* VGCarouselContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
 		4F5A9D7E1B49A1E200E90D8C /* UIView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
 		4F5A9D7F1B49A1E200E90D8C /* UIView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
-		4F5A9D8B1B49A1E200E90D8C /* FTTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewContent.h; sourceTree = "<group>"; };
-		4F5A9D8C1B49A1E200E90D8C /* FTTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewContent.m; sourceTree = "<group>"; };
+		4F5A9D8B1B49A1E200E90D8C /* VGTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
+		4F5A9D8C1B49A1E200E90D8C /* VGTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
 		4F5A9D8D1B49A1E200E90D8C /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
 		4F5A9D8E1B49A1E200E90D8C /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
 		4F5A9DA21B49A20B00E90D8C /* VGContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
@@ -187,8 +187,8 @@
 		4F5A9D8A1B49A1E200E90D8C /* FTTableViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				4F5A9D8B1B49A1E200E90D8C /* FTTableViewContent.h */,
-				4F5A9D8C1B49A1E200E90D8C /* FTTableViewContent.m */,
+				4F5A9D8B1B49A1E200E90D8C /* VGTableViewContent.h */,
+				4F5A9D8C1B49A1E200E90D8C /* VGTableViewContent.m */,
 				4F5A9D8D1B49A1E200E90D8C /* UITableViewCell+Setup.h */,
 				4F5A9D8E1B49A1E200E90D8C /* UITableViewCell+Setup.m */,
 			);
@@ -333,7 +333,7 @@
 				4F5A9DA61B49A20B00E90D8C /* VGContent.h in Headers */,
 				4F5A9DB41B49AB4200E90D8C /* VGCollectionViewContent.h in Headers */,
 				4F5A9DA81B49A20B00E90D8C /* UIView+Identifier.h in Headers */,
-				4F5A9D9D1B49A1E200E90D8C /* FTTableViewContent.h in Headers */,
+				4F5A9D9D1B49A1E200E90D8C /* VGTableViewContent.h in Headers */,
 				4F5A9DB61B49AB4200E90D8C /* UICollectionViewCell+Setup.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +461,7 @@
 				4F5A9DB51B49AB4200E90D8C /* VGCollectionViewContent.m in Sources */,
 				4F5A9DA71B49A20B00E90D8C /* VGContent.m in Sources */,
 				4F5A9D941B49A1E200E90D8C /* UIView+Setup.m in Sources */,
-				4F5A9D9E1B49A1E200E90D8C /* FTTableViewContent.m in Sources */,
+				4F5A9D9E1B49A1E200E90D8C /* VGTableViewContent.m in Sources */,
 				4F5A9DA01B49A1E200E90D8C /* UITableViewCell+Setup.m in Sources */,
 				920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */,
 				3A2C505697A275EA3B2BD9E1 /* ReplaceMe.m in Sources */,
