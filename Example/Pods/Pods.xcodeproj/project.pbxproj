@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11BD88BE0F97AB69A166068D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C314DF59F171A00BDD064A /* Foundation.framework */; };
-		3A2C505697A275EA3B2BD9E1 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AF03387422B17FBCABF93B39 /* ReplaceMe.m */; };
 		4F5A9D8F1B49A1E200E90D8C /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D781B49A1E200E90D8C /* VGCarouselContent.h */; };
 		4F5A9D901B49A1E200E90D8C /* FTCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D791B49A1E200E90D8C /* FTCarouselContent.m */; };
 		4F5A9D911B49A1E200E90D8C /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D7B1B49A1E200E90D8C /* VGCarouselContentView.h */; };
@@ -89,7 +88,6 @@
 		8269061A91C577AABF072D29 /* Pods-VGContent_Tests-VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-prefix.pch"; sourceTree = "<group>"; };
 		82E381F55B24A71A182EC68E /* Pods-VGContent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGContent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9C179FA31576235CEE93CD3C /* Pods-VGContent_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-environment.h"; sourceTree = "<group>"; };
-		AF03387422B17FBCABF93B39 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		BE281214FBF761E1EE8E1169 /* Pods-VGContent_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-resources.sh"; sourceTree = "<group>"; };
 		C5654B5F1CA46BE06B22B30B /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C7D46D2287D220534024BA73 /* Pods-VGContent_Tests-VGContent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests-VGContent.modulemap"; sourceTree = "<group>"; };
@@ -294,7 +292,6 @@
 				4F5A9DA11B49A20B00E90D8C /* VGContent */,
 				4F5A9D771B49A1E200E90D8C /* FTCarouselContent */,
 				4F5A9D8A1B49A1E200E90D8C /* FTTableViewContent */,
-				AF03387422B17FBCABF93B39 /* ReplaceMe.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -464,7 +461,6 @@
 				4F5A9D9E1B49A1E200E90D8C /* VGTableViewContent.m in Sources */,
 				4F5A9DA01B49A1E200E90D8C /* UITableViewCell+Setup.m in Sources */,
 				920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */,
-				3A2C505697A275EA3B2BD9E1 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
