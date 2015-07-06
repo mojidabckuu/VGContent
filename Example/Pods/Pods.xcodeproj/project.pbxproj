@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		11BD88BE0F97AB69A166068D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C314DF59F171A00BDD064A /* Foundation.framework */; };
-		4F5A9D8F1B49A1E200E90D8C /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D781B49A1E200E90D8C /* VGCarouselContent.h */; };
-		4F5A9D901B49A1E200E90D8C /* FTCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D791B49A1E200E90D8C /* FTCarouselContent.m */; };
-		4F5A9D911B49A1E200E90D8C /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D7B1B49A1E200E90D8C /* VGCarouselContentView.h */; };
-		4F5A9D921B49A1E200E90D8C /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D7C1B49A1E200E90D8C /* VGCarouselContentView.m */; };
-		4F5A9D931B49A1E200E90D8C /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D7E1B49A1E200E90D8C /* UIView+Setup.h */; };
-		4F5A9D941B49A1E200E90D8C /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D7F1B49A1E200E90D8C /* UIView+Setup.m */; };
-		4F5A9D9D1B49A1E200E90D8C /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D8B1B49A1E200E90D8C /* VGTableViewContent.h */; };
-		4F5A9D9E1B49A1E200E90D8C /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D8C1B49A1E200E90D8C /* VGTableViewContent.m */; };
-		4F5A9D9F1B49A1E200E90D8C /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9D8D1B49A1E200E90D8C /* UITableViewCell+Setup.h */; };
-		4F5A9DA01B49A1E200E90D8C /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9D8E1B49A1E200E90D8C /* UITableViewCell+Setup.m */; };
-		4F5A9DA61B49A20B00E90D8C /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9DA21B49A20B00E90D8C /* VGContent.h */; };
-		4F5A9DA71B49A20B00E90D8C /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9DA31B49A20B00E90D8C /* VGContent.m */; };
-		4F5A9DA81B49A20B00E90D8C /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9DA41B49A20B00E90D8C /* UIView+Identifier.h */; };
-		4F5A9DA91B49A20B00E90D8C /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9DA51B49A20B00E90D8C /* UIView+Identifier.m */; };
-		4F5A9DAD1B49A23000E90D8C /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9DAB1B49A23000E90D8C /* VGURLContent.h */; };
-		4F5A9DAE1B49A23000E90D8C /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9DAC1B49A23000E90D8C /* VGURLContent.m */; };
-		4F5A9DB41B49AB4200E90D8C /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9DB01B49AB4200E90D8C /* VGCollectionViewContent.h */; };
-		4F5A9DB51B49AB4200E90D8C /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9DB11B49AB4200E90D8C /* VGCollectionViewContent.m */; };
-		4F5A9DB61B49AB4200E90D8C /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5A9DB21B49AB4200E90D8C /* UICollectionViewCell+Setup.h */; };
-		4F5A9DB71B49AB4200E90D8C /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9DB31B49AB4200E90D8C /* UICollectionViewCell+Setup.m */; };
-		4FD6C2E61B4A4A0F00CEF725 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2E41B4A4A0F00CEF725 /* VGContentViewController.h */; };
-		4FD6C2E71B4A4A0F00CEF725 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C2E51B4A4A0F00CEF725 /* VGContentViewController.m */; };
-		4FD6C2EB1B4A4B2000CEF725 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2E91B4A4B2000CEF725 /* VGContentTableViewController.h */; };
-		4FD6C2EC1B4A4B2000CEF725 /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C2EA1B4A4B2000CEF725 /* VGContentTableViewController.m */; };
-		4FD6C2EE1B4A4B5300CEF725 /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2ED1B4A4B5300CEF725 /* VGContentControllerProtocol.h */; };
+		4FD6C31D1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2FF1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h */; };
+		4FD6C31E1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3001B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m */; };
+		4FD6C31F1B4A4DCF00CEF725 /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3011B4A4DCF00CEF725 /* VGCollectionViewContent.h */; };
+		4FD6C3201B4A4DCF00CEF725 /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3021B4A4DCF00CEF725 /* VGCollectionViewContent.m */; };
+		4FD6C3211B4A4DCF00CEF725 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3041B4A4DCF00CEF725 /* UIView+Identifier.h */; };
+		4FD6C3221B4A4DCF00CEF725 /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3051B4A4DCF00CEF725 /* UIView+Identifier.m */; };
+		4FD6C3231B4A4DCF00CEF725 /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3061B4A4DCF00CEF725 /* VGContent.h */; };
+		4FD6C3241B4A4DCF00CEF725 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3071B4A4DCF00CEF725 /* VGContent.m */; };
+		4FD6C3251B4A4DCF00CEF725 /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3091B4A4DCF00CEF725 /* VGURLContent.h */; };
+		4FD6C3261B4A4DCF00CEF725 /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C30A1B4A4DCF00CEF725 /* VGURLContent.m */; };
+		4FD6C3271B4A4DCF00CEF725 /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C30C1B4A4DCF00CEF725 /* VGContentControllerProtocol.h */; };
+		4FD6C3281B4A4DCF00CEF725 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C30E1B4A4DCF00CEF725 /* VGContentTableViewController.h */; };
+		4FD6C3291B4A4DCF00CEF725 /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C30F1B4A4DCF00CEF725 /* VGContentTableViewController.m */; };
+		4FD6C32A1B4A4DCF00CEF725 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3111B4A4DCF00CEF725 /* VGContentViewController.h */; };
+		4FD6C32B1B4A4DCF00CEF725 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3121B4A4DCF00CEF725 /* VGContentViewController.m */; };
+		4FD6C33A1B4A4E0700CEF725 /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C32E1B4A4E0700CEF725 /* UIView+Setup.h */; };
+		4FD6C33B1B4A4E0700CEF725 /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C32F1B4A4E0700CEF725 /* UIView+Setup.m */; };
+		4FD6C33C1B4A4E0700CEF725 /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3301B4A4E0700CEF725 /* VGCarouselContent.h */; };
+		4FD6C33D1B4A4E0700CEF725 /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3311B4A4E0700CEF725 /* VGCarouselContent.m */; };
+		4FD6C33E1B4A4E0700CEF725 /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3331B4A4E0700CEF725 /* VGCarouselContentView.h */; };
+		4FD6C33F1B4A4E0700CEF725 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3341B4A4E0700CEF725 /* VGCarouselContentView.m */; };
+		4FD6C3401B4A4E0700CEF725 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3361B4A4E0700CEF725 /* UITableViewCell+Setup.h */; };
+		4FD6C3411B4A4E0700CEF725 /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3371B4A4E0700CEF725 /* UITableViewCell+Setup.m */; };
+		4FD6C3421B4A4E0700CEF725 /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3381B4A4E0700CEF725 /* VGTableViewContent.h */; };
+		4FD6C3431B4A4E0700CEF725 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3391B4A4E0700CEF725 /* VGTableViewContent.m */; };
 		6919FADD278B86C6EF44E086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C314DF59F171A00BDD064A /* Foundation.framework */; };
 		85E57F4FDD4F8D737B1C4BBD /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 347C92C001648A233D8B1F47 /* Pods-VGContent_Tests-dummy.m */; };
 		920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B167C13189B7D570334B9A /* Pods-VGContent_Tests-VGContent-dummy.m */; };
@@ -65,32 +65,32 @@
 		347C92C001648A233D8B1F47 /* Pods-VGContent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-dummy.m"; sourceTree = "<group>"; };
 		3515D4BBB052CCA80EC7D99E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36B167C13189B7D570334B9A /* Pods-VGContent_Tests-VGContent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-VGContent-dummy.m"; sourceTree = "<group>"; };
-		4F5A9D781B49A1E200E90D8C /* VGCarouselContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
-		4F5A9D791B49A1E200E90D8C /* FTCarouselContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCarouselContent.m; sourceTree = "<group>"; };
-		4F5A9D7B1B49A1E200E90D8C /* VGCarouselContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
-		4F5A9D7C1B49A1E200E90D8C /* VGCarouselContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
-		4F5A9D7E1B49A1E200E90D8C /* UIView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
-		4F5A9D7F1B49A1E200E90D8C /* UIView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
-		4F5A9D8B1B49A1E200E90D8C /* VGTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
-		4F5A9D8C1B49A1E200E90D8C /* VGTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
-		4F5A9D8D1B49A1E200E90D8C /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
-		4F5A9D8E1B49A1E200E90D8C /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
-		4F5A9DA21B49A20B00E90D8C /* VGContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
-		4F5A9DA31B49A20B00E90D8C /* VGContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
-		4F5A9DA41B49A20B00E90D8C /* UIView+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
-		4F5A9DA51B49A20B00E90D8C /* UIView+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
-		4F5A9DAB1B49A23000E90D8C /* VGURLContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
-		4F5A9DAC1B49A23000E90D8C /* VGURLContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
-		4F5A9DB01B49AB4200E90D8C /* VGCollectionViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
-		4F5A9DB11B49AB4200E90D8C /* VGCollectionViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
-		4F5A9DB21B49AB4200E90D8C /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
-		4F5A9DB31B49AB4200E90D8C /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
 		4F6577F984DEF295EA9C0710 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FD6C2E41B4A4A0F00CEF725 /* VGContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
-		4FD6C2E51B4A4A0F00CEF725 /* VGContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
-		4FD6C2E91B4A4B2000CEF725 /* VGContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
-		4FD6C2EA1B4A4B2000CEF725 /* VGContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
-		4FD6C2ED1B4A4B5300CEF725 /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
+		4FD6C2FF1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
+		4FD6C3001B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
+		4FD6C3011B4A4DCF00CEF725 /* VGCollectionViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
+		4FD6C3021B4A4DCF00CEF725 /* VGCollectionViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
+		4FD6C3041B4A4DCF00CEF725 /* UIView+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
+		4FD6C3051B4A4DCF00CEF725 /* UIView+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
+		4FD6C3061B4A4DCF00CEF725 /* VGContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
+		4FD6C3071B4A4DCF00CEF725 /* VGContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
+		4FD6C3091B4A4DCF00CEF725 /* VGURLContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
+		4FD6C30A1B4A4DCF00CEF725 /* VGURLContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
+		4FD6C30C1B4A4DCF00CEF725 /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
+		4FD6C30E1B4A4DCF00CEF725 /* VGContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
+		4FD6C30F1B4A4DCF00CEF725 /* VGContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
+		4FD6C3111B4A4DCF00CEF725 /* VGContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
+		4FD6C3121B4A4DCF00CEF725 /* VGContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
+		4FD6C32E1B4A4E0700CEF725 /* UIView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
+		4FD6C32F1B4A4E0700CEF725 /* UIView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
+		4FD6C3301B4A4E0700CEF725 /* VGCarouselContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
+		4FD6C3311B4A4E0700CEF725 /* VGCarouselContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
+		4FD6C3331B4A4E0700CEF725 /* VGCarouselContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
+		4FD6C3341B4A4E0700CEF725 /* VGCarouselContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
+		4FD6C3361B4A4E0700CEF725 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
+		4FD6C3371B4A4E0700CEF725 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
+		4FD6C3381B4A4E0700CEF725 /* VGTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
+		4FD6C3391B4A4E0700CEF725 /* VGTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
 		5461E97BBAC58DAD37EB2EBF /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent-Private.xcconfig"; sourceTree = "<group>"; };
 		7919F5BEC87572A0715AB1D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,93 +163,115 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4F5A9D771B49A1E200E90D8C /* FTCarouselContent */ = {
+		4FD6C2EF1B4A4DCF00CEF725 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4F5A9D781B49A1E200E90D8C /* VGCarouselContent.h */,
-				4F5A9D791B49A1E200E90D8C /* FTCarouselContent.m */,
-				4F5A9D7A1B49A1E200E90D8C /* FTCarouselContentView */,
-				4F5A9D7D1B49A1E200E90D8C /* Utils */,
+				4FD6C32C1B4A4E0700CEF725 /* VGCarouselContent */,
+				4FD6C3351B4A4E0700CEF725 /* VGTableViewContent */,
+				4FD6C2FE1B4A4DCF00CEF725 /* VGCollectionViewContent */,
+				4FD6C3031B4A4DCF00CEF725 /* VGContent */,
+				4FD6C3081B4A4DCF00CEF725 /* VGURLContent */,
 			);
-			path = FTCarouselContent;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		4F5A9D7A1B49A1E200E90D8C /* FTCarouselContentView */ = {
+		4FD6C2FE1B4A4DCF00CEF725 /* VGCollectionViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				4F5A9D7B1B49A1E200E90D8C /* VGCarouselContentView.h */,
-				4F5A9D7C1B49A1E200E90D8C /* VGCarouselContentView.m */,
-			);
-			path = FTCarouselContentView;
-			sourceTree = "<group>";
-		};
-		4F5A9D7D1B49A1E200E90D8C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4F5A9D7E1B49A1E200E90D8C /* UIView+Setup.h */,
-				4F5A9D7F1B49A1E200E90D8C /* UIView+Setup.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		4F5A9D8A1B49A1E200E90D8C /* FTTableViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				4F5A9D8B1B49A1E200E90D8C /* VGTableViewContent.h */,
-				4F5A9D8C1B49A1E200E90D8C /* VGTableViewContent.m */,
-				4F5A9D8D1B49A1E200E90D8C /* UITableViewCell+Setup.h */,
-				4F5A9D8E1B49A1E200E90D8C /* UITableViewCell+Setup.m */,
-			);
-			path = FTTableViewContent;
-			sourceTree = "<group>";
-		};
-		4F5A9DA11B49A20B00E90D8C /* VGContent */ = {
-			isa = PBXGroup;
-			children = (
-				4F5A9DA21B49A20B00E90D8C /* VGContent.h */,
-				4F5A9DA31B49A20B00E90D8C /* VGContent.m */,
-				4F5A9DA41B49A20B00E90D8C /* UIView+Identifier.h */,
-				4F5A9DA51B49A20B00E90D8C /* UIView+Identifier.m */,
-			);
-			path = VGContent;
-			sourceTree = "<group>";
-		};
-		4F5A9DAA1B49A22200E90D8C /* VGURLContent */ = {
-			isa = PBXGroup;
-			children = (
-				4F5A9DAB1B49A23000E90D8C /* VGURLContent.h */,
-				4F5A9DAC1B49A23000E90D8C /* VGURLContent.m */,
-			);
-			path = VGURLContent;
-			sourceTree = "<group>";
-		};
-		4F5A9DAF1B49AB4200E90D8C /* VGCollectionViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				4F5A9DB01B49AB4200E90D8C /* VGCollectionViewContent.h */,
-				4F5A9DB11B49AB4200E90D8C /* VGCollectionViewContent.m */,
-				4F5A9DB21B49AB4200E90D8C /* UICollectionViewCell+Setup.h */,
-				4F5A9DB31B49AB4200E90D8C /* UICollectionViewCell+Setup.m */,
+				4FD6C2FF1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h */,
+				4FD6C3001B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m */,
+				4FD6C3011B4A4DCF00CEF725 /* VGCollectionViewContent.h */,
+				4FD6C3021B4A4DCF00CEF725 /* VGCollectionViewContent.m */,
 			);
 			path = VGCollectionViewContent;
 			sourceTree = "<group>";
 		};
-		4FD6C2E31B4A49F400CEF725 /* VGContentViewController */ = {
+		4FD6C3031B4A4DCF00CEF725 /* VGContent */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C2E41B4A4A0F00CEF725 /* VGContentViewController.h */,
-				4FD6C2E51B4A4A0F00CEF725 /* VGContentViewController.m */,
+				4FD6C3041B4A4DCF00CEF725 /* UIView+Identifier.h */,
+				4FD6C3051B4A4DCF00CEF725 /* UIView+Identifier.m */,
+				4FD6C3061B4A4DCF00CEF725 /* VGContent.h */,
+				4FD6C3071B4A4DCF00CEF725 /* VGContent.m */,
+			);
+			path = VGContent;
+			sourceTree = "<group>";
+		};
+		4FD6C3081B4A4DCF00CEF725 /* VGURLContent */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C3091B4A4DCF00CEF725 /* VGURLContent.h */,
+				4FD6C30A1B4A4DCF00CEF725 /* VGURLContent.m */,
+			);
+			path = VGURLContent;
+			sourceTree = "<group>";
+		};
+		4FD6C30B1B4A4DCF00CEF725 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C30C1B4A4DCF00CEF725 /* VGContentControllerProtocol.h */,
+				4FD6C30D1B4A4DCF00CEF725 /* VGContentTableViewController */,
+				4FD6C3101B4A4DCF00CEF725 /* VGContentViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4FD6C30D1B4A4DCF00CEF725 /* VGContentTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C30E1B4A4DCF00CEF725 /* VGContentTableViewController.h */,
+				4FD6C30F1B4A4DCF00CEF725 /* VGContentTableViewController.m */,
+			);
+			path = VGContentTableViewController;
+			sourceTree = "<group>";
+		};
+		4FD6C3101B4A4DCF00CEF725 /* VGContentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C3111B4A4DCF00CEF725 /* VGContentViewController.h */,
+				4FD6C3121B4A4DCF00CEF725 /* VGContentViewController.m */,
 			);
 			path = VGContentViewController;
 			sourceTree = "<group>";
 		};
-		4FD6C2E81B4A4B1500CEF725 /* VGContentTableViewController */ = {
+		4FD6C32C1B4A4E0700CEF725 /* VGCarouselContent */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C2E91B4A4B2000CEF725 /* VGContentTableViewController.h */,
-				4FD6C2EA1B4A4B2000CEF725 /* VGContentTableViewController.m */,
+				4FD6C32D1B4A4E0700CEF725 /* Utils */,
+				4FD6C3301B4A4E0700CEF725 /* VGCarouselContent.h */,
+				4FD6C3311B4A4E0700CEF725 /* VGCarouselContent.m */,
+				4FD6C3321B4A4E0700CEF725 /* VGCarouselContentView */,
 			);
-			path = VGContentTableViewController;
+			path = VGCarouselContent;
+			sourceTree = "<group>";
+		};
+		4FD6C32D1B4A4E0700CEF725 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C32E1B4A4E0700CEF725 /* UIView+Setup.h */,
+				4FD6C32F1B4A4E0700CEF725 /* UIView+Setup.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4FD6C3321B4A4E0700CEF725 /* VGCarouselContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C3331B4A4E0700CEF725 /* VGCarouselContentView.h */,
+				4FD6C3341B4A4E0700CEF725 /* VGCarouselContentView.m */,
+			);
+			path = VGCarouselContentView;
+			sourceTree = "<group>";
+		};
+		4FD6C3351B4A4E0700CEF725 /* VGTableViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C3361B4A4E0700CEF725 /* UITableViewCell+Setup.h */,
+				4FD6C3371B4A4E0700CEF725 /* UITableViewCell+Setup.m */,
+				4FD6C3381B4A4E0700CEF725 /* VGTableViewContent.h */,
+				4FD6C3391B4A4E0700CEF725 /* VGTableViewContent.m */,
+			);
+			path = VGTableViewContent;
 			sourceTree = "<group>";
 		};
 		9A59E9AF84E88496D3AF586D /* iOS */ = {
@@ -315,14 +337,8 @@
 		CB9678D2B676A2045ACCF4A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C2ED1B4A4B5300CEF725 /* VGContentControllerProtocol.h */,
-				4FD6C2E81B4A4B1500CEF725 /* VGContentTableViewController */,
-				4FD6C2E31B4A49F400CEF725 /* VGContentViewController */,
-				4F5A9DAF1B49AB4200E90D8C /* VGCollectionViewContent */,
-				4F5A9DAA1B49A22200E90D8C /* VGURLContent */,
-				4F5A9DA11B49A20B00E90D8C /* VGContent */,
-				4F5A9D771B49A1E200E90D8C /* FTCarouselContent */,
-				4F5A9D8A1B49A1E200E90D8C /* FTTableViewContent */,
+				4FD6C2EF1B4A4DCF00CEF725 /* Models */,
+				4FD6C30B1B4A4DCF00CEF725 /* ViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -352,17 +368,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F5A9D9F1B49A1E200E90D8C /* UITableViewCell+Setup.h in Headers */,
-				4F5A9D8F1B49A1E200E90D8C /* VGCarouselContent.h in Headers */,
-				4F5A9DAD1B49A23000E90D8C /* VGURLContent.h in Headers */,
-				4F5A9D911B49A1E200E90D8C /* VGCarouselContentView.h in Headers */,
 				C412A12525024ED81CAC7BA5 /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */,
-				4F5A9D931B49A1E200E90D8C /* UIView+Setup.h in Headers */,
-				4F5A9DA61B49A20B00E90D8C /* VGContent.h in Headers */,
-				4F5A9DB41B49AB4200E90D8C /* VGCollectionViewContent.h in Headers */,
-				4F5A9DA81B49A20B00E90D8C /* UIView+Identifier.h in Headers */,
-				4F5A9D9D1B49A1E200E90D8C /* VGTableViewContent.h in Headers */,
-				4F5A9DB61B49AB4200E90D8C /* UICollectionViewCell+Setup.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,10 +376,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD6C2EB1B4A4B2000CEF725 /* VGContentTableViewController.h in Headers */,
-				4FD6C2EE1B4A4B5300CEF725 /* VGContentControllerProtocol.h in Headers */,
-				4FD6C2E61B4A4A0F00CEF725 /* VGContentViewController.h in Headers */,
+				4FD6C3271B4A4DCF00CEF725 /* VGContentControllerProtocol.h in Headers */,
+				4FD6C3231B4A4DCF00CEF725 /* VGContent.h in Headers */,
+				4FD6C33E1B4A4E0700CEF725 /* VGCarouselContentView.h in Headers */,
+				4FD6C3421B4A4E0700CEF725 /* VGTableViewContent.h in Headers */,
+				4FD6C3251B4A4DCF00CEF725 /* VGURLContent.h in Headers */,
+				4FD6C33A1B4A4E0700CEF725 /* UIView+Setup.h in Headers */,
+				4FD6C3211B4A4DCF00CEF725 /* UIView+Identifier.h in Headers */,
+				4FD6C31D1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h in Headers */,
+				4FD6C3401B4A4E0700CEF725 /* UITableViewCell+Setup.h in Headers */,
 				93F53468C686504B5E4477FC /* Pods-VGContent_Tests-umbrella.h in Headers */,
+				4FD6C31F1B4A4DCF00CEF725 /* VGCollectionViewContent.h in Headers */,
+				4FD6C3281B4A4DCF00CEF725 /* VGContentTableViewController.h in Headers */,
+				4FD6C32A1B4A4DCF00CEF725 /* VGContentViewController.h in Headers */,
+				4FD6C33C1B4A4E0700CEF725 /* VGCarouselContent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,16 +500,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F5A9DAE1B49A23000E90D8C /* VGURLContent.m in Sources */,
-				4F5A9D921B49A1E200E90D8C /* VGCarouselContentView.m in Sources */,
-				4F5A9D901B49A1E200E90D8C /* FTCarouselContent.m in Sources */,
-				4F5A9DA91B49A20B00E90D8C /* UIView+Identifier.m in Sources */,
-				4F5A9DB71B49AB4200E90D8C /* UICollectionViewCell+Setup.m in Sources */,
-				4F5A9DB51B49AB4200E90D8C /* VGCollectionViewContent.m in Sources */,
-				4F5A9DA71B49A20B00E90D8C /* VGContent.m in Sources */,
-				4F5A9D941B49A1E200E90D8C /* UIView+Setup.m in Sources */,
-				4F5A9D9E1B49A1E200E90D8C /* VGTableViewContent.m in Sources */,
-				4F5A9DA01B49A1E200E90D8C /* UITableViewCell+Setup.m in Sources */,
 				920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,9 +515,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD6C3221B4A4DCF00CEF725 /* UIView+Identifier.m in Sources */,
 				85E57F4FDD4F8D737B1C4BBD /* Pods-VGContent_Tests-dummy.m in Sources */,
-				4FD6C2EC1B4A4B2000CEF725 /* VGContentTableViewController.m in Sources */,
-				4FD6C2E71B4A4A0F00CEF725 /* VGContentViewController.m in Sources */,
+				4FD6C3291B4A4DCF00CEF725 /* VGContentTableViewController.m in Sources */,
+				4FD6C3411B4A4E0700CEF725 /* UITableViewCell+Setup.m in Sources */,
+				4FD6C3201B4A4DCF00CEF725 /* VGCollectionViewContent.m in Sources */,
+				4FD6C33B1B4A4E0700CEF725 /* UIView+Setup.m in Sources */,
+				4FD6C3241B4A4DCF00CEF725 /* VGContent.m in Sources */,
+				4FD6C31E1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m in Sources */,
+				4FD6C32B1B4A4DCF00CEF725 /* VGContentViewController.m in Sources */,
+				4FD6C33D1B4A4E0700CEF725 /* VGCarouselContent.m in Sources */,
+				4FD6C3431B4A4E0700CEF725 /* VGTableViewContent.m in Sources */,
+				4FD6C3261B4A4DCF00CEF725 /* VGURLContent.m in Sources */,
+				4FD6C33F1B4A4E0700CEF725 /* VGCarouselContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
