@@ -1,16 +1,16 @@
 //
-//  VGContentViewController.m
-//  VGContent
+//  VGContentTableViewController.m
+//  Pods
 //
 //  Created by Vlad Gorbenko on 06.07.15.
 //
 //
 
-#import "VGContentViewController.h"
+#import "VGContentTableViewController.h"
 
-@implementation VGContentViewController
+@implementation VGContentTableViewController
 
-#pragma mark - VGContentViewController
+#pragma mark - VGContentTableViewController lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,5 +33,6 @@
         }
     }
 }
+
 
 @end

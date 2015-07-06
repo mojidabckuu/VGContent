@@ -30,6 +30,9 @@
 		4F5A9DB71B49AB4200E90D8C /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A9DB31B49AB4200E90D8C /* UICollectionViewCell+Setup.m */; };
 		4FD6C2E61B4A4A0F00CEF725 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2E41B4A4A0F00CEF725 /* VGContentViewController.h */; };
 		4FD6C2E71B4A4A0F00CEF725 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C2E51B4A4A0F00CEF725 /* VGContentViewController.m */; };
+		4FD6C2EB1B4A4B2000CEF725 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2E91B4A4B2000CEF725 /* VGContentTableViewController.h */; };
+		4FD6C2EC1B4A4B2000CEF725 /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C2EA1B4A4B2000CEF725 /* VGContentTableViewController.m */; };
+		4FD6C2EE1B4A4B5300CEF725 /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2ED1B4A4B5300CEF725 /* VGContentControllerProtocol.h */; };
 		6919FADD278B86C6EF44E086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C314DF59F171A00BDD064A /* Foundation.framework */; };
 		85E57F4FDD4F8D737B1C4BBD /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 347C92C001648A233D8B1F47 /* Pods-VGContent_Tests-dummy.m */; };
 		920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B167C13189B7D570334B9A /* Pods-VGContent_Tests-VGContent-dummy.m */; };
@@ -85,6 +88,9 @@
 		4F6577F984DEF295EA9C0710 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD6C2E41B4A4A0F00CEF725 /* VGContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
 		4FD6C2E51B4A4A0F00CEF725 /* VGContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
+		4FD6C2E91B4A4B2000CEF725 /* VGContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
+		4FD6C2EA1B4A4B2000CEF725 /* VGContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
+		4FD6C2ED1B4A4B5300CEF725 /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
 		5461E97BBAC58DAD37EB2EBF /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent-Private.xcconfig"; sourceTree = "<group>"; };
 		7919F5BEC87572A0715AB1D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +243,15 @@
 			path = VGContentViewController;
 			sourceTree = "<group>";
 		};
+		4FD6C2E81B4A4B1500CEF725 /* VGContentTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C2E91B4A4B2000CEF725 /* VGContentTableViewController.h */,
+				4FD6C2EA1B4A4B2000CEF725 /* VGContentTableViewController.m */,
+			);
+			path = VGContentTableViewController;
+			sourceTree = "<group>";
+		};
 		9A59E9AF84E88496D3AF586D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +315,8 @@
 		CB9678D2B676A2045ACCF4A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4FD6C2ED1B4A4B5300CEF725 /* VGContentControllerProtocol.h */,
+				4FD6C2E81B4A4B1500CEF725 /* VGContentTableViewController */,
 				4FD6C2E31B4A49F400CEF725 /* VGContentViewController */,
 				4F5A9DAF1B49AB4200E90D8C /* VGCollectionViewContent */,
 				4F5A9DAA1B49A22200E90D8C /* VGURLContent */,
@@ -353,6 +370,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD6C2EB1B4A4B2000CEF725 /* VGContentTableViewController.h in Headers */,
+				4FD6C2EE1B4A4B5300CEF725 /* VGContentControllerProtocol.h in Headers */,
 				4FD6C2E61B4A4A0F00CEF725 /* VGContentViewController.h in Headers */,
 				93F53468C686504B5E4477FC /* Pods-VGContent_Tests-umbrella.h in Headers */,
 			);
@@ -491,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E57F4FDD4F8D737B1C4BBD /* Pods-VGContent_Tests-dummy.m in Sources */,
+				4FD6C2EC1B4A4B2000CEF725 /* VGContentTableViewController.m in Sources */,
 				4FD6C2E71B4A4A0F00CEF725 /* VGContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
