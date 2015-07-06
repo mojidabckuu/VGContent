@@ -1,5 +1,5 @@
 //
-//  FTCarouselContent.h
+//  VGCarouselContent.h
 //  VGContent
 //
 //  Created by Vlad Gorbenko on 5/11/15.
@@ -14,7 +14,7 @@
 
 #import <iCarousel/iCarousel.h>
 
-@protocol VGCarouselContentDelegate <FTContentDelegate>
+@protocol VGCarouselContentDelegate <VGContentDelegate>
 
 @optional
 - (void)content:(VGURLContent *)content didChangeCurrentItem:(id)item;

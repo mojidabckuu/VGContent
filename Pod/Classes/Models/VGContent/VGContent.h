@@ -16,8 +16,24 @@
 @protocol VGContentProtocol <NSObject>
 
 @required
+/**
+ Accessor method for items.
+ Fill _items array and reload corresponding view.
+ */
 - (void)setItems:(NSArray *)items;
+
+/**
+ Accessor method to obtain item by index.
+ @param index Index of item.
+ @return item Item by index.
+ */
 - (id)itemAtIndex:(NSInteger)index;
+
+/**
+ Accessor method to obtrain index by item.
+ @param item Item to obtain index.
+ @return index Index of item.
+ */
 - (NSInteger)indexOfItem:(id)item;
 
 @optional
@@ -55,7 +71,14 @@
 @protocol VGContentDelegate <NSObject>
 
 @optional
+/**
+ Delegate method that triggered when item selected.
+ */
 - (void)content:(VGContent *)content didSelectItem:(id)item;
+
+/**
+ Delegate method that triggered when item deselected.
+ */
 - (void)content:(VGContent *)content didDeselectItem:(id)item;
 
 @end
@@ -89,9 +112,16 @@
 - (instancetype)initWithView:(UIView *)view;
 
 #pragma mark - Setup methods
+/**
+ Setup method for additional customization of content.
+ */
 - (void)setup;
 
 #pragma mark - Utils
+/**
+ Utils method
+ @return `NSArray` of `NSIndexPath` objects which corresponding to items indexes.
+ */
 - (NSArray *)indexPathsWithItems:(NSArray *)items;
 
 @end

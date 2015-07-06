@@ -76,12 +76,6 @@
     return nil;
 }
 
-- (void)setItems:(NSArray *)items {
-    [_items removeAllObjects];
-    [_items addObjectsFromArray:items];
-    [self.tableView reloadData];
-}
-
 #pragma mark - UITableView data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -14,10 +14,16 @@
 
 @interface VGCollectionViewContent : VGURLContent <UICollectionViewDataSource, UICollectionViewDelegate>
 
+/**
+ Reference on UICollectionView object.
+ */
 @property (nonatomic, assign) UICollectionView *collectionView;
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 
+/**
+ Setup method for UICollectionViewLayout.
+ */
 - (void)setupLayout;
 
 @end

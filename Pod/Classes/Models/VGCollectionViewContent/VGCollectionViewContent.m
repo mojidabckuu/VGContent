@@ -92,11 +92,6 @@
     [self.collectionView reloadData];
 }
 
-- (void)setItems:(NSArray *)items {
-    _items = [[NSMutableArray alloc] initWithArray:items];
-    [self.collectionView reloadData];
-}
-
 - (id)selectedItem {
     NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems.firstObject;
     if (indexPath) {
