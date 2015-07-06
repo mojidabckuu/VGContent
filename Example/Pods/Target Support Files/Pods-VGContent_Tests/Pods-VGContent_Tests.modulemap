@@ -1,0 +1,6 @@
+framework module Pods_VGContent_Tests {
+  umbrella header "Pods-VGContent_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

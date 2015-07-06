@@ -1,0 +1,14 @@
+PODS:
+  - VGContent (0.1.0)
+
+DEPENDENCIES:
+  - VGContent (from `../`)
+
+EXTERNAL SOURCES:
+  VGContent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VGContent: d90a3b8dd49417e18a74d8b6e9ef657bda5dfd85
+
+COCOAPODS: 0.37.2
