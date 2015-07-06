@@ -8,12 +8,20 @@
 
 #import "VGURLContent.h"
 
+@interface VGURLContent ()
+
+@end
+
 @implementation VGURLContent
+
+@synthesize isRefreshing = _isRefreshing;
+@synthesize isAllLoaded = _isAllLoaded;
+@synthesize isLoading = _isLoading;
 
 #pragma mark - Accessors
 
 - (NSInteger)offset {
-    return _isRefreshing ? 0 : self.itemsCount;
+    return _isRefreshing ? 0 : self.items.count;
 }
 
 - (BOOL)isRefreshing {
@@ -27,56 +35,56 @@
 
 - (void)refresh {
     _isRefreshing = YES;
-    [self notifyWillLoaded];
+    [self notifyWillLoad];
     [self loadItems];
 }
 
 - (void)loadMoreItems {
     _isLoading = YES;
-    [self notifyWillLoaded];
+    [self notifyWillLoad];
     [self loadItems];
 }
 
 - (void)cancel {
 }
 
-- (void)reload {
-}
-
 #pragma mark - URL fetching management
 
-- (void)fetchLoadedItems:(NSArray *)items {
+- (void)fetchLoadedItems:(NSArray *)items error:(NSError *)error {
+    if(error) {
+        [self notifyDidFailWithError:error];
+        return;
+    }
     if (_isRefreshing) {
         _items = [NSMutableArray arrayWithArray:items];
     } else {
         [_items addObjectsFromArray:items];
     }
-    [self notifyDidLoadedWithItems:items];
+    [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;
-    self.showLoading = !_isAllLoaded;
 }
 
-- (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize {
+- (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
     _isAllLoaded = items.count < pageSize;
-    [self fetchLoadedItems:items];
+    [self fetchLoadedItems:items error:error];
 }
 
 #pragma mark - Notifiers
 
-- (void)notifyWithError:(NSError *)error {
-    if ([self.dataDelegate respondsToSelector:@selector (content:didFailLoadingItemsWithError:)]) {
-        [self.dataDelegate content:self didFailLoadingItemsWithError:error];
+- (void)notifyDidFailWithError:(NSError *)error {
+    if ([self.dataDelegate respondsToSelector:@selector (content:didFailLoadingWithError:)]) {
+        [self.dataDelegate content:self didFailLoadingWithError:error];
     }
 }
 
-- (void)notifyDidLoadedWithItems:(NSArray *)items {
+- (void)notifyDidLoadWithItems:(NSArray *)items {
     if ([self.dataDelegate respondsToSelector:@selector (content:didFinishLoadingWithItems:)]) {
         [self.dataDelegate content:self didFinishLoadingWithItems:items];
     }
 }
 
-- (void)notifyWillLoaded {
+- (void)notifyWillLoad {
     if ([self.dataDelegate respondsToSelector:@selector (contentWillLoaded:)]) {
         [self.dataDelegate contentWillLoaded:self];
     }

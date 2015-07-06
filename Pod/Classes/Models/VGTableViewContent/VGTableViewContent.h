@@ -20,4 +20,13 @@
 - (instancetype)initWithTableView:(UITableView *)tableView;
 - (instancetype)initWithTableView:(UITableView *)tableView infinite:(BOOL)infinite;
 
+#pragma mark - Items management
+
+- (void)insertItem:(id)item atIndex:(NSInteger)index animation:(UITableViewRowAnimation)animation;
+- (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animation:(UITableViewRowAnimation)animation;
+- (void)deleteItem:(id)item animation:(UITableViewRowAnimation)animation;
+- (void)deleteItems:(NSArray *)items animation:(UITableViewRowAnimation)animation;
+- (void)reloadItem:(id)item animation:(UITableViewRowAnimation)animation;
+- (void)reloadItems:(NSArray *)items animation:(UITableViewRowAnimation)animation;
+
 @end

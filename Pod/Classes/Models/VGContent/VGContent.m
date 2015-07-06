@@ -70,45 +70,89 @@
     return [_items indexOfObject:item];
 }
 
+#pragma mark - Insert management
+
 - (void)insertItem:(id)item atIndex:(NSInteger)index {
+    [self insertItem:item atIndex:index animated:NO];
 }
 
-- (void)insertItems:(NSArray *)items {
+- (void)insertItem:(id)item atIndex:(NSInteger)index animated:(BOOL)animated {
+    if(item) {
+        [self insertItems:@[item] atIndex:index animated:animated];
+    }
 }
 
-- (void)insertItem:(id)item atIndex:(NSInteger)index section:(NSInteger)section {
+- (void)insertItems:(NSArray *)items atIndex:(NSInteger)index {
+    [self insertItems:items atIndex:index animated:NO];
 }
+
+- (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+}
+
+#pragma mark - Delete management
 
 - (void)deleteItem:(id)item {
+    [self deleteItem:item animated:NO];
+}
+
+- (void)deleteItem:(id)item animated:(BOOL)animated {
+    if(item) {
+        [self deleteItems:@[item] animated:animated];
+    }
 }
 
 - (void)deleteItems:(NSArray *)items {
+    [self deleteItems:items animated:NO];
+}
+
+- (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+}
+
+#pragma mark - Selection managemtn
+
+- (void)selectItem:(id)item {
+    [self selectItem:item animated:NO];
 }
 
 - (void)selectItem:(id)item animated:(BOOL)animated {
-}
-
-- (void)selectItem:(id)item {
-}
-
-- (void)deselectItem:(id)item animated:(BOOL)animated {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
 }
 
 - (void)deselectItem:(id)item {
+    [self deselectItem:item animated:NO];
 }
 
+- (void)deselectItem:(id)item animated:(BOOL)animated {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+}
+
+#pragma mark - Reload management
+
 - (void)reloadItem:(id)item {
+    [self reloadItem:item animated:NO];
+}
+
+- (void)reloadItem:(id)item animated:(BOOL)animated {
+    if(item) {
+        [self reloadItems:@[item] animated:animated];
+    }
+}
+
+- (void)reloadItems:(NSArray *)items {
+    [self reloadItems:items animated:NO];
+}
+
+- (void)reloadItems:(NSArray *)items animated:(BOOL)animated {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+}
+
+- (void)reload {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
 }
 
 #pragma mark - Utils
-
-- (NSArray *)insertIndexPathsWithItems:(NSArray *)items {
-    return [self indexPathsWithItems:items];
-}
-
-- (NSArray *)deleteIndexPathsWithItems:(NSArray *)items {
-    return [self indexPathsWithItems:items];
-}
 
 - (NSArray *)indexPathsWithItems:(NSArray *)items {
     NSMutableArray *indexPaths = [NSMutableArray array];

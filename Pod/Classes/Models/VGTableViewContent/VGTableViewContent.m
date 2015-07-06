@@ -115,7 +115,6 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.row == _items.count - 1) {
         if(!self.isAllLoaded && !self.isLoading) {
-            self.showLoading = YES;
             [self loadMoreItems];
         }
     }
@@ -127,80 +126,96 @@
     }
 }
 
-#pragma mark - VGContent management
-
-- (void)reload {
-    [self.tableView reloadData];
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if([self.delegate respondsToSelector:@selector(content:didDeselectItem:)]) {
+        [self.delegate content:self didDeselectItem:_items[indexPath.row]];
+    }
 }
 
-#pragma mark - Items management
+#pragma mark - Insert management
 
-- (void)insertItem:(id)item atIndex:(NSInteger)index {
-    [self insertItem:item atIndex:index section:0];
+- (void)insertItem:(id)item atIndex:(NSInteger)index animation:(UITableViewRowAnimation)animation {
+    if(item) {
+        [self insertItems:@[item] atIndex:index animation:animation];
+    }
 }
 
-- (void)insertItems:(NSArray *)items {
-    if(_isRefreshing) {
+- (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
+    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationNone : UITableViewRowAnimationAutomatic;
+    [self insertItems:items atIndex:index animation:animation];
+}
+
+- (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animation:(UITableViewRowAnimation)animation {
+    if(self.isRefreshing) {
         [_items removeAllObjects];
+        //TODO: refreshing animation
         [self.tableView reloadData];
-        [_items addObjectsFromArray:items];
     }
-    NSArray *indexesToInsert = [self insertIndexPathsWithItems:items];
-    [self.tableView insertRowsAtIndexPaths:indexesToInsert withRowAnimation:UITableViewRowAnimationAutomatic];
-    if(items.count) {
-        self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    for(NSInteger i = 0; i < items.count; i++) {
+        [_items insertObject:items[i] atIndex:i + index];
+    }
+    NSArray *indexesToInsert = [self indexPathsWithItems:items];
+    [self.tableView insertRowsAtIndexPaths:indexesToInsert withRowAnimation:animation];
+}
+
+#pragma mark - Delete management
+
+- (void)deleteItem:(id)item animation:(UITableViewRowAnimation)animation {
+    if(item) {
+        [self deleteItems:@[item] animation:animation];
     }
 }
 
-- (void)deleteItem:(id)item {
-    NSInteger index = [_items indexOfObject:item];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-    [_items removeObject:item];
-    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+- (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
+    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationNone : UITableViewRowAnimationAutomatic;
+    [self deleteItems:items animation:animation];
 }
 
-- (void)deleteItems:(NSArray *)items {
-    NSArray *indexPathsToDelete = [self deleteIndexPathsWithItems:items];
-    [_items removeObjectsInArray:items];
-    [self.tableView deleteRowsAtIndexPaths:indexPathsToDelete withRowAnimation:UITableViewRowAnimationAutomatic];
+- (void)deleteItems:(NSArray *)items animation:(UITableViewRowAnimation)animation {
+    NSArray *indexesToDelete = [self indexPathsWithItems:items];
+    [self.tableView deleteRowsAtIndexPaths:indexesToDelete withRowAnimation:animation];
 }
 
-- (void)insertItem:(id)item atIndex:(NSInteger)index section:(NSInteger)section {
-    [_items insertObject:item atIndex:index];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:section];
-    [self.tableView insertRowsAtIndexPaths:@[ indexPath ] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
+#pragma mark - Selection managemtn
 
 - (void)selectItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if([_items containsObject:item]) {
         NSInteger index = [_items indexOfObject:item];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
         [self.tableView selectRowAtIndexPath:indexPath animated:animated scrollPosition:UITableViewScrollPositionNone];
     }
 }
 
-- (void)selectItem:(id)item {
-    [self selectItem:item animated:NO];
-}
-
 - (void)deselectItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if([_items containsObject:item]) {
         NSInteger index = [_items indexOfObject:item];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
         [self.tableView deselectRowAtIndexPath:indexPath animated:animated];
     }
 }
 
-- (void)deselectItem:(id)item {
-    [self deselectItem:item animated:NO];
+#pragma mark - Reload management
+
+- (void)reloadItem:(id)item animation:(UITableViewRowAnimation)animation {
+    if(item) {
+        [self reloadItems:@[item] animation:animation];
+    }
 }
 
-- (void)reloadItem:(id)item {
-    if(item && [_items containsObject:item]) {
-        NSInteger index = [_items indexOfObject:item];
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-        [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+- (void)reloadItems:(NSArray *)items animated:(BOOL)animated {
+    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationNone : UITableViewRowAnimationAutomatic;
+    [self reloadItems:items animation:animation];
+}
+
+- (void)reloadItems:(NSArray *)items animation:(UITableViewRowAnimation)animation {
+    if(items.count) {
+        NSArray *indexPathsToReload = [self indexPathsWithItems:items];
+        [self.tableView reloadRowsAtIndexPaths:indexPathsToReload withRowAnimation:animation];
     }
+}
+
+- (void)reload {
+    [self.tableView reloadData];
 }
 
 @end

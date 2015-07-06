@@ -38,41 +38,58 @@
     
 }
 
-#pragma mark - Items management
+#pragma mark - Insert management
 
-- (void)insertItem:(id)item atIndex:(NSInteger)index {
-    if(![_items containsObject:item]) {
-        [_items insertObject:item atIndex:0];
-        if(_items.count == 1) {
-            [self.collectionView reloadData];
-        } else {
-            [self.collectionView performBatchUpdates:^{
-                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-                [self.collectionView insertItemsAtIndexPaths:@[indexPath]];
-            } completion:nil];
-        }
+- (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
+    for(NSInteger i = 0; i < items.count; i++) {
+        [_items insertObject:items[i] atIndex:i + index];
+    }
+    NSArray *indexPathsToInsert = [self indexPathsWithItems:items];
+    if(_items.count == 1) {
+        [self.collectionView reloadData];
+    } else {
+        [self.collectionView performBatchUpdates:^{
+            [self.collectionView insertItemsAtIndexPaths:indexPathsToInsert];
+        } completion:nil];
     }
 }
 
-- (void)insertItems:(NSArray *)items {
-    BOOL reload = !_items.count;
-    NSMutableArray *indexPathToInsert = [NSMutableArray array];
-    for(id item in items) {
-        if(![_items containsObject:item]) {
-            [_items addObject:item];
-            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_items.count - 1 inSection:0];
-            [indexPathToInsert addObject:indexPath];
-        }
+#pragma mark - Delete management
+
+- (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
+    NSArray *indexesToDelete = [self indexPathsWithItems:items];
+    [self.collectionView performBatchUpdates:^{
+        [self.collectionView deleteItemsAtIndexPaths:indexesToDelete];
+    } completion:nil];
+}
+
+#pragma mark - Selection management
+
+- (void)selectItem:(id)item animated:(BOOL)animated {
+    if(item) {
+        NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
+        [self.collectionView selectItemAtIndexPath:indexPath animated:animated scrollPosition:UICollectionViewScrollPositionNone];
     }
-    if(reload) {
-        [self.collectionView reloadData];
-    } else {
-        if(indexPathToInsert.count) {
-            [self.collectionView performBatchUpdates:^{
-                [self.collectionView insertItemsAtIndexPaths:indexPathToInsert];
-            } completion:nil];
-        }
+}
+
+- (void)deselectItem:(id)item animated:(BOOL)animated {
+    if(item) {
+        NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
+        [self.collectionView deselectItemAtIndexPath:indexPath animated:animated];
     }
+}
+
+#pragma mark - Reload management
+
+- (void)reloadItems:(NSArray *)items animated:(BOOL)animated {
+    NSArray *indexPathsToReload = [self indexPathsWithItems:items];
+    [self.collectionView performBatchUpdates:^{
+        [self.collectionView reloadItemsAtIndexPaths:indexPathsToReload];
+    } completion:nil];
+}
+
+- (void)reload {
+    [self.collectionView reloadData];
 }
 
 - (void)setItems:(NSArray *)items {
@@ -113,6 +130,12 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
         [self.delegate content:self didSelectItem:_items[indexPath.row]];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if([self.delegate respondsToSelector:@selector(content:didDeselectItem:)]) {
+        [self.delegate content:self didDeselectItem:_items[indexPath.row]];
     }
 }
 

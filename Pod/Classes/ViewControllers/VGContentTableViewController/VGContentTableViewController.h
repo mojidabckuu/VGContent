@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <VGContentControllerProtocol.h>
+#import "VGContentControllerProtocol.h"
 
 @interface VGContentTableViewController : UITableViewController <VGContentControllerProtocol>
 
