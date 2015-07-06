@@ -1,5 +1,5 @@
 //
-//  FTCarouselContentView.m
+//  VGCarouselContentView.m
 //  VGContent
 //
 //  Created by Vlad Gorbenko on 5/12/15.

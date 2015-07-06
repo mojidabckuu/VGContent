@@ -19,7 +19,7 @@
 
 @implementation VGTableViewContent
 
-#pragma mark - FTTableViewContent lifecycle
+#pragma mark - VGTableViewContent lifecycle
 
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[UITableView class]], @"You passed not UITableView view");
@@ -29,8 +29,6 @@
     }
     return self;
 }
-
-#pragma mark - SLContent lifecycle
 
 - (instancetype)initWithTableView:(UITableView *)tableView {
     self = [self initWithTableView:tableView infinite:NO];
@@ -131,7 +129,7 @@
     }
 }
 
-#pragma mark - FTContent management
+#pragma mark - VGContent management
 
 - (void)reload {
     [self.tableView reloadData];

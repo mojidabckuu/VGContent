@@ -1,5 +1,5 @@
 //
-//  FTCarouselContentView.h
+//  VGCarouselContentView.h
 //  VGContent
 //
 //  Created by Vlad Gorbenko on 5/12/15.

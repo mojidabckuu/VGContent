@@ -14,7 +14,16 @@
 
 @implementation VGCollectionViewContent
 
-#pragma mark - FTCollectionViewContent lifecycle
+#pragma mark - VGCollectionViewContent lifecycle
+
+- (instancetype)initWithView:(UIView *)view {
+    NSAssert([view isKindOfClass:[UICollectionView class]], @"You passed not UICollectionView view");
+    UICollectionView *collectionView = (UICollectionView *)view;
+    self = [self initWithCollectionView:collectionView];
+    if(self) {
+    }
+    return self;
+}
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView {
     self = [self init];

@@ -20,7 +20,16 @@
 
 @implementation VGCarouselContent
 
-#pragma mark - FTCarouselContent
+#pragma mark - VGCarouselContent
+
+- (instancetype)initWithView:(UIView *)view {
+    NSAssert([view isKindOfClass:[iCarousel class]], @"You passed not iCarousel view");
+    iCarousel *carousel = (iCarousel *)view;
+    self = [self initWithCarousel:carousel];
+    if(self) {
+    }
+    return self;
+}
 
 - (instancetype)initWithCarousel:(iCarousel *)carousel {
     self = [self initWithCarousel:carousel infinite:NO];
@@ -42,7 +51,7 @@
     return self;
 }
 
-#pragma mark - FTContent management
+#pragma mark - VGContent management
 
 - (void)reload {
     [self.carousel reloadData];
