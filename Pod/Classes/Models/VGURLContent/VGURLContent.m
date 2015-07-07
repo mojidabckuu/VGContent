@@ -58,7 +58,7 @@
     if (_isRefreshing) {
         [_items removeAllObjects];
     }
-    [self insertItems:items atIndex:_items.count - 1 animated:YES];
+    [self insertItems:items atIndex:_items.count animated:YES];
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;

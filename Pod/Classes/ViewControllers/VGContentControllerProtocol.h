@@ -20,4 +20,7 @@
 @property (nonatomic, strong) IBInspectable NSString *contentName;
 @property (nonatomic, strong) IBInspectable NSString *cellIdentifier;
 
+- (void)contentAwakeFromNib;
+- (BOOL)contentShouldRefresh;
+
 @end

@@ -14,12 +14,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupContent];
+    [self contentAwakeFromNib];
+    self.content.delegate = self;
+    self.content.dataDelegate = self;
+    
+    BOOL shouldRefresh = [self contentShouldRefresh];
+    if(shouldRefresh) {
+        [self.content refresh];
+    }
 }
 
 #pragma mark - Setup methods
 
-- (void)setupContent {
+#pragma mark - Setup methods
+
+- (void)contentAwakeFromNib {
     if(self.contentName) {
         if(self.cellIdentifier) {
             Class class = NSClassFromString(self.contentName);
@@ -27,12 +36,13 @@
                      contentName);
             self.content = [[class alloc] initWithView:self.contentView];
             self.content.cellIdentifier = self.cellIdentifier;
-            self.content.delegate = self;
-            self.content.dataDelegate = self;
-            [self.content refresh];
+            
         }
     }
 }
 
+- (BOOL)contentShouldRefresh {
+    return YES;
+}
 
 @end
