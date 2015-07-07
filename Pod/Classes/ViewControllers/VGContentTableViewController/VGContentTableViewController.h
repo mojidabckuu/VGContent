@@ -17,6 +17,6 @@
 @property (nonatomic, strong) VGURLContent *content;
 
 @property (nonatomic, strong) IBInspectable NSString *contentName;
-@property (nonatomic, strong) IBInspectable NSString *cellIdentifier
+@property (nonatomic, strong) IBInspectable NSString *cellIdentifier;
 
 @end
