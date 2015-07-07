@@ -10,11 +10,6 @@
 
 @implementation VGContentViewController
 
-@dynamic cellIdentifier;
-@dynamic content;
-@dynamic contentName;
-@dynamic contentView;
-
 #pragma mark - VGContentViewController
 
 - (void)viewDidLoad {

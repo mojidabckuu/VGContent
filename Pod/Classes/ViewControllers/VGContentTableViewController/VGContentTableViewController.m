@@ -10,11 +10,6 @@
 
 @implementation VGContentTableViewController
 
-@dynamic cellIdentifier;
-@dynamic content;
-@dynamic contentName;
-@dynamic contentView;
-
 #pragma mark - VGContentTableViewController lifecycle
 
 - (void)viewDidLoad {

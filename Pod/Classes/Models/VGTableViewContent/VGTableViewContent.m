@@ -135,7 +135,7 @@
 }
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
-    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationNone : UITableViewRowAnimationAutomatic;
+    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationAutomatic : UITableViewRowAnimationNone;
     [self insertItems:items atIndex:index animation:animation];
 }
 
@@ -161,12 +161,13 @@
 }
 
 - (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
-    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationNone : UITableViewRowAnimationAutomatic;
+    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationAutomatic : UITableViewRowAnimationNone;
     [self deleteItems:items animation:animation];
 }
 
 - (void)deleteItems:(NSArray *)items animation:(UITableViewRowAnimation)animation {
     NSArray *indexesToDelete = [self indexPathsWithItems:items];
+    [_items removeObjectsInArray:items];
     [self.tableView deleteRowsAtIndexPaths:indexesToDelete withRowAnimation:animation];
 }
 
@@ -197,7 +198,7 @@
 }
 
 - (void)reloadItems:(NSArray *)items animated:(BOOL)animated {
-    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationNone : UITableViewRowAnimationAutomatic;
+    UITableViewRowAnimation animation = animated ? UITableViewRowAnimationAutomatic : UITableViewRowAnimationNone;
     [self reloadItems:items animation:animation];
 }
 
