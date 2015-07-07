@@ -56,10 +56,9 @@
         return;
     }
     if (_isRefreshing) {
-        _items = [NSMutableArray arrayWithArray:items];
-    } else {
-        [_items addObjectsFromArray:items];
+        [_items removeAllObjects];
     }
+    [self insertItems:items atIndex:_items.count - 1 animated:YES];
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;
