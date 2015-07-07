@@ -84,8 +84,8 @@
 }
 
 - (void)notifyWillLoad {
-    if ([self.dataDelegate respondsToSelector:@selector (contentWillLoaded:)]) {
-        [self.dataDelegate contentWillLoaded:self];
+    if ([self.dataDelegate respondsToSelector:@selector (contentWillLoadItems:)]) {
+        [self.dataDelegate contentWillLoadItems:self];
     }
 }
 

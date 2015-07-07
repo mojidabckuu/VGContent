@@ -34,7 +34,7 @@
  Delegate method that will be called when content starts loading process.
  @param content Reference to content.
  */
-- (void)contentWillLoaded:(VGURLContent *)content;
+- (void)contentWillLoadItems:(VGURLContent *)content;
 
 @end
 
