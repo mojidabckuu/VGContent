@@ -16,10 +16,6 @@
 
 @property (nonatomic, assign) UITableView *tableView;
 
-#pragma mark - Init
-- (instancetype)initWithTableView:(UITableView *)tableView;
-- (instancetype)initWithTableView:(UITableView *)tableView infinite:(BOOL)infinite;
-
 #pragma mark - Items management
 
 - (void)insertItem:(id)item atIndex:(NSInteger)index animation:(UITableViewRowAnimation)animation;

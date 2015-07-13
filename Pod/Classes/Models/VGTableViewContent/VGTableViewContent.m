@@ -22,29 +22,10 @@
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[UITableView class]], @"You passed not UITableView view");
     UITableView *tableView = (UITableView *)view;
-    self = [self initWithTableView:tableView];
-    if(self) {
-    }
-    return self;
-}
-
-- (instancetype)initWithTableView:(UITableView *)tableView {
-    self = [self initWithTableView:tableView infinite:NO];
-    if(self) {
-    }
-    return self;
-}
-
-- (instancetype)initWithTableView:(UITableView *)tableView infinite:(BOOL)infinite {
-    self = [self init];
+    self = [super initWithView:view];
     if(self) {
         self.tableView = tableView;
-        if(infinite) {
-            self.tableView.tableFooterView = self.tableFooterView;
-        }
-        self.isAllLoaded = !infinite;
-        self.tableView.delegate = self;
-        self.tableView.dataSource = self;
+        [self setupTableVIew];
     }
     return self;
 }
@@ -53,6 +34,13 @@
     self.tableView.dataSource = nil;
     self.tableView.delegate = nil;
     self.tableView = nil;
+}
+
+#pragma mark - Setup
+
+- (void)setupTableVIew {
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 #pragma mark - Accessors
