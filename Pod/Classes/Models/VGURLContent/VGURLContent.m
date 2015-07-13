@@ -27,7 +27,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     if(self) {
-        self.isAllLoaded = YES;
+        _isAllLoaded = YES;
         self.scrollView = view;
         [self setupInfiniteScrollingWithScrollView:view];
     }
@@ -52,6 +52,13 @@
 
 - (BOOL)isRefreshing {
     return _isRefreshing;
+}
+
+- (void)setIsAllLoaded:(BOOL)isAllLoaded {
+    _isAllLoaded = isAllLoaded;
+    if(isAllLoaded) {
+        [self.scrollView removeInfiniteScroll];
+    }
 }
 
 #pragma mark - VGURLContent management
@@ -89,14 +96,11 @@
     _isRefreshing = NO;
     _isLoading = NO;
     [self.scrollView finishInfiniteScroll];
-    if(self.isAllLoaded) {
-        [self.scrollView removeInfiniteScroll];
-    }
 }
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
-    _isAllLoaded = items.count < pageSize;
     [self fetchLoadedItems:items error:error];
+    self.isAllLoaded = items.count < pageSize;
 }
 
 #pragma mark - Notifiers
