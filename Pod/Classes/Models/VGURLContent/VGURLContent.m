@@ -89,6 +89,9 @@
     _isRefreshing = NO;
     _isLoading = NO;
     [self.scrollView finishInfiniteScroll];
+    if(self.isAllLoaded) {
+        [self.scrollView removeInfiniteScroll];
+    }
 }
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
