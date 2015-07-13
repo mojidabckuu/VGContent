@@ -22,9 +22,8 @@
 }
 
 - (instancetype)initWithView:(UIView *)view {
-    self = [super init];
+    self = [self init];
     if(self) {
-        [self setup];
     }
     return self;
 }
