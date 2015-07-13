@@ -94,14 +94,6 @@
 
 #pragma mark - UITableView delegate
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.row == _items.count - 1) {
-        if(!self.isAllLoaded && !self.isLoading) {
-            [self loadMoreItems];
-        }
-    }
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
         [self.delegate content:self didSelectItem:_items[indexPath.row]];
