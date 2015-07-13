@@ -1,5 +1,7 @@
 PODS:
-  - VGContent (0.1.0)
+  - UIScrollView-InfiniteScroll (0.7.2)
+  - VGContent (0.1.0):
+    - UIScrollView-InfiniteScroll (~> 0.7.2)
 
 DEPENDENCIES:
   - VGContent (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VGContent: d90a3b8dd49417e18a74d8b6e9ef657bda5dfd85
+  UIScrollView-InfiniteScroll: cfa860f96f5a2e3b4575d59fe6d08d337093ac2a
+  VGContent: a5a5e5e4cc4672d6ec84ea4a77efaf9288fa13e0
 
 COCOAPODS: 0.37.2

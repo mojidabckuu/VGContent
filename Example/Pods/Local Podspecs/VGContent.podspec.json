@@ -1,15 +1,14 @@
 {
   "name": "VGContent",
   "version": "0.1.0",
-  "summary": "A short description of VGContent.",
-  "description": "                       An optional longer description of VGContent\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/VGContent",
+  "summary": "Small DRY workaround on UITableView, UICollectionView, iCarousel delegates.",
+  "homepage": "https://github.com/mojidabckuu/VGContent",
   "license": "MIT",
   "authors": {
     "mojidabckuu": "mojidabckuu.22.06.92@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/VGContent.git",
+    "git": "https://github.com/mojidabckuu/VGContent.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -20,6 +19,11 @@
   "resource_bundles": {
     "VGContent": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "UIScrollView-InfiniteScroll": [
+      "~> 0.7.2"
     ]
   }
 }

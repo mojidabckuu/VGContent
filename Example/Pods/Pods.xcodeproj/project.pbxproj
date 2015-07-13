@@ -7,439 +7,524 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11BD88BE0F97AB69A166068D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C314DF59F171A00BDD064A /* Foundation.framework */; };
-		4FD6C31D1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C2FF1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h */; };
-		4FD6C31E1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3001B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m */; };
-		4FD6C31F1B4A4DCF00CEF725 /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3011B4A4DCF00CEF725 /* VGCollectionViewContent.h */; };
-		4FD6C3201B4A4DCF00CEF725 /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3021B4A4DCF00CEF725 /* VGCollectionViewContent.m */; };
-		4FD6C3211B4A4DCF00CEF725 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3041B4A4DCF00CEF725 /* UIView+Identifier.h */; };
-		4FD6C3221B4A4DCF00CEF725 /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3051B4A4DCF00CEF725 /* UIView+Identifier.m */; };
-		4FD6C3231B4A4DCF00CEF725 /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3061B4A4DCF00CEF725 /* VGContent.h */; };
-		4FD6C3241B4A4DCF00CEF725 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3071B4A4DCF00CEF725 /* VGContent.m */; };
-		4FD6C3251B4A4DCF00CEF725 /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3091B4A4DCF00CEF725 /* VGURLContent.h */; };
-		4FD6C3261B4A4DCF00CEF725 /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C30A1B4A4DCF00CEF725 /* VGURLContent.m */; };
-		4FD6C3271B4A4DCF00CEF725 /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C30C1B4A4DCF00CEF725 /* VGContentControllerProtocol.h */; };
-		4FD6C3281B4A4DCF00CEF725 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C30E1B4A4DCF00CEF725 /* VGContentTableViewController.h */; };
-		4FD6C3291B4A4DCF00CEF725 /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C30F1B4A4DCF00CEF725 /* VGContentTableViewController.m */; };
-		4FD6C32A1B4A4DCF00CEF725 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3111B4A4DCF00CEF725 /* VGContentViewController.h */; };
-		4FD6C32B1B4A4DCF00CEF725 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3121B4A4DCF00CEF725 /* VGContentViewController.m */; };
-		4FD6C33A1B4A4E0700CEF725 /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C32E1B4A4E0700CEF725 /* UIView+Setup.h */; };
-		4FD6C33B1B4A4E0700CEF725 /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C32F1B4A4E0700CEF725 /* UIView+Setup.m */; };
-		4FD6C33C1B4A4E0700CEF725 /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3301B4A4E0700CEF725 /* VGCarouselContent.h */; };
-		4FD6C33D1B4A4E0700CEF725 /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3311B4A4E0700CEF725 /* VGCarouselContent.m */; };
-		4FD6C33E1B4A4E0700CEF725 /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3331B4A4E0700CEF725 /* VGCarouselContentView.h */; };
-		4FD6C33F1B4A4E0700CEF725 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3341B4A4E0700CEF725 /* VGCarouselContentView.m */; };
-		4FD6C3401B4A4E0700CEF725 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3361B4A4E0700CEF725 /* UITableViewCell+Setup.h */; };
-		4FD6C3411B4A4E0700CEF725 /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3371B4A4E0700CEF725 /* UITableViewCell+Setup.m */; };
-		4FD6C3421B4A4E0700CEF725 /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C3381B4A4E0700CEF725 /* VGTableViewContent.h */; };
-		4FD6C3431B4A4E0700CEF725 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C3391B4A4E0700CEF725 /* VGTableViewContent.m */; };
-		6919FADD278B86C6EF44E086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C314DF59F171A00BDD064A /* Foundation.framework */; };
-		85E57F4FDD4F8D737B1C4BBD /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 347C92C001648A233D8B1F47 /* Pods-VGContent_Tests-dummy.m */; };
-		920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B167C13189B7D570334B9A /* Pods-VGContent_Tests-VGContent-dummy.m */; };
-		93F53468C686504B5E4477FC /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33FE7A0B260EE193BC343F3E /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C412A12525024ED81CAC7BA5 /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD45026B8848FE04ABD7697 /* Pods-VGContent_Tests-VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D74CF1C92A48A65B848AF0AF /* VGContent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC3FAD5F87F4CDBAA487394A /* VGContent.bundle */; };
+		1A620CBEEF4890DC14269FB4 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D3F86DF6F601EE332BEEEF /* VGContentViewController.m */; };
+		1D819DD76A0282A09CD0AB89 /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFBAC3915C4E4154991E64E /* VGContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35F48B0EFD25F7495F7D44D2 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5928C7223639D6D4913DC017 /* VGContentTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37BEABB1F87230BB40FF9457 /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 25453659F5C7F10D8108C822 /* VGTableViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37F3F12187F37C2B0F87B7CB /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3BEF5978671811C735CFDD /* VGCarouselContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9925A4CC862AB3382D6D10 /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C64CF95629DA04DC5B624B84 /* Pods-VGContent_Tests-VGContent-dummy.m */; };
+		4F1297C8EDFBD2B9EF8E327C /* UIScrollView_InfiniteScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13FD6B888BCB7CEC0E9B610 /* UIScrollView_InfiniteScroll.framework */; };
+		513E6BC5AFF588AEE022818E /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B61E5DCD917178182877D4 /* VGContentTableViewController.m */; };
+		51782BCB1DDEB4C27912E0F7 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC940B5365FC032F15927D /* VGContent.m */; };
+		5C1B53938A9D8CB627E09C2A /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = DD47037249BE945C523E1E6D /* UICollectionViewCell+Setup.m */; };
+		78EF5656FE33E299A697EBD1 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BCB8D6668103BDA67B07D16 /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EBE69440A8295863B414960 /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED613005852EEA7418DFF0C /* VGCollectionViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8B963AB94FE6072C37517A /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = BA316766A3E2620EAA522D5C /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F198A615B4D499D7732DC89 /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = CF97772BE8474D8A0D580E9B /* UIView+Setup.m */; };
+		982A16A50B44A200322FF456 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6922AA947D88C5818ECEB591 /* VGCarouselContentView.m */; };
+		A1D0F63F46F716A1B1F3CC48 /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D4B25A2693245B9F52755D /* VGURLContent.m */; };
+		A6D141D57DB93A59266BD652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3662868260F93C4A68247 /* Foundation.framework */; };
+		A6E91D1A20EE1932BCE2B617 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5787F1EA30E00F5F8BAF399B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0A556DECA57488F04FDDA91 /* VGContent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */; };
+		B3A476227C61E456F108F1FE /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA278E9D295EC9AB677993 /* VGCarouselContent.m */; };
+		B664693ED778115C7D7853F1 /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6197A972471E450A86494080 /* UIView+Identifier.m */; };
+		B691A93CD5A617167DFE7AC5 /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D340C2169EA735F6A2C07E7 /* UIView+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7A11177D6AD8D4EF26AD66C /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42558340916B3B684A3FABCF /* Pods-VGContent_Tests-VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5192C6F47EE842F48905F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3662868260F93C4A68247 /* Foundation.framework */; };
+		D24F03F7BA70CC98E1F503CE /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CA4C9E7A09362F89393502 /* VGCollectionViewContent.m */; };
+		D29A953CC4B51E7BFBEDFDC9 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE9B30954A252B58E8C56D8 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m */; };
+		DC930C993CD98E2D0A874B28 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0F74DA3C9C3FB716AC11E0 /* UIView+Identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2C22DD9916D1028A903007 /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 687CF3750DF2D7AFF2D6A024 /* Pods-VGContent_Tests-dummy.m */; };
+		DE4B5E0CE32184D86F6565FB /* UIScrollView+InfiniteScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C32F9963B17D8E831F5E73 /* UIScrollView+InfiniteScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5D6F4A9055E915FF07DC62 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = C309C9B4D708576E0A8ECB5F /* UIScrollView+InfiniteScroll.m */; };
+		E4FF31D52DCF4A454765E0E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3662868260F93C4A68247 /* Foundation.framework */; };
+		E598BCFDE568F760FF7ABC40 /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D53BCF51F0A10705A18343 /* VGCarouselContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D479D2399456C6ED30AA12 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF1C47BB529F55706FE8FE37 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */; };
+		EFBFC59867B3092B6B5B502B /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */; };
+		F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CCBA59243875A60FCE9A75 /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D477A317395F9420B8036F /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC018428715E5A0CF5CC63DD /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		99D395FB943CB6E6ECF6BB2C /* PBXContainerItemProxy */ = {
+		8C4783F3FAC6E5F2942ADE53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3C09C1F0B3D1A5179241B9AB /* Project object */;
+			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 50A8642D9AD50B2A439FD28B;
+			remoteGlobalIDString = 3BD466AB24974CBD1867B251;
 			remoteInfo = "Pods-VGContent_Tests-VGContent";
 		};
-		C73321A62C83C008F6F7CEFA /* PBXContainerItemProxy */ = {
+		9346C2098D4261C176891E68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3C09C1F0B3D1A5179241B9AB /* Project object */;
+			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5EC4402AFF0BAD29542DDA74;
+			remoteGlobalIDString = 6C4F2CE1338C2033B8851749;
+			remoteInfo = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+		};
+		CC0D45031DF4F0029A2A92B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB3246E2E62D50BF40864FA;
 			remoteInfo = "Pods-VGContent_Tests-VGContent-VGContent";
+		};
+		F911AC27D0C25F8A0A77523D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C4F2CE1338C2033B8851749;
+			remoteInfo = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17C314DF59F171A00BDD064A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2DD45026B8848FE04ABD7697 /* Pods-VGContent_Tests-VGContent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-umbrella.h"; sourceTree = "<group>"; };
-		33FE7A0B260EE193BC343F3E /* Pods-VGContent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-umbrella.h"; sourceTree = "<group>"; };
-		347C92C001648A233D8B1F47 /* Pods-VGContent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-dummy.m"; sourceTree = "<group>"; };
-		3515D4BBB052CCA80EC7D99E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36B167C13189B7D570334B9A /* Pods-VGContent_Tests-VGContent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-VGContent-dummy.m"; sourceTree = "<group>"; };
-		4F6577F984DEF295EA9C0710 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FD6C2FF1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
-		4FD6C3001B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
-		4FD6C3011B4A4DCF00CEF725 /* VGCollectionViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
-		4FD6C3021B4A4DCF00CEF725 /* VGCollectionViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
-		4FD6C3041B4A4DCF00CEF725 /* UIView+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
-		4FD6C3051B4A4DCF00CEF725 /* UIView+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
-		4FD6C3061B4A4DCF00CEF725 /* VGContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
-		4FD6C3071B4A4DCF00CEF725 /* VGContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
-		4FD6C3091B4A4DCF00CEF725 /* VGURLContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
-		4FD6C30A1B4A4DCF00CEF725 /* VGURLContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
-		4FD6C30C1B4A4DCF00CEF725 /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
-		4FD6C30E1B4A4DCF00CEF725 /* VGContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
-		4FD6C30F1B4A4DCF00CEF725 /* VGContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
-		4FD6C3111B4A4DCF00CEF725 /* VGContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
-		4FD6C3121B4A4DCF00CEF725 /* VGContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
-		4FD6C32E1B4A4E0700CEF725 /* UIView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
-		4FD6C32F1B4A4E0700CEF725 /* UIView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
-		4FD6C3301B4A4E0700CEF725 /* VGCarouselContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
-		4FD6C3311B4A4E0700CEF725 /* VGCarouselContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
-		4FD6C3331B4A4E0700CEF725 /* VGCarouselContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
-		4FD6C3341B4A4E0700CEF725 /* VGCarouselContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
-		4FD6C3361B4A4E0700CEF725 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
-		4FD6C3371B4A4E0700CEF725 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
-		4FD6C3381B4A4E0700CEF725 /* VGTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
-		4FD6C3391B4A4E0700CEF725 /* VGTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
-		5461E97BBAC58DAD37EB2EBF /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent-Private.xcconfig"; sourceTree = "<group>"; };
-		7919F5BEC87572A0715AB1D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81B9DB9F2FF7B0D630ECFB59 /* Pods-VGContent_Tests-VGContent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent.xcconfig"; sourceTree = "<group>"; };
-		8269061A91C577AABF072D29 /* Pods-VGContent_Tests-VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-prefix.pch"; sourceTree = "<group>"; };
-		82E381F55B24A71A182EC68E /* Pods-VGContent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGContent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9C179FA31576235CEE93CD3C /* Pods-VGContent_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-environment.h"; sourceTree = "<group>"; };
-		BE281214FBF761E1EE8E1169 /* Pods-VGContent_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-resources.sh"; sourceTree = "<group>"; };
-		C5654B5F1CA46BE06B22B30B /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C7D46D2287D220534024BA73 /* Pods-VGContent_Tests-VGContent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests-VGContent.modulemap"; sourceTree = "<group>"; };
-		CA29D132529B97B0FA244608 /* Pods-VGContent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests.modulemap"; sourceTree = "<group>"; };
-		CCF98E0B889536D85E117966 /* Pods-VGContent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D655CBF32B22F45FB8A4C21E /* VGContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB3204F22FBB9C4C10BCC6DC /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DC3FAD5F87F4CDBAA487394A /* VGContent.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGContent.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCD37AFF7EBEF5EAA37F5A3 /* Pods-VGContent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGContent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		108877B1FD8AFAFDA2B5ED7A /* Pods-VGContent_Tests-VGContent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent.xcconfig"; sourceTree = "<group>"; };
+		10B06AF9EBF0EC3FFD1CE48D /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
+		1240BED02091151859D31E0A /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
+		13D4B25A2693245B9F52755D /* VGURLContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
+		17B61E5DCD917178182877D4 /* VGContentTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
+		1D340C2169EA735F6A2C07E7 /* UIView+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
+		1E3BEF5978671811C735CFDD /* VGCarouselContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
+		1EE9B30954A252B58E8C56D8 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
+		1FCC940B5365FC032F15927D /* VGContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
+		21FAE515C675ADFC8B3CBAEE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		25453659F5C7F10D8108C822 /* VGTableViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
+		26D3F86DF6F601EE332BEEEF /* VGContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
+		2C0F74DA3C9C3FB716AC11E0 /* UIView+Identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
+		2F5F5B2D83505EB5B99ACDAA /* VGContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD4D93D0BFAE0ECC6934E2B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
+		2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
+		3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
+		423BC1124F30189FAF26A9DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42558340916B3B684A3FABCF /* Pods-VGContent_Tests-VGContent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-umbrella.h"; sourceTree = "<group>"; };
+		4DD582A5D15E7BF39EB12029 /* Pods-VGContent_Tests-VGContent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests-VGContent.modulemap"; sourceTree = "<group>"; };
+		4DFBAC3915C4E4154991E64E /* VGContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
+		4EEA278E9D295EC9AB677993 /* VGCarouselContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
+		4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGContent.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5787F1EA30E00F5F8BAF399B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
+		5928C7223639D6D4913DC017 /* VGContentTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
+		5ED613005852EEA7418DFF0C /* VGCollectionViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
+		6197A972471E450A86494080 /* UIView+Identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
+		631941C0232C82412192C273 /* Pods-VGContent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		66E5EA532C96C77942869D57 /* Pods-VGContent_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-environment.h"; sourceTree = "<group>"; };
+		687CF3750DF2D7AFF2D6A024 /* Pods-VGContent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-dummy.m"; sourceTree = "<group>"; };
+		6922AA947D88C5818ECEB591 /* VGCarouselContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
+		694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent-Private.xcconfig"; sourceTree = "<group>"; };
+		729B004E7EABD38E4A432013 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77370E6807ED58F0FAE68B3B /* Pods-VGContent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGContent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		79D6506C42303136F39032C2 /* Pods-VGContent_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-resources.sh"; sourceTree = "<group>"; };
+		7BCB8D6668103BDA67B07D16 /* Pods-VGContent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-umbrella.h"; sourceTree = "<group>"; };
+		80CCBA59243875A60FCE9A75 /* VGURLContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
+		81CA4C9E7A09362F89393502 /* VGCollectionViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
+		81D53BCF51F0A10705A18343 /* VGCarouselContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
+		86C9601D2FDAFA41E22C9268 /* Pods-VGContent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests.modulemap"; sourceTree = "<group>"; };
+		86D477A317395F9420B8036F /* VGContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
+		97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
+		99F3662868260F93C4A68247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9B5A39F73B88CC3D1947F8E3 /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0D862988FD593A3D24EDCD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13FD6B888BCB7CEC0E9B610 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA316766A3E2620EAA522D5C /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
+		C309C9B4D708576E0A8ECB5F /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
+		C64CF95629DA04DC5B624B84 /* Pods-VGContent_Tests-VGContent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-VGContent-dummy.m"; sourceTree = "<group>"; };
+		CF97772BE8474D8A0D580E9B /* UIView+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
+		D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig"; sourceTree = "<group>"; };
+		DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
+		DD47037249BE945C523E1E6D /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
+		E3322EB5969E070780BEA974 /* Pods-VGContent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGContent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E8C32F9963B17D8E831F5E73 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
+		EA3842B9B601E21C82D8C70C /* Pods-VGContent_Tests-VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-prefix.pch"; sourceTree = "<group>"; };
+		EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65674BEA861EFD5A03EB4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		42D4D34FFAB918C4F1B898F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11BD88BE0F97AB69A166068D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B98A71FFD22E9D4ACA20279F /* Frameworks */ = {
+		78330AE570748A5077FC420F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA88F8BAB58CC136A7AD008B /* Frameworks */ = {
+		8525A23655ED25E557FAF42E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6919FADD278B86C6EF44E086 /* Foundation.framework in Frameworks */,
+				A6D141D57DB93A59266BD652 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96819D0596F0B9B94EC45178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5192C6F47EE842F48905F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD77196A055E1A6F61289672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FF31D52DCF4A454765E0E9 /* Foundation.framework in Frameworks */,
+				4F1297C8EDFBD2B9EF8E327C /* UIScrollView_InfiniteScroll.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		166F6653F0DF5310FFDFD4F9 /* Targets Support Files */ = {
+		0FF81309632740DB16B6FF5E /* VGContent */ = {
 			isa = PBXGroup;
 			children = (
-				C530484AAA1A156A37295A22 /* Pods-VGContent_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		32E2109C1A83D72C9F9A6246 = {
-			isa = PBXGroup;
-			children = (
-				DB3204F22FBB9C4C10BCC6DC /* Podfile */,
-				ED56A6C49547D2A191072289 /* Development Pods */,
-				3ED58693981E99FA0CED57A8 /* Frameworks */,
-				BBBA59A283027925E96DBF6B /* Products */,
-				166F6653F0DF5310FFDFD4F9 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		3ED58693981E99FA0CED57A8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9A59E9AF84E88496D3AF586D /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4FD6C2EF1B4A4DCF00CEF725 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C32C1B4A4E0700CEF725 /* VGCarouselContent */,
-				4FD6C3351B4A4E0700CEF725 /* VGTableViewContent */,
-				4FD6C2FE1B4A4DCF00CEF725 /* VGCollectionViewContent */,
-				4FD6C3031B4A4DCF00CEF725 /* VGContent */,
-				4FD6C3081B4A4DCF00CEF725 /* VGURLContent */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4FD6C2FE1B4A4DCF00CEF725 /* VGCollectionViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C2FF1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h */,
-				4FD6C3001B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m */,
-				4FD6C3011B4A4DCF00CEF725 /* VGCollectionViewContent.h */,
-				4FD6C3021B4A4DCF00CEF725 /* VGCollectionViewContent.m */,
-			);
-			path = VGCollectionViewContent;
-			sourceTree = "<group>";
-		};
-		4FD6C3031B4A4DCF00CEF725 /* VGContent */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C3041B4A4DCF00CEF725 /* UIView+Identifier.h */,
-				4FD6C3051B4A4DCF00CEF725 /* UIView+Identifier.m */,
-				4FD6C3061B4A4DCF00CEF725 /* VGContent.h */,
-				4FD6C3071B4A4DCF00CEF725 /* VGContent.m */,
+				2C0F74DA3C9C3FB716AC11E0 /* UIView+Identifier.h */,
+				6197A972471E450A86494080 /* UIView+Identifier.m */,
+				4DFBAC3915C4E4154991E64E /* VGContent.h */,
+				1FCC940B5365FC032F15927D /* VGContent.m */,
 			);
 			path = VGContent;
 			sourceTree = "<group>";
 		};
-		4FD6C3081B4A4DCF00CEF725 /* VGURLContent */ = {
+		1417F0E6CE2C3A8DAE0CC423 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C3091B4A4DCF00CEF725 /* VGURLContent.h */,
-				4FD6C30A1B4A4DCF00CEF725 /* VGURLContent.m */,
+				B13FD6B888BCB7CEC0E9B610 /* UIScrollView_InfiniteScroll.framework */,
+				F32F0A7694E2E31AFC47F942 /* iOS */,
 			);
-			path = VGURLContent;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FD6C30B1B4A4DCF00CEF725 /* ViewControllers */ = {
+		2E961AC688F0FF2328BD345D /* VGContentTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C30C1B4A4DCF00CEF725 /* VGContentControllerProtocol.h */,
-				4FD6C30D1B4A4DCF00CEF725 /* VGContentTableViewController */,
-				4FD6C3101B4A4DCF00CEF725 /* VGContentViewController */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		4FD6C30D1B4A4DCF00CEF725 /* VGContentTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C30E1B4A4DCF00CEF725 /* VGContentTableViewController.h */,
-				4FD6C30F1B4A4DCF00CEF725 /* VGContentTableViewController.m */,
+				5928C7223639D6D4913DC017 /* VGContentTableViewController.h */,
+				17B61E5DCD917178182877D4 /* VGContentTableViewController.m */,
 			);
 			path = VGContentTableViewController;
 			sourceTree = "<group>";
 		};
-		4FD6C3101B4A4DCF00CEF725 /* VGContentViewController */ = {
+		400B70F34F87499ACF95495C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C3111B4A4DCF00CEF725 /* VGContentViewController.h */,
-				4FD6C3121B4A4DCF00CEF725 /* VGContentViewController.m */,
-			);
-			path = VGContentViewController;
-			sourceTree = "<group>";
-		};
-		4FD6C32C1B4A4E0700CEF725 /* VGCarouselContent */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C32D1B4A4E0700CEF725 /* Utils */,
-				4FD6C3301B4A4E0700CEF725 /* VGCarouselContent.h */,
-				4FD6C3311B4A4E0700CEF725 /* VGCarouselContent.m */,
-				4FD6C3321B4A4E0700CEF725 /* VGCarouselContentView */,
-			);
-			path = VGCarouselContent;
-			sourceTree = "<group>";
-		};
-		4FD6C32D1B4A4E0700CEF725 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C32E1B4A4E0700CEF725 /* UIView+Setup.h */,
-				4FD6C32F1B4A4E0700CEF725 /* UIView+Setup.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		4FD6C3321B4A4E0700CEF725 /* VGCarouselContentView */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C3331B4A4E0700CEF725 /* VGCarouselContentView.h */,
-				4FD6C3341B4A4E0700CEF725 /* VGCarouselContentView.m */,
-			);
-			path = VGCarouselContentView;
-			sourceTree = "<group>";
-		};
-		4FD6C3351B4A4E0700CEF725 /* VGTableViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				4FD6C3361B4A4E0700CEF725 /* UITableViewCell+Setup.h */,
-				4FD6C3371B4A4E0700CEF725 /* UITableViewCell+Setup.m */,
-				4FD6C3381B4A4E0700CEF725 /* VGTableViewContent.h */,
-				4FD6C3391B4A4E0700CEF725 /* VGTableViewContent.m */,
-			);
-			path = VGTableViewContent;
-			sourceTree = "<group>";
-		};
-		9A59E9AF84E88496D3AF586D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				17C314DF59F171A00BDD064A /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		AB8331C9AFF7DD52585248A6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CB9678D2B676A2045ACCF4A3 /* Classes */,
+				AEA4A4A7B1AC1CAF7F50DEA9 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		AFA9751BC900B1B77D57278E /* Support Files */ = {
+		43BD97ED25C8EDECD611D60C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7919F5BEC87572A0715AB1D0 /* Info.plist */,
-				C7D46D2287D220534024BA73 /* Pods-VGContent_Tests-VGContent.modulemap */,
-				81B9DB9F2FF7B0D630ECFB59 /* Pods-VGContent_Tests-VGContent.xcconfig */,
-				59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */,
-				36B167C13189B7D570334B9A /* Pods-VGContent_Tests-VGContent-dummy.m */,
-				8269061A91C577AABF072D29 /* Pods-VGContent_Tests-VGContent-prefix.pch */,
-				2DD45026B8848FE04ABD7697 /* Pods-VGContent_Tests-VGContent-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-VGContent_Tests-VGContent";
-			sourceTree = "<group>";
-		};
-		BBBA59A283027925E96DBF6B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4F6577F984DEF295EA9C0710 /* Pods_VGContent_Tests.framework */,
-				DC3FAD5F87F4CDBAA487394A /* VGContent.bundle */,
-				D655CBF32B22F45FB8A4C21E /* VGContent.framework */,
+				F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */,
+				729B004E7EABD38E4A432013 /* UIScrollView_InfiniteScroll.framework */,
+				4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */,
+				2F5F5B2D83505EB5B99ACDAA /* VGContent.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C530484AAA1A156A37295A22 /* Pods-VGContent_Tests */ = {
+		442F550536DF77A40AC5B9BA /* UIScrollView-InfiniteScroll */ = {
 			isa = PBXGroup;
 			children = (
-				3515D4BBB052CCA80EC7D99E /* Info.plist */,
-				CA29D132529B97B0FA244608 /* Pods-VGContent_Tests.modulemap */,
-				EBCD37AFF7EBEF5EAA37F5A3 /* Pods-VGContent_Tests-acknowledgements.markdown */,
-				82E381F55B24A71A182EC68E /* Pods-VGContent_Tests-acknowledgements.plist */,
-				347C92C001648A233D8B1F47 /* Pods-VGContent_Tests-dummy.m */,
-				9C179FA31576235CEE93CD3C /* Pods-VGContent_Tests-environment.h */,
-				CCF98E0B889536D85E117966 /* Pods-VGContent_Tests-frameworks.sh */,
-				BE281214FBF761E1EE8E1169 /* Pods-VGContent_Tests-resources.sh */,
-				33FE7A0B260EE193BC343F3E /* Pods-VGContent_Tests-umbrella.h */,
-				5461E97BBAC58DAD37EB2EBF /* Pods-VGContent_Tests.debug.xcconfig */,
-				C5654B5F1CA46BE06B22B30B /* Pods-VGContent_Tests.release.xcconfig */,
+				E8C32F9963B17D8E831F5E73 /* UIScrollView+InfiniteScroll.h */,
+				C309C9B4D708576E0A8ECB5F /* UIScrollView+InfiniteScroll.m */,
+				C84EEDCB62AB6F5E9D2DDBBE /* Support Files */,
+			);
+			path = "UIScrollView-InfiniteScroll";
+			sourceTree = "<group>";
+		};
+		46F31577383D298CFA78A923 /* Pods-VGContent_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FD65674BEA861EFD5A03EB4A /* Info.plist */,
+				86C9601D2FDAFA41E22C9268 /* Pods-VGContent_Tests.modulemap */,
+				E3322EB5969E070780BEA974 /* Pods-VGContent_Tests-acknowledgements.markdown */,
+				77370E6807ED58F0FAE68B3B /* Pods-VGContent_Tests-acknowledgements.plist */,
+				687CF3750DF2D7AFF2D6A024 /* Pods-VGContent_Tests-dummy.m */,
+				66E5EA532C96C77942869D57 /* Pods-VGContent_Tests-environment.h */,
+				631941C0232C82412192C273 /* Pods-VGContent_Tests-frameworks.sh */,
+				79D6506C42303136F39032C2 /* Pods-VGContent_Tests-resources.sh */,
+				7BCB8D6668103BDA67B07D16 /* Pods-VGContent_Tests-umbrella.h */,
+				9B5A39F73B88CC3D1947F8E3 /* Pods-VGContent_Tests.debug.xcconfig */,
+				EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */,
 			);
 			name = "Pods-VGContent_Tests";
 			path = "Target Support Files/Pods-VGContent_Tests";
 			sourceTree = "<group>";
 		};
-		CB9678D2B676A2045ACCF4A3 /* Classes */ = {
+		485AA26BAEF296BAD5042847 /* VGTableViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				4FD6C2EF1B4A4DCF00CEF725 /* Models */,
-				4FD6C30B1B4A4DCF00CEF725 /* ViewControllers */,
+				97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */,
+				DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */,
+				25453659F5C7F10D8108C822 /* VGTableViewContent.h */,
+				3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */,
 			);
-			path = Classes;
+			path = VGTableViewContent;
 			sourceTree = "<group>";
 		};
-		ED56A6C49547D2A191072289 /* Development Pods */ = {
+		4A9DC44B144C4DE8BAD3FB43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F4EF6EBD3796EC85257AE8A0 /* VGContent */,
+				59E3DFD6E339D41CDF8674BC /* VGCarouselContent */,
+				F049F49E9E079B30C4EA05E9 /* VGCollectionViewContent */,
+				0FF81309632740DB16B6FF5E /* VGContent */,
+				485AA26BAEF296BAD5042847 /* VGTableViewContent */,
+				73FD953814CB075060751778 /* VGURLContent */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59E3DFD6E339D41CDF8674BC /* VGCarouselContent */ = {
+			isa = PBXGroup;
+			children = (
+				1E3BEF5978671811C735CFDD /* VGCarouselContent.h */,
+				4EEA278E9D295EC9AB677993 /* VGCarouselContent.m */,
+				F94BADD591257FCEE20F5389 /* Utils */,
+				BDEC05A0B9B083C7A7882C59 /* VGCarouselContentView */,
+			);
+			path = VGCarouselContent;
+			sourceTree = "<group>";
+		};
+		73FD953814CB075060751778 /* VGURLContent */ = {
+			isa = PBXGroup;
+			children = (
+				80CCBA59243875A60FCE9A75 /* VGURLContent.h */,
+				13D4B25A2693245B9F52755D /* VGURLContent.m */,
+			);
+			path = VGURLContent;
+			sourceTree = "<group>";
+		};
+		7E7CEF1B1B3F58185391C201 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA9C242B32A4FBA38E53EF14 /* VGContent */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F4EF6EBD3796EC85257AE8A0 /* VGContent */ = {
+		80642DC48E003EFBE408F3EF = {
 			isa = PBXGroup;
 			children = (
-				AB8331C9AFF7DD52585248A6 /* Pod */,
-				AFA9751BC900B1B77D57278E /* Support Files */,
+				21FAE515C675ADFC8B3CBAEE /* Podfile */,
+				7E7CEF1B1B3F58185391C201 /* Development Pods */,
+				1417F0E6CE2C3A8DAE0CC423 /* Frameworks */,
+				AACC8D0EAE010511107BA05E /* Pods */,
+				43BD97ED25C8EDECD611D60C /* Products */,
+				8CF200646424640479F47E87 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF200646424640479F47E87 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46F31577383D298CFA78A923 /* Pods-VGContent_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A514352F5E5AD36680F9FC9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				423BC1124F30189FAF26A9DC /* Info.plist */,
+				4DD582A5D15E7BF39EB12029 /* Pods-VGContent_Tests-VGContent.modulemap */,
+				108877B1FD8AFAFDA2B5ED7A /* Pods-VGContent_Tests-VGContent.xcconfig */,
+				694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */,
+				C64CF95629DA04DC5B624B84 /* Pods-VGContent_Tests-VGContent-dummy.m */,
+				EA3842B9B601E21C82D8C70C /* Pods-VGContent_Tests-VGContent-prefix.pch */,
+				42558340916B3B684A3FABCF /* Pods-VGContent_Tests-VGContent-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-VGContent_Tests-VGContent";
+			sourceTree = "<group>";
+		};
+		AACC8D0EAE010511107BA05E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				442F550536DF77A40AC5B9BA /* UIScrollView-InfiniteScroll */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEA4A4A7B1AC1CAF7F50DEA9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A9DC44B144C4DE8BAD3FB43 /* Models */,
+				ECF882984D39E3906712B1E1 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BDEC05A0B9B083C7A7882C59 /* VGCarouselContentView */ = {
+			isa = PBXGroup;
+			children = (
+				81D53BCF51F0A10705A18343 /* VGCarouselContentView.h */,
+				6922AA947D88C5818ECEB591 /* VGCarouselContentView.m */,
+			);
+			path = VGCarouselContentView;
+			sourceTree = "<group>";
+		};
+		C84EEDCB62AB6F5E9D2DDBBE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0D862988FD593A3D24EDCD1 /* Info.plist */,
+				2FD4D93D0BFAE0ECC6934E2B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap */,
+				10B06AF9EBF0EC3FFD1CE48D /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.xcconfig */,
+				D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */,
+				1EE9B30954A252B58E8C56D8 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m */,
+				1240BED02091151859D31E0A /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch */,
+				5787F1EA30E00F5F8BAF399B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			sourceTree = "<group>";
+		};
+		DA9C242B32A4FBA38E53EF14 /* VGContent */ = {
+			isa = PBXGroup;
+			children = (
+				400B70F34F87499ACF95495C /* Pod */,
+				A514352F5E5AD36680F9FC9D /* Support Files */,
 			);
 			name = VGContent;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		ECF882984D39E3906712B1E1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */,
+				2E961AC688F0FF2328BD345D /* VGContentTableViewController */,
+				FBEF874FF5A2632B102DEAA9 /* VGContentViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F049F49E9E079B30C4EA05E9 /* VGCollectionViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				BA316766A3E2620EAA522D5C /* UICollectionViewCell+Setup.h */,
+				DD47037249BE945C523E1E6D /* UICollectionViewCell+Setup.m */,
+				5ED613005852EEA7418DFF0C /* VGCollectionViewContent.h */,
+				81CA4C9E7A09362F89393502 /* VGCollectionViewContent.m */,
+			);
+			path = VGCollectionViewContent;
+			sourceTree = "<group>";
+		};
+		F32F0A7694E2E31AFC47F942 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				99F3662868260F93C4A68247 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F94BADD591257FCEE20F5389 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D340C2169EA735F6A2C07E7 /* UIView+Setup.h */,
+				CF97772BE8474D8A0D580E9B /* UIView+Setup.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FBEF874FF5A2632B102DEAA9 /* VGContentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86D477A317395F9420B8036F /* VGContentViewController.h */,
+				26D3F86DF6F601EE332BEEEF /* VGContentViewController.m */,
+			);
+			path = VGContentViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		43A9D9B2717B5971C1F8E06E /* Headers */ = {
+		110F9772C146956398B6D2F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C412A12525024ED81CAC7BA5 /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */,
+				78EF5656FE33E299A697EBD1 /* Pods-VGContent_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78CA77C10C063F5E78F11EBB /* Headers */ = {
+		7158180C42CF12285A8D03BC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD6C3271B4A4DCF00CEF725 /* VGContentControllerProtocol.h in Headers */,
-				4FD6C3231B4A4DCF00CEF725 /* VGContent.h in Headers */,
-				4FD6C33E1B4A4E0700CEF725 /* VGCarouselContentView.h in Headers */,
-				4FD6C3421B4A4E0700CEF725 /* VGTableViewContent.h in Headers */,
-				4FD6C3251B4A4DCF00CEF725 /* VGURLContent.h in Headers */,
-				4FD6C33A1B4A4E0700CEF725 /* UIView+Setup.h in Headers */,
-				4FD6C3211B4A4DCF00CEF725 /* UIView+Identifier.h in Headers */,
-				4FD6C31D1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.h in Headers */,
-				4FD6C3401B4A4E0700CEF725 /* UITableViewCell+Setup.h in Headers */,
-				93F53468C686504B5E4477FC /* Pods-VGContent_Tests-umbrella.h in Headers */,
-				4FD6C31F1B4A4DCF00CEF725 /* VGCollectionViewContent.h in Headers */,
-				4FD6C3281B4A4DCF00CEF725 /* VGContentTableViewController.h in Headers */,
-				4FD6C32A1B4A4DCF00CEF725 /* VGContentViewController.h in Headers */,
-				4FD6C33C1B4A4E0700CEF725 /* VGCarouselContent.h in Headers */,
+				A6E91D1A20EE1932BCE2B617 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h in Headers */,
+				DE4B5E0CE32184D86F6565FB /* UIScrollView+InfiniteScroll.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0CDC2A296105C27F4F036A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A11177D6AD8D4EF26AD66C /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */,
+				8E8B963AB94FE6072C37517A /* UICollectionViewCell+Setup.h in Headers */,
+				E5D479D2399456C6ED30AA12 /* UITableViewCell+Setup.h in Headers */,
+				DC930C993CD98E2D0A874B28 /* UIView+Identifier.h in Headers */,
+				B691A93CD5A617167DFE7AC5 /* UIView+Setup.h in Headers */,
+				37F3F12187F37C2B0F87B7CB /* VGCarouselContent.h in Headers */,
+				E598BCFDE568F760FF7ABC40 /* VGCarouselContentView.h in Headers */,
+				7EBE69440A8295863B414960 /* VGCollectionViewContent.h in Headers */,
+				1D819DD76A0282A09CD0AB89 /* VGContent.h in Headers */,
+				FC018428715E5A0CF5CC63DD /* VGContentControllerProtocol.h in Headers */,
+				35F48B0EFD25F7495F7D44D2 /* VGContentTableViewController.h in Headers */,
+				F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */,
+				37BEABB1F87230BB40FF9457 /* VGTableViewContent.h in Headers */,
+				F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2BA97004FD94C3E3FCEC0986 /* Pods-VGContent_Tests */ = {
+		3BD466AB24974CBD1867B251 /* Pods-VGContent_Tests-VGContent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD711EAEF6887CDF0E83388B /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */;
+			buildConfigurationList = 66536798AF83F6C564B127B6 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent" */;
 			buildPhases = (
-				FC292200AC5F952E391E817D /* Sources */,
-				BA88F8BAB58CC136A7AD008B /* Frameworks */,
-				78CA77C10C063F5E78F11EBB /* Headers */,
+				A8884C852A3688E4A24A2B92 /* Sources */,
+				FD77196A055E1A6F61289672 /* Frameworks */,
+				AAB29828F05E21D75FA57A78 /* Resources */,
+				BD0CDC2A296105C27F4F036A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D18BC5A7C4783CDEB50FF52D /* PBXTargetDependency */,
-			);
-			name = "Pods-VGContent_Tests";
-			productName = "Pods-VGContent_Tests";
-			productReference = 4F6577F984DEF295EA9C0710 /* Pods_VGContent_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		50A8642D9AD50B2A439FD28B /* Pods-VGContent_Tests-VGContent */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BBE8C520CC2BFF376AF3868E /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent" */;
-			buildPhases = (
-				22CD730B80F42BF81A80319F /* Sources */,
-				42D4D34FFAB918C4F1B898F0 /* Frameworks */,
-				6A2C4F5153D69BED7DAD78FC /* Resources */,
-				43A9D9B2717B5971C1F8E06E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				86BF5ACDBEE164110F969C0E /* PBXTargetDependency */,
+				5929F9D7DD1DA4AFE63B088B /* PBXTargetDependency */,
+				32F12C9AE99E788897C73DBE /* PBXTargetDependency */,
 			);
 			name = "Pods-VGContent_Tests-VGContent";
 			productName = "Pods-VGContent_Tests-VGContent";
-			productReference = D655CBF32B22F45FB8A4C21E /* VGContent.framework */;
+			productReference = 2F5F5B2D83505EB5B99ACDAA /* VGContent.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5EC4402AFF0BAD29542DDA74 /* Pods-VGContent_Tests-VGContent-VGContent */ = {
+		6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88DC43AC925D921B611B228B /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent-VGContent" */;
+			buildConfigurationList = BA06061A108AE697C4F66405 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-UIScrollView-InfiniteScroll" */;
 			buildPhases = (
-				41964FD618DBDD7870E06E4B /* Sources */,
-				B98A71FFD22E9D4ACA20279F /* Frameworks */,
-				5EB872C293C3E219AF60CB55 /* Resources */,
+				0E2F747D89B0389A70CD9E65 /* Sources */,
+				8525A23655ED25E557FAF42E /* Frameworks */,
+				7158180C42CF12285A8D03BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			productName = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			productReference = 729B004E7EABD38E4A432013 /* UIScrollView_InfiniteScroll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEB3246E2E62D50BF40864FA /* Pods-VGContent_Tests-VGContent-VGContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F62A83F64EBB347964E4069A /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent-VGContent" */;
+			buildPhases = (
+				1709EA0EA8C3D210987A2C93 /* Sources */,
+				78330AE570748A5077FC420F /* Frameworks */,
+				E4D425AC9B2441020C18B396 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -447,111 +532,152 @@
 			);
 			name = "Pods-VGContent_Tests-VGContent-VGContent";
 			productName = "Pods-VGContent_Tests-VGContent-VGContent";
-			productReference = DC3FAD5F87F4CDBAA487394A /* VGContent.bundle */;
+			productReference = 4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		E2DABC6DD29ABBCF53C097A7 /* Pods-VGContent_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CBE9A672BA4E2DFDEFD711 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */;
+			buildPhases = (
+				9420B4FF8CB2727181CEDA1A /* Sources */,
+				96819D0596F0B9B94EC45178 /* Frameworks */,
+				110F9772C146956398B6D2F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F177E2185AED2999EB3EF53 /* PBXTargetDependency */,
+				2D1A97666D3FADCFA47E9C4A /* PBXTargetDependency */,
+			);
+			name = "Pods-VGContent_Tests";
+			productName = "Pods-VGContent_Tests";
+			productReference = F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3C09C1F0B3D1A5179241B9AB /* Project object */ = {
+		4E6ACEEF25334D575FA840A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = C68FB3CDFD6E3DE21CEDF903 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = ADC64613839F6530807B1233 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 32E2109C1A83D72C9F9A6246;
-			productRefGroup = BBBA59A283027925E96DBF6B /* Products */;
+			mainGroup = 80642DC48E003EFBE408F3EF;
+			productRefGroup = 43BD97ED25C8EDECD611D60C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BA97004FD94C3E3FCEC0986 /* Pods-VGContent_Tests */,
-				50A8642D9AD50B2A439FD28B /* Pods-VGContent_Tests-VGContent */,
-				5EC4402AFF0BAD29542DDA74 /* Pods-VGContent_Tests-VGContent-VGContent */,
+				E2DABC6DD29ABBCF53C097A7 /* Pods-VGContent_Tests */,
+				6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */,
+				3BD466AB24974CBD1867B251 /* Pods-VGContent_Tests-VGContent */,
+				CEB3246E2E62D50BF40864FA /* Pods-VGContent_Tests-VGContent-VGContent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5EB872C293C3E219AF60CB55 /* Resources */ = {
+		AAB29828F05E21D75FA57A78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A556DECA57488F04FDDA91 /* VGContent.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A2C4F5153D69BED7DAD78FC /* Resources */ = {
+		E4D425AC9B2441020C18B396 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74CF1C92A48A65B848AF0AF /* VGContent.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22CD730B80F42BF81A80319F /* Sources */ = {
+		0E2F747D89B0389A70CD9E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920D9CE6C5E08C715C50AC5A /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */,
+				D29A953CC4B51E7BFBEDFDC9 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m in Sources */,
+				DF5D6F4A9055E915FF07DC62 /* UIScrollView+InfiniteScroll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41964FD618DBDD7870E06E4B /* Sources */ = {
+		1709EA0EA8C3D210987A2C93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC292200AC5F952E391E817D /* Sources */ = {
+		9420B4FF8CB2727181CEDA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD6C3221B4A4DCF00CEF725 /* UIView+Identifier.m in Sources */,
-				85E57F4FDD4F8D737B1C4BBD /* Pods-VGContent_Tests-dummy.m in Sources */,
-				4FD6C3291B4A4DCF00CEF725 /* VGContentTableViewController.m in Sources */,
-				4FD6C3411B4A4E0700CEF725 /* UITableViewCell+Setup.m in Sources */,
-				4FD6C3201B4A4DCF00CEF725 /* VGCollectionViewContent.m in Sources */,
-				4FD6C33B1B4A4E0700CEF725 /* UIView+Setup.m in Sources */,
-				4FD6C3241B4A4DCF00CEF725 /* VGContent.m in Sources */,
-				4FD6C31E1B4A4DCF00CEF725 /* UICollectionViewCell+Setup.m in Sources */,
-				4FD6C32B1B4A4DCF00CEF725 /* VGContentViewController.m in Sources */,
-				4FD6C33D1B4A4E0700CEF725 /* VGCarouselContent.m in Sources */,
-				4FD6C3431B4A4E0700CEF725 /* VGTableViewContent.m in Sources */,
-				4FD6C3261B4A4DCF00CEF725 /* VGURLContent.m in Sources */,
-				4FD6C33F1B4A4E0700CEF725 /* VGCarouselContentView.m in Sources */,
+				DD2C22DD9916D1028A903007 /* Pods-VGContent_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8884C852A3688E4A24A2B92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9925A4CC862AB3382D6D10 /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */,
+				5C1B53938A9D8CB627E09C2A /* UICollectionViewCell+Setup.m in Sources */,
+				EFBFC59867B3092B6B5B502B /* UITableViewCell+Setup.m in Sources */,
+				B664693ED778115C7D7853F1 /* UIView+Identifier.m in Sources */,
+				8F198A615B4D499D7732DC89 /* UIView+Setup.m in Sources */,
+				B3A476227C61E456F108F1FE /* VGCarouselContent.m in Sources */,
+				982A16A50B44A200322FF456 /* VGCarouselContentView.m in Sources */,
+				D24F03F7BA70CC98E1F503CE /* VGCollectionViewContent.m in Sources */,
+				51782BCB1DDEB4C27912E0F7 /* VGContent.m in Sources */,
+				513E6BC5AFF588AEE022818E /* VGContentTableViewController.m in Sources */,
+				1A620CBEEF4890DC14269FB4 /* VGContentViewController.m in Sources */,
+				EF1C47BB529F55706FE8FE37 /* VGTableViewContent.m in Sources */,
+				A1D0F63F46F716A1B1F3CC48 /* VGURLContent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		86BF5ACDBEE164110F969C0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-VGContent_Tests-VGContent-VGContent";
-			target = 5EC4402AFF0BAD29542DDA74 /* Pods-VGContent_Tests-VGContent-VGContent */;
-			targetProxy = C73321A62C83C008F6F7CEFA /* PBXContainerItemProxy */;
-		};
-		D18BC5A7C4783CDEB50FF52D /* PBXTargetDependency */ = {
+		2D1A97666D3FADCFA47E9C4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-VGContent_Tests-VGContent";
-			target = 50A8642D9AD50B2A439FD28B /* Pods-VGContent_Tests-VGContent */;
-			targetProxy = 99D395FB943CB6E6ECF6BB2C /* PBXContainerItemProxy */;
+			target = 3BD466AB24974CBD1867B251 /* Pods-VGContent_Tests-VGContent */;
+			targetProxy = 8C4783F3FAC6E5F2942ADE53 /* PBXContainerItemProxy */;
+		};
+		2F177E2185AED2999EB3EF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			target = 6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */;
+			targetProxy = 9346C2098D4261C176891E68 /* PBXContainerItemProxy */;
+		};
+		32F12C9AE99E788897C73DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGContent_Tests-VGContent-VGContent";
+			target = CEB3246E2E62D50BF40864FA /* Pods-VGContent_Tests-VGContent-VGContent */;
+			targetProxy = CC0D45031DF4F0029A2A92B8 /* PBXContainerItemProxy */;
+		};
+		5929F9D7DD1DA4AFE63B088B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			target = 6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */;
+			targetProxy = F911AC27D0C25F8A0A77523D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12B1C6C91BDD7A21392387D1 /* Release */ = {
+		02FBFB84CBAF84BB6AED100B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
+			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGContent_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -562,9 +688,9 @@
 			};
 			name = Release;
 		};
-		23C8501B4393692777A9A177 /* Debug */ = {
+		156BF716639578A86239A30D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5461E97BBAC58DAD37EB2EBF /* Pods-VGContent_Tests.debug.xcconfig */;
+			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -573,16 +699,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests/Pods-VGContent_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_VGContent_Tests;
+				PRODUCT_NAME = VGContent;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,7 +715,34 @@
 			};
 			name = Debug;
 		};
-		3C15B419937E3836059BAD25 /* Release */ = {
+		62ECA88A6D6E31A91DC11C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B48EF3CDD821626EAA242CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -625,9 +776,9 @@
 			};
 			name = Release;
 		};
-		560BA8A0593F82D0F49E0529 /* Release */ = {
+		965E7812DB1785E6A11C4462 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5654B5F1CA46BE06B22B30B /* Pods-VGContent_Tests.release.xcconfig */;
+			baseConfigurationReference = 9B5A39F73B88CC3D1947F8E3 /* Pods-VGContent_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -641,7 +792,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests/Pods-VGContent_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -652,38 +803,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		7E995E7B087614CCA1BF66EC /* Release */ = {
+		A61F915F71AE387A4004B0DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = VGContent;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9C476C7727C09E65DAA1CC57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
+			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGContent_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -694,7 +818,7 @@
 			};
 			name = Debug;
 		};
-		A58DF6A9C149718ADC9ECA5D /* Debug */ = {
+		B1D77E0B91184A2886639D1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -733,9 +857,9 @@
 			};
 			name = Debug;
 		};
-		C6E9B8FB1E2DEB8B54949251 /* Debug */ = {
+		B48FD55B0B25561A79782A61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59A1966C0B1F14C3323DC52C /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
+			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -750,7 +874,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = VGContent;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -758,48 +882,113 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		DEBB2704BA2468A506DFD454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests/Pods-VGContent_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_VGContent_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAE29B496D5AB21746FDAC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88DC43AC925D921B611B228B /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent-VGContent" */ = {
+		66536798AF83F6C564B127B6 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C476C7727C09E65DAA1CC57 /* Debug */,
-				12B1C6C91BDD7A21392387D1 /* Release */,
+				156BF716639578A86239A30D /* Debug */,
+				B48FD55B0B25561A79782A61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBE8C520CC2BFF376AF3868E /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent" */ = {
+		ADC64613839F6530807B1233 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6E9B8FB1E2DEB8B54949251 /* Debug */,
-				7E995E7B087614CCA1BF66EC /* Release */,
+				B1D77E0B91184A2886639D1F /* Debug */,
+				6B48EF3CDD821626EAA242CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C68FB3CDFD6E3DE21CEDF903 /* Build configuration list for PBXProject "Pods" */ = {
+		BA06061A108AE697C4F66405 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-UIScrollView-InfiniteScroll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A58DF6A9C149718ADC9ECA5D /* Debug */,
-				3C15B419937E3836059BAD25 /* Release */,
+				62ECA88A6D6E31A91DC11C7C /* Debug */,
+				FAE29B496D5AB21746FDAC3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD711EAEF6887CDF0E83388B /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */ = {
+		E4CBE9A672BA4E2DFDEFD711 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23C8501B4393692777A9A177 /* Debug */,
-				560BA8A0593F82D0F49E0529 /* Release */,
+				965E7812DB1785E6A11C4462 /* Debug */,
+				DEBB2704BA2468A506DFD454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F62A83F64EBB347964E4069A /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent-VGContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61F915F71AE387A4004B0DB /* Debug */,
+				02FBFB84CBAF84BB6AED100B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3C09C1F0B3D1A5179241B9AB /* Project object */;
+	rootObject = 4E6ACEEF25334D575FA840A9 /* Project object */;
 }

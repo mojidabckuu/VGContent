@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Models/VGCollectionViewContent/UICollectionViewCell+Setup.h

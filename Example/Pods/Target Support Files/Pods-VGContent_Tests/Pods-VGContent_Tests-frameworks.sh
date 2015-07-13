@@ -48,8 +48,10 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'UIScrollView_InfiniteScroll.framework'
   install_framework 'VGContent.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'UIScrollView_InfiniteScroll.framework'
   install_framework 'VGContent.framework'
 fi

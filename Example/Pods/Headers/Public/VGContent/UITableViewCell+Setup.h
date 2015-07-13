@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Models/VGTableViewContent/UITableViewCell+Setup.h

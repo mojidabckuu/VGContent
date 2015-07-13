@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Models/VGCarouselContent/VGCarouselContentView/VGCarouselContentView.h

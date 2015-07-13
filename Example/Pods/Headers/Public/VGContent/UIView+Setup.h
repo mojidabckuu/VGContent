@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Models/VGCarouselContent/Utils/UIView+Setup.h

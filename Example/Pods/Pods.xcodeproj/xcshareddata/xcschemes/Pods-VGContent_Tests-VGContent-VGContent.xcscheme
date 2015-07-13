@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5EC4402AFF0BAD29542DDA74"
+               BlueprintIdentifier = "CEB3246E2E62D50BF40864FA"
                BuildableName = "VGContent.bundle"
                BlueprintName = "Pods-VGContent_Tests-VGContent-VGContent"
                ReferencedContainer = "container:Pods.xcodeproj">

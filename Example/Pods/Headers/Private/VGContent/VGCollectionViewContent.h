@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Models/VGCollectionViewContent/VGCollectionViewContent.h

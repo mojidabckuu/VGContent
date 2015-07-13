@@ -8,7 +8,11 @@
 
 #import "VGURLContent.h"
 
+#import <UIScrollView-InfiniteScroll/UIScrollView+InfiniteScroll.h>
+
 @interface VGURLContent ()
+
+@property (nonatomic, assign) UIScrollView *scrollView;
 
 @end
 
@@ -17,6 +21,28 @@
 @synthesize isRefreshing = _isRefreshing;
 @synthesize isAllLoaded = _isAllLoaded;
 @synthesize isLoading = _isLoading;
+
+#pragma mark - VGURLContent lifecycle
+
+- (instancetype)initWithView:(UIView *)view {
+    self = [super initWithView:view];
+    if(self) {
+        self.isAllLoaded = YES;
+        self.scrollView = view;
+        [self setupInfiniteScrollingWithScrollView:view];
+    }
+    return self;
+}
+
+#pragma mark - Setup methods
+
+- (void)setupInfiniteScrollingWithScrollView:(UIScrollView *)scrollView {
+    [scrollView addInfiniteScrollWithHandler:^(id scrollView) {
+        if(!self.isAllLoaded) {
+            [self loadMoreItems];
+        }
+    }];
+}
 
 #pragma mark - Accessors
 
@@ -62,6 +88,7 @@
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;
+    [self.scrollView finishInfiniteScroll];
 }
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
