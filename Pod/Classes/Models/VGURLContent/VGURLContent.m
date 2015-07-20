@@ -47,7 +47,7 @@
 #pragma mark - Accessors
 
 - (NSInteger)offset {
-    return _isRefreshing ? 0 : self.items.count;
+    return _isRefreshing ? 0 : _offset;
 }
 
 - (BOOL)isRefreshing {
@@ -100,7 +100,7 @@
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
     [self fetchLoadedItems:items error:error];
-    self.isAllLoaded = items.count < pageSize;
+    self.isAllLoaded = items.count <= pageSize;
 }
 
 #pragma mark - Notifiers

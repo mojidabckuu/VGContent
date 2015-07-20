@@ -69,7 +69,7 @@
 /**
  Current content offset.
  */
-@property (nonatomic, assign, readonly) NSInteger offset;
+@property (nonatomic, assign) NSInteger offset;
 
 ///---------------------
 /// @name Loading management
