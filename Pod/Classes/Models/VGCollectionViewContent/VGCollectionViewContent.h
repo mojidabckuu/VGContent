@@ -17,7 +17,7 @@
 /**
  Reference on UICollectionView object.
  */
-@property (nonatomic, assign) UICollectionView *collectionView;
+@property (nonatomic, weak) UICollectionView *collectionView;
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 

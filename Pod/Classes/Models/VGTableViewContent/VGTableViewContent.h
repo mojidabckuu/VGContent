@@ -14,7 +14,7 @@
 
 @interface VGTableViewContent : VGURLContent <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, assign) UITableView *tableView;
+@property (nonatomic, weak) UITableView *tableView;
 
 #pragma mark - Items management
 

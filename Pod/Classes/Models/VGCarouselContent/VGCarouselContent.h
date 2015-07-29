@@ -23,7 +23,7 @@
 
 @interface VGCarouselContent : VGURLContent
 
-@property (nonatomic, assign) iCarousel *carousel;
+@property (nonatomic, weak) iCarousel *carousel;
 @property (nonatomic, assign) id<VGCarouselContentDelegate> delegate;
 
 - (instancetype)initWithCarousel:(iCarousel *)carousel;
