@@ -77,6 +77,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = self.cellIdentifier ?: [UITableViewCell identifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(identifier)];
+    if ([bundle pathForResource:identifier ofType:@"nib"]){
+        cell = [[bundle loadNibNamed:identifier owner:nil options:nil] firstObject];
+    }
     if (cell == nil) {
         Class class = NSClassFromString(identifier);
         cell = [[class alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
