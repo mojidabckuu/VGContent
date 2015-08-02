@@ -83,7 +83,9 @@
     }
     if (cell == nil) {
         Class class = NSClassFromString(identifier);
-        cell = [[class alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        if(class) {
+            cell = [[class alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        }
     }
     [cell setupWithItem:_items[indexPath.row]];
     if(!self.cellIdentifier) {
