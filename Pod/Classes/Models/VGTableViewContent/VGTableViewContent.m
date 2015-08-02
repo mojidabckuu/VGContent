@@ -185,6 +185,14 @@
     }
 }
 
+- (void)selectItems:(NSArray *)items animated:(BOOL)animated {
+    for(id item in items) {
+        if([_items containsObject:item]) {
+            [self selectItem:item animated:animated];
+        }
+    }
+}
+
 - (void)deselectItem:(id)item animated:(BOOL)animated {
     if([_items containsObject:item]) {
         NSInteger index = [_items indexOfObject:item];

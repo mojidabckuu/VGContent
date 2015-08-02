@@ -123,6 +123,14 @@
     @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
 }
 
+- (void)selectItems:(NSArray *)items {
+    [self selectItems:items animated:NO];
+}
+
+- (void)selectItems:(NSArray *)items animated:(BOOL)animated {
+    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+}
+
 - (void)deselectItem:(id)item {
     [self deselectItem:item animated:NO];
 }
