@@ -18,7 +18,7 @@
 /**
  `NSArray` of fildeted items.
  */
-@property (nonatomic, strong) NSMutableArray *filteredItems;
+@property (nonatomic, strong) NSArray *filteredItems;
 
 /**
  Method to perform search on items.
