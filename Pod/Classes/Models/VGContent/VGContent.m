@@ -11,6 +11,7 @@
 @implementation VGContent
 
 @synthesize filteredItems = _filteredItems;
+@synthesize originalItems = _originalItems;
 
 #pragma mark - VGContent lifecycle
 
@@ -157,7 +158,11 @@
 #pragma mark - VGContentSearch protocol
 
 - (void)searchWithString:(NSString *)string {
-    self.filteredItems = [_items copy];
+    _items = [NSMutableArray arrayWithArray:self.filteredItems];
+}
+
+- (void)cancelSearch {
+    self.filteredItems = nil;
 }
 
 #pragma mark - Utils

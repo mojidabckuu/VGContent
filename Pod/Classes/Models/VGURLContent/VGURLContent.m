@@ -28,8 +28,8 @@
     self = [super initWithView:view];
     if(self) {
         _isAllLoaded = YES;
-        self.scrollView = view;
-        [self setupInfiniteScrollingWithScrollView:view];
+        self.scrollView = (UIScrollView *)view;
+        [self setupInfiniteScrollingWithScrollView:self.scrollView];
     }
     return self;
 }
@@ -88,9 +88,11 @@
         [self notifyDidFailWithError:error];
         return;
     }
-    if (_isRefreshing) {
+    if (_isRefreshing) { // TODO: handle situations when can infinite scroll with search string.
+        self.originalItems = [NSMutableArray arrayWithArray:items];
         [_items removeAllObjects];
     }
+    
     [self insertItems:items atIndex:_items.count animated:YES];
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
@@ -99,6 +101,7 @@
 }
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
+    self.filteredItems = nil;
     [self fetchLoadedItems:items error:error];
     self.isAllLoaded = items.count < pageSize;
 }
