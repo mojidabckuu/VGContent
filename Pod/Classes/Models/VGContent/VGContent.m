@@ -53,6 +53,7 @@
 - (void)setItems:(NSArray *)items {
     [_items removeAllObjects];
     [_items addObjectsFromArray:items];
+    _originalItems = _items;
     [self reload];
 }
 
