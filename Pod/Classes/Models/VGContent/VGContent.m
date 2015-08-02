@@ -156,7 +156,7 @@
 
 #pragma mark - VGContentSearch protocol
 
-- (void)search {
+- (void)searchWithString:(NSString *)string {
     self.filteredItems = [_items copy];
 }
 

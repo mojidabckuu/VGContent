@@ -19,6 +19,6 @@
  Method to perform search on items.
  @result Result array will be putted to filtered items.
  */
-- (void)search;
+- (void)searchWithString:(NSString *)string;
 
 @end
