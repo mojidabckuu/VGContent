@@ -30,13 +30,12 @@
 
 - (void)contentAwakeFromNib {
     if(self.contentName) {
+        Class class = NSClassFromString(self.contentName);
+        NSAssert(class, @"Content class is not exists %@", self.
+                 contentName);
+        self.content = [[class alloc] initWithView:self.contentView];
         if(self.cellIdentifier) {
-            Class class = NSClassFromString(self.contentName);
-            NSAssert(class, @"Content class is not exists %@", self.
-                     contentName);
-            self.content = [[class alloc] initWithView:self.contentView];
             self.content.cellIdentifier = self.cellIdentifier;
-            
         }
     }
 }
