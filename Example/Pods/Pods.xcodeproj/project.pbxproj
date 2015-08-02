@@ -42,6 +42,8 @@
 		E5D479D2399456C6ED30AA12 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF1C47BB529F55706FE8FE37 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */; };
 		EFBFC59867B3092B6B5B502B /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */; };
+		F59B1D241B6E14F900C1DBC7 /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */; };
+		F59B1D261B6E151000C1DBC7 /* VGContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */; };
 		F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CCBA59243875A60FCE9A75 /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D477A317395F9420B8036F /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC018428715E5A0CF5CC63DD /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -137,6 +139,8 @@
 		EA3842B9B601E21C82D8C70C /* Pods-VGContent_Tests-VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-prefix.pch"; sourceTree = "<group>"; };
 		EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentSearchProtocol.h; sourceTree = "<group>"; };
+		F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentProtocol.h; sourceTree = "<group>"; };
 		FD65674BEA861EFD5A03EB4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +187,8 @@
 				6197A972471E450A86494080 /* UIView+Identifier.m */,
 				4DFBAC3915C4E4154991E64E /* VGContent.h */,
 				1FCC940B5365FC032F15927D /* VGContent.m */,
+				F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */,
+				F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */,
 			);
 			path = VGContent;
 			sourceTree = "<group>";
@@ -445,6 +451,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78EF5656FE33E299A697EBD1 /* Pods-VGContent_Tests-umbrella.h in Headers */,
+				F59B1D261B6E151000C1DBC7 /* VGContentProtocol.h in Headers */,
+				F59B1D241B6E14F900C1DBC7 /* VGContentSearchProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

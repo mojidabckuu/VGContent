@@ -10,6 +10,8 @@
 
 @implementation VGContent
 
+@synthesize filteredItems = _filteredItems;
+
 #pragma mark - VGContent lifecycle
 
 - (instancetype)init {
@@ -150,6 +152,12 @@
 
 - (void)reload {
     @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+}
+
+#pragma mark - VGContentSearch protocol
+
+- (void)search {
+    self.filteredItems = [_items copy];
 }
 
 #pragma mark - Utils
