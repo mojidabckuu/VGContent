@@ -64,6 +64,34 @@
     return nil;
 }
 
+#pragma mark - Modifiers
+
+- (void)setCellIdentifier:(NSString *)cellIdentifier {
+    [super setCellIdentifier:cellIdentifier];
+    
+    id cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if(cell) {
+        return;
+    }
+    
+    BOOL registered = NO;
+    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
+    if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
+        UINib *nib = [[bundle loadNibNamed:cellIdentifier owner:nil options:nil] firstObject];
+        if(nib) {
+            [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+            registered = YES;
+        }
+    }
+    if(!registered) {
+        Class class = NSClassFromString(cellIdentifier);
+        if(!class) {
+            class = [UITableViewCell class];
+        }
+        [self.tableView registerClass:class forCellReuseIdentifier:cellIdentifier];
+    }
+}
+
 #pragma mark - UITableView data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -77,16 +105,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = self.cellIdentifier ?: [UITableViewCell identifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(identifier)];
-    if ([bundle pathForResource:identifier ofType:@"nib"]){
-        cell = [[bundle loadNibNamed:identifier owner:nil options:nil] firstObject];
-    }
-    if (cell == nil) {
-        Class class = NSClassFromString(identifier);
-        if(class) {
-            cell = [[class alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        }
-    }
     [cell setupWithItem:_items[indexPath.row]];
     if(!self.cellIdentifier) {
         cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
