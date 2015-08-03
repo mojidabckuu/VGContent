@@ -170,6 +170,16 @@
     _items = [NSMutableArray arrayWithArray:self.filteredItems];
 }
 
+- (void)searchWithString:(NSString *)string keyPath:(NSString *)keyPath {
+    NSPredicate *predicate = nil;
+    if (keyPath) {
+        predicate = [NSPredicate predicateWithFormat:@"self.%K contains[cd] %@", keyPath, string];
+    }
+    else {
+        predicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", string];
+    }
+}
+
 - (void)cancelSearch {
     self.filteredItems = nil;
 }
