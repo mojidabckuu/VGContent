@@ -171,15 +171,20 @@
 }
 
 - (void)searchWithString:(NSString *)string keyPath:(NSString *)keyPath {
-    NSPredicate *predicate = nil;
-    if (keyPath) {
-        predicate = [NSPredicate predicateWithFormat:@"self.%K contains[cd] %@", keyPath, string];
+    if(string.length) {
+        NSPredicate *predicate = nil;
+        if (keyPath) {
+            predicate = [NSPredicate predicateWithFormat:@"self.%K contains[cd] %@", keyPath, string];
+        }
+        else {
+            predicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", string];
+        }
+        self.filteredItems = [self.originalItems filteredArrayUsingPredicate:predicate];
+        _items = [NSMutableArray arrayWithArray:self.filteredItems];
+    } else {
+        self.filteredItems = nil;
+        _items = self.originalItems;
     }
-    else {
-        predicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", string];
-    }
-    self.filteredItems = [self.originalItems filteredArrayUsingPredicate:predicate];
-    _items = [NSMutableArray arrayWithArray:self.filteredItems];
 }
 
 - (void)cancelSearch {
