@@ -178,6 +178,8 @@
     else {
         predicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", string];
     }
+    self.filteredItems = [self.originalItems filteredArrayUsingPredicate:predicate];
+    _items = [NSMutableArray arrayWithArray:self.filteredItems];
 }
 
 - (void)cancelSearch {
