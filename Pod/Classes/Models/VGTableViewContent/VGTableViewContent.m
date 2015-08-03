@@ -77,7 +77,7 @@
     BOOL registered = NO;
     NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
     if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
-        UINib *nib = [[bundle loadNibNamed:cellIdentifier owner:nil options:nil] firstObject];
+        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
         if(nib) {
             [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
             registered = YES;
