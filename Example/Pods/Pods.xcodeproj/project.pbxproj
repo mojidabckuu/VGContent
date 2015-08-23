@@ -7,599 +7,699 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A620CBEEF4890DC14269FB4 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D3F86DF6F601EE332BEEEF /* VGContentViewController.m */; };
-		1D819DD76A0282A09CD0AB89 /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFBAC3915C4E4154991E64E /* VGContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35F48B0EFD25F7495F7D44D2 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5928C7223639D6D4913DC017 /* VGContentTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37BEABB1F87230BB40FF9457 /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 25453659F5C7F10D8108C822 /* VGTableViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37F3F12187F37C2B0F87B7CB /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3BEF5978671811C735CFDD /* VGCarouselContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A9925A4CC862AB3382D6D10 /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C64CF95629DA04DC5B624B84 /* Pods-VGContent_Tests-VGContent-dummy.m */; };
-		4F1297C8EDFBD2B9EF8E327C /* UIScrollView_InfiniteScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13FD6B888BCB7CEC0E9B610 /* UIScrollView_InfiniteScroll.framework */; };
-		513E6BC5AFF588AEE022818E /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B61E5DCD917178182877D4 /* VGContentTableViewController.m */; };
-		51782BCB1DDEB4C27912E0F7 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC940B5365FC032F15927D /* VGContent.m */; };
-		5C1B53938A9D8CB627E09C2A /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = DD47037249BE945C523E1E6D /* UICollectionViewCell+Setup.m */; };
-		78EF5656FE33E299A697EBD1 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BCB8D6668103BDA67B07D16 /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EBE69440A8295863B414960 /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED613005852EEA7418DFF0C /* VGCollectionViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E8B963AB94FE6072C37517A /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = BA316766A3E2620EAA522D5C /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F198A615B4D499D7732DC89 /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = CF97772BE8474D8A0D580E9B /* UIView+Setup.m */; };
-		982A16A50B44A200322FF456 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6922AA947D88C5818ECEB591 /* VGCarouselContentView.m */; };
-		A1D0F63F46F716A1B1F3CC48 /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D4B25A2693245B9F52755D /* VGURLContent.m */; };
-		A6D141D57DB93A59266BD652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3662868260F93C4A68247 /* Foundation.framework */; };
-		A6E91D1A20EE1932BCE2B617 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5787F1EA30E00F5F8BAF399B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0A556DECA57488F04FDDA91 /* VGContent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */; };
-		B3A476227C61E456F108F1FE /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA278E9D295EC9AB677993 /* VGCarouselContent.m */; };
-		B664693ED778115C7D7853F1 /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6197A972471E450A86494080 /* UIView+Identifier.m */; };
-		B691A93CD5A617167DFE7AC5 /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D340C2169EA735F6A2C07E7 /* UIView+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7A11177D6AD8D4EF26AD66C /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42558340916B3B684A3FABCF /* Pods-VGContent_Tests-VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE5192C6F47EE842F48905F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3662868260F93C4A68247 /* Foundation.framework */; };
-		D24F03F7BA70CC98E1F503CE /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CA4C9E7A09362F89393502 /* VGCollectionViewContent.m */; };
-		D29A953CC4B51E7BFBEDFDC9 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE9B30954A252B58E8C56D8 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m */; };
-		DC930C993CD98E2D0A874B28 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0F74DA3C9C3FB716AC11E0 /* UIView+Identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD2C22DD9916D1028A903007 /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 687CF3750DF2D7AFF2D6A024 /* Pods-VGContent_Tests-dummy.m */; };
-		DE4B5E0CE32184D86F6565FB /* UIScrollView+InfiniteScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C32F9963B17D8E831F5E73 /* UIScrollView+InfiniteScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5D6F4A9055E915FF07DC62 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = C309C9B4D708576E0A8ECB5F /* UIScrollView+InfiniteScroll.m */; };
-		E4FF31D52DCF4A454765E0E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3662868260F93C4A68247 /* Foundation.framework */; };
-		E598BCFDE568F760FF7ABC40 /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D53BCF51F0A10705A18343 /* VGCarouselContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5D479D2399456C6ED30AA12 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF1C47BB529F55706FE8FE37 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */; };
-		EFBFC59867B3092B6B5B502B /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */; };
-		F59B1D261B6E151000C1DBC7 /* VGContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */; };
-		F5B262731B89E2250062EBC4 /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CCBA59243875A60FCE9A75 /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D477A317395F9420B8036F /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC018428715E5A0CF5CC63DD /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D666A9574FA9330A259F58B9A4ED2E /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 935CBFAEFC9C71B6E30D869C4B5ECB5E /* VGTableViewContent.m */; };
+		10C86995D04A48756AE4797CFFEDD69A /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA92161FB52387A8A8816D3AF40358 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		17FEEE034CED37219B2D83AEF241E6EC /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B414EB5D2301F0D33354D115A886C /* VGURLContent.m */; };
+		180D4243B66AAE083EBD67D6F8281234 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = FA471733C4D452C0CCE814FF311A2552 /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A128BFD7ADBE155E2616501FA96742E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5608655374FCD70B714D1912E1730BFE /* Foundation.framework */; };
+		1A8178E2BE9DCB7F53CECDB344802BF9 /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 59310FA69CBE1C4517B9B33CD0C5A08F /* VGContentSearchProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B7FD24ED8BAF3B0932A5CB54FA0816A /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA358AE5EFE5F81FFCCDD2C9277EC2 /* UIView+Identifier.m */; };
+		223B611C4D3F5868CF38E0B179FC1D3A /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA62B935D2F4496057FB375C77B906 /* VGCarouselContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		269B365A72259FA31FB1FBB924AB2B9A /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4271F2CE21F232FD2F164368AF43708F /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26AC87538004E71FBB8CCF5C24B142DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4598912930522E4AD6D792922D73A2C /* QuartzCore.framework */; };
+		2C26F4DB6E5A50ACAB50404C6145FA2F /* VGContent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3932591043DDB4E2EAEA6BCE9C307CA /* VGContent.bundle */; };
+		2D64B0345B4F70C5E423FEC9A3C6A286 /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040BC42B2455C4F77BFDAEFD7D4F9640 /* VGContentTableViewController.m */; };
+		2DDA56D86DBA89103DA1953F9BD40771 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AD763B49AF139D5C6BE912778221EE9C /* VGContentTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCFF8C3E0C199E2EE56ECE65C5F6979 /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE336C311424F1662524B8E3B76BE15 /* UICollectionViewCell+Setup.m */; };
+		33DC227DD13E6204DCCA59F49E239D7F /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0BA6C50F07766B508D3AD90D116182 /* UIView+Setup.m */; };
+		41D3CB435E5DED4BA8987CDCA5D97CE8 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6375F7114FC9A63684AF7FB2DD2D747E /* VGContentViewController.m */; };
+		48EA33DF24E360A6BB01ADF4AD7CEBCA /* UIScrollView_InfiniteScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41542C5D21608DC61CC50ABDCC7B5FB /* UIScrollView_InfiniteScroll.framework */; };
+		507F2F78CF99D908283ADC408F847AAA /* UIScrollView-InfiniteScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57F50C62B6B7FE423B004AF806C0D2 /* UIScrollView-InfiniteScroll-dummy.m */; };
+		678189B315D476930326171219CDC426 /* UIScrollView-InfiniteScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC44BC81E49A08A72E815CB147491995 /* UIScrollView-InfiniteScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E5D66E78FE8058097280024D2A8612A /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = B8127163000285F06F111F9A3CAE18BD /* VGCarouselContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7243B8AE7BB52F55DFFA991511C5AFDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5608655374FCD70B714D1912E1730BFE /* Foundation.framework */; };
+		88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB7341BBA0E68514B73C5BF7193D26A /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9167A16E66FF5473B24C489BA1CE7E6D /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = D353E49BC62BA738AD93E2FCF7314C82 /* VGCollectionViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		977A5FBD590818A8C28A8402A012DA0D /* VGContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF2A310317C3838E2139EB85BB7B2E8 /* VGContentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A81EF03D98ED34687685752982E2924 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5608655374FCD70B714D1912E1730BFE /* Foundation.framework */; };
+		9A923B68293079B5E52F8729A06C9875 /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA0027787D8593AC2D83165FB2946A2 /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DE9751F3DA6B73ADE4AF9F4B767D221 /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD03C98097A531B8BCE7EB95C42C521 /* UITableViewCell+Setup.m */; };
+		9EDCE876032AED646486D2E809FD1F54 /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 817155AD44798DA58632E2FA75444A85 /* VGCollectionViewContent.m */; };
+		A2B5E888788AFB65C9E89AB41D72608D /* UIScrollView+InfiniteScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B73B5882FDA78726EBA414573198C5 /* UIScrollView+InfiniteScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A46E63B43B6AFB344831A9883BB709C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5608655374FCD70B714D1912E1730BFE /* Foundation.framework */; };
+		BB1567AF60C4BF6D17A393A59BB9E862 /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1179AC8744E09A79A0601EEC201A816D /* VGTableViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBA9EA1208595BBA1F04A742AAC933BB /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E1C8135AB0C17476C68EDCE9ED6D /* VGCarouselContent.m */; };
+		BD99B1A8176D8FE96BDE6D8446FCE2B4 /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 609CE6BD96E825B8768191A7564973E5 /* VGContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EFD8699DBC3334490178609CDD078E /* iCarousel-dummy.m */; };
+		CF916AD9FE8CB2E5211AABB307833C23 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D70A56F9E92EB43719C88E91DCAFFBC6 /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E46F0563BE131C8953CC69D3635328 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68B0961FD9811E3ECDFD44CB778FE7 /* UIScrollView+InfiniteScroll.m */; };
+		D59F5B8900B732E94AF4BA0186274FE1 /* iCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CC29093E75091474F6134D0B7B3206 /* iCarousel.framework */; };
+		DD92B3311E59DE3DBD2D1E0120752B48 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8555C3B953EA16AFA0A45A037103F84A /* UIView+Identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AC8EE9DED2DD3969CC3B71050F308B /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6398A4AAACBBBB77C32B318186135 /* Pods-VGContent_Tests-dummy.m */; };
+		EEBBA29B7167A616BF39107C77AA57E5 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDB5FFA4841EFE016A4914DF55492B8 /* VGCarouselContentView.m */; };
+		F0A1CFA25EA4E1861A6336C88C38B79D /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 403FA9E43D57150C9F8243414F925988 /* UIView+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29975185420AEF3B5CA64762DC067680 /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F288483BEEB781F6D4E5D03FF6EE42B7 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 95136E5320E508CE6C3B064F181E0017 /* VGContent.m */; };
+		F56E24C5CA0B77DF5FDEA2591AB67976 /* VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E192681E21A6FAABEA95CE40DAF42407 /* VGContent-dummy.m */; };
+		F96C462E38EC0826FA3C74CD69E261A9 /* VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 427D13E8070BBCA4E1FFFC496FBEE119 /* VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB066EB4D0EC98D06D91A1D1563B32E2 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D554474F4A66C2C0C38CB3DF638D2AC /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC12DBAC5F1FDACECE69690B5A253F7 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9174928131B0D49272A4B85C75A3CF2B /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8C4783F3FAC6E5F2942ADE53 /* PBXContainerItemProxy */ = {
+		0C6D6D4AEAB68F171FAA9A52025B4379 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3BD466AB24974CBD1867B251;
-			remoteInfo = "Pods-VGContent_Tests-VGContent";
+			remoteGlobalIDString = 3634ABA74A6F41DB3C7516A583373EE8;
+			remoteInfo = iCarousel;
 		};
-		9346C2098D4261C176891E68 /* PBXContainerItemProxy */ = {
+		1C75A6C9179781E05C23FD22F6F292B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C4F2CE1338C2033B8851749;
-			remoteInfo = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			remoteGlobalIDString = B1E892E618731F66C7D78C356DC6DE15;
+			remoteInfo = "VGContent-VGContent";
 		};
-		CC0D45031DF4F0029A2A92B8 /* PBXContainerItemProxy */ = {
+		2A2ED3FFF1F07B430DB826C24146B83D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CEB3246E2E62D50BF40864FA;
-			remoteInfo = "Pods-VGContent_Tests-VGContent-VGContent";
+			remoteGlobalIDString = 739C8103E4E3607080D29593615FBD79;
+			remoteInfo = VGContent;
 		};
-		F911AC27D0C25F8A0A77523D /* PBXContainerItemProxy */ = {
+		2C471A2E5AAF7A83E2D47A7363ECBE78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E6ACEEF25334D575FA840A9 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C4F2CE1338C2033B8851749;
-			remoteInfo = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			remoteGlobalIDString = DC4A7F0AD0F968190759B944FDEA5D33;
+			remoteInfo = "UIScrollView-InfiniteScroll";
+		};
+		D4106145C2B2B7C8ACD15D579B64DA9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3634ABA74A6F41DB3C7516A583373EE8;
+			remoteInfo = iCarousel;
+		};
+		F52F4714F8E52E826538E6B1A7E55A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4A7F0AD0F968190759B944FDEA5D33;
+			remoteInfo = "UIScrollView-InfiniteScroll";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		108877B1FD8AFAFDA2B5ED7A /* Pods-VGContent_Tests-VGContent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent.xcconfig"; sourceTree = "<group>"; };
-		10B06AF9EBF0EC3FFD1CE48D /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
-		1240BED02091151859D31E0A /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
-		13D4B25A2693245B9F52755D /* VGURLContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
-		17B61E5DCD917178182877D4 /* VGContentTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
-		1D340C2169EA735F6A2C07E7 /* UIView+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
-		1E3BEF5978671811C735CFDD /* VGCarouselContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
-		1EE9B30954A252B58E8C56D8 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
-		1FCC940B5365FC032F15927D /* VGContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
-		21FAE515C675ADFC8B3CBAEE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		25453659F5C7F10D8108C822 /* VGTableViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
-		26D3F86DF6F601EE332BEEEF /* VGContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
-		2C0F74DA3C9C3FB716AC11E0 /* UIView+Identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
-		2F5F5B2D83505EB5B99ACDAA /* VGContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FD4D93D0BFAE0ECC6934E2B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
-		2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
-		3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
-		423BC1124F30189FAF26A9DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42558340916B3B684A3FABCF /* Pods-VGContent_Tests-VGContent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-umbrella.h"; sourceTree = "<group>"; };
-		4DD582A5D15E7BF39EB12029 /* Pods-VGContent_Tests-VGContent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests-VGContent.modulemap"; sourceTree = "<group>"; };
-		4DFBAC3915C4E4154991E64E /* VGContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
-		4EEA278E9D295EC9AB677993 /* VGCarouselContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
-		4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGContent.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5787F1EA30E00F5F8BAF399B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
-		5928C7223639D6D4913DC017 /* VGContentTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
-		5ED613005852EEA7418DFF0C /* VGCollectionViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
-		6197A972471E450A86494080 /* UIView+Identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
-		631941C0232C82412192C273 /* Pods-VGContent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		66E5EA532C96C77942869D57 /* Pods-VGContent_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-environment.h"; sourceTree = "<group>"; };
-		687CF3750DF2D7AFF2D6A024 /* Pods-VGContent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-dummy.m"; sourceTree = "<group>"; };
-		6922AA947D88C5818ECEB591 /* VGCarouselContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
-		694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-VGContent-Private.xcconfig"; sourceTree = "<group>"; };
-		729B004E7EABD38E4A432013 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77370E6807ED58F0FAE68B3B /* Pods-VGContent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGContent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		79D6506C42303136F39032C2 /* Pods-VGContent_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-resources.sh"; sourceTree = "<group>"; };
-		7BCB8D6668103BDA67B07D16 /* Pods-VGContent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-umbrella.h"; sourceTree = "<group>"; };
-		80CCBA59243875A60FCE9A75 /* VGURLContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
-		81CA4C9E7A09362F89393502 /* VGCollectionViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
-		81D53BCF51F0A10705A18343 /* VGCarouselContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
-		86C9601D2FDAFA41E22C9268 /* Pods-VGContent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests.modulemap"; sourceTree = "<group>"; };
-		86D477A317395F9420B8036F /* VGContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
-		97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
-		99F3662868260F93C4A68247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9B5A39F73B88CC3D1947F8E3 /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B0D862988FD593A3D24EDCD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B13FD6B888BCB7CEC0E9B610 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA316766A3E2620EAA522D5C /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
-		C309C9B4D708576E0A8ECB5F /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
-		C64CF95629DA04DC5B624B84 /* Pods-VGContent_Tests-VGContent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-VGContent-dummy.m"; sourceTree = "<group>"; };
-		CF97772BE8474D8A0D580E9B /* UIView+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
-		D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig"; sourceTree = "<group>"; };
-		DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
-		DD47037249BE945C523E1E6D /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
-		E3322EB5969E070780BEA974 /* Pods-VGContent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGContent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E8C32F9963B17D8E831F5E73 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
-		EA3842B9B601E21C82D8C70C /* Pods-VGContent_Tests-VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-VGContent-prefix.pch"; sourceTree = "<group>"; };
-		EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentSearchProtocol.h; sourceTree = "<group>"; };
-		F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGContentProtocol.h; sourceTree = "<group>"; };
-		FD65674BEA861EFD5A03EB4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02CA62B935D2F4496057FB375C77B906 /* VGCarouselContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
+		040BC42B2455C4F77BFDAEFD7D4F9640 /* VGContentTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
+		04CC29093E75091474F6134D0B7B3206 /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3315D49959AF1B88E428BBBD3625C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1179AC8744E09A79A0601EEC201A816D /* VGTableViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
+		1A8705C57C6EC126B743794BAA001BF4 /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
+		22CAE77507B7B5CE9DA562CE4FF96354 /* Pods-VGContent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGContent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		27B73B5882FDA78726EBA414573198C5 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
+		29975185420AEF3B5CA64762DC067680 /* iCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-umbrella.h"; sourceTree = "<group>"; };
+		398EF2261DBBD76F8FB3C2FEA772B4A4 /* VGContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E55B47A604C37A450561AFCFEE13599 /* iCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iCarousel.modulemap; sourceTree = "<group>"; };
+		3EA5F0B6F10A107B6FAA3F681A109F1F /* VGContent-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VGContent-Private.xcconfig"; sourceTree = "<group>"; };
+		403FA9E43D57150C9F8243414F925988 /* UIView+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
+		4271F2CE21F232FD2F164368AF43708F /* VGURLContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
+		427D13E8070BBCA4E1FFFC496FBEE119 /* VGContent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VGContent-umbrella.h"; sourceTree = "<group>"; };
+		4D554474F4A66C2C0C38CB3DF638D2AC /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
+		4D8DACCDAC5C12B097DD7E93A856461A /* UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
+		4EDA358AE5EFE5F81FFCCDD2C9277EC2 /* UIView+Identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
+		509A7350D6DD56AB72219F4A89F91986 /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		525EE9DA13BCFF64B376D40DD08D6DF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5608655374FCD70B714D1912E1730BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		568B414EB5D2301F0D33354D115A886C /* VGURLContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
+		59310FA69CBE1C4517B9B33CD0C5A08F /* VGContentSearchProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentSearchProtocol.h; sourceTree = "<group>"; };
+		5A68B0961FD9811E3ECDFD44CB778FE7 /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
+		5A8A25F9AC30C4A631723C0B62FC5911 /* iCarousel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "iCarousel-Private.xcconfig"; sourceTree = "<group>"; };
+		609CE6BD96E825B8768191A7564973E5 /* VGContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
+		62EFD8699DBC3334490178609CDD078E /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		6375F7114FC9A63684AF7FB2DD2D747E /* VGContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
+		67027169A73D150E36F2C3820A5C5893 /* UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
+		6CC7A455F72859CDE47DA4619428FA06 /* Pods-VGContent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests.modulemap"; sourceTree = "<group>"; };
+		6F6156B5C56ABCA4AF6F1952D481EEF0 /* VGContent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VGContent.xcconfig; sourceTree = "<group>"; };
+		706B51786E99CFEE743D6F485C56710E /* Pods-VGContent_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-resources.sh"; sourceTree = "<group>"; };
+		7991C276CB60129D00876CBD71977A50 /* Pods-VGContent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7EA0027787D8593AC2D83165FB2946A2 /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
+		817155AD44798DA58632E2FA75444A85 /* VGCollectionViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
+		8555C3B953EA16AFA0A45A037103F84A /* UIView+Identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
+		9174928131B0D49272A4B85C75A3CF2B /* Pods-VGContent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-umbrella.h"; sourceTree = "<group>"; };
+		935CBFAEFC9C71B6E30D869C4B5ECB5E /* VGTableViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
+		95136E5320E508CE6C3B064F181E0017 /* VGContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
+		9A0BA6C50F07766B508D3AD90D116182 /* UIView+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
+		9BE336C311424F1662524B8E3B76BE15 /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
+		A083E04A087DF9E862D769162039D60D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1632276E234E8C291B8F44B47D818D3 /* UIScrollView-InfiniteScroll-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIScrollView-InfiniteScroll-Private.xcconfig"; sourceTree = "<group>"; };
+		AD763B49AF139D5C6BE912778221EE9C /* VGContentTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
+		ADB7341BBA0E68514B73C5BF7193D26A /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		AEC6398A4AAACBBBB77C32B318186135 /* Pods-VGContent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-dummy.m"; sourceTree = "<group>"; };
+		B8127163000285F06F111F9A3CAE18BD /* VGCarouselContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC44BC81E49A08A72E815CB147491995 /* UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
+		C3932591043DDB4E2EAEA6BCE9C307CA /* VGContent.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGContent.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C792900ACAE934C34166F703192A9DA0 /* UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
+		C9CA92161FB52387A8A8816D3AF40358 /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		CFBF45F7D5D5149B15EADC93349E05CE /* VGContent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VGContent.modulemap; sourceTree = "<group>"; };
+		CFE34D457622AD73C90EE7E2DFC16ADB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D353E49BC62BA738AD93E2FCF7314C82 /* VGCollectionViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
+		D41542C5D21608DC61CC50ABDCC7B5FB /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4598912930522E4AD6D792922D73A2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D6EA5D5E7BCB2BA6DED486A39A27FCD9 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70A56F9E92EB43719C88E91DCAFFBC6 /* VGContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
+		DBDB5FFA4841EFE016A4914DF55492B8 /* VGCarouselContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
+		DF57F50C62B6B7FE423B004AF806C0D2 /* UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
+		E192681E21A6FAABEA95CE40DAF42407 /* VGContent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VGContent-dummy.m"; sourceTree = "<group>"; };
+		E9EE32BCD22E5E920C6C2034F39FD531 /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBA8E1C8135AB0C17476C68EDCE9ED6D /* VGCarouselContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
+		EBBFCF2D2E33DA40CC9B1758468C5913 /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
+		EC50C3D968B2F0D7FB50BB19F38EC360 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8297DFFE5F06AABB2F2722359644767 /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FA471733C4D452C0CCE814FF311A2552 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
+		FAD03C98097A531B8BCE7EB95C42C521 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
+		FAF2A310317C3838E2139EB85BB7B2E8 /* VGContentProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentProtocol.h; sourceTree = "<group>"; };
+		FCE7ECCB765FDE16BAC204B7D7866A7A /* VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VGContent-prefix.pch"; sourceTree = "<group>"; };
+		FE404AF38E950D94319A3D37BC788BFF /* Pods-VGContent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGContent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		78330AE570748A5077FC420F /* Frameworks */ = {
+		477C02F5D037C309AD996C8434B79680 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A81EF03D98ED34687685752982E2924 /* Foundation.framework in Frameworks */,
+				48EA33DF24E360A6BB01ADF4AD7CEBCA /* UIScrollView_InfiniteScroll.framework in Frameworks */,
+				D59F5B8900B732E94AF4BA0186274FE1 /* iCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8525A23655ED25E557FAF42E /* Frameworks */ = {
+		484E8213ABE693B04C577ED9C3F6F790 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D141D57DB93A59266BD652 /* Foundation.framework in Frameworks */,
+				7243B8AE7BB52F55DFFA991511C5AFDC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96819D0596F0B9B94EC45178 /* Frameworks */ = {
+		C2D32DD2168137C9C50ECCB9FE24BE94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5192C6F47EE842F48905F3 /* Foundation.framework in Frameworks */,
+				A46E63B43B6AFB344831A9883BB709C3 /* Foundation.framework in Frameworks */,
+				26AC87538004E71FBB8CCF5C24B142DA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD77196A055E1A6F61289672 /* Frameworks */ = {
+		DEADEFBD3BDC9E2AC67CD1F4A26257A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4FF31D52DCF4A454765E0E9 /* Foundation.framework in Frameworks */,
-				4F1297C8EDFBD2B9EF8E327C /* UIScrollView_InfiniteScroll.framework in Frameworks */,
+				1A128BFD7ADBE155E2616501FA96742E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6A553CD3BD88F3023E44F7D68489FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FF81309632740DB16B6FF5E /* VGContent */ = {
+		050660D72F4320C280A23D2132A06AFA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2C0F74DA3C9C3FB716AC11E0 /* UIView+Identifier.h */,
-				6197A972471E450A86494080 /* UIView+Identifier.m */,
-				4DFBAC3915C4E4154991E64E /* VGContent.h */,
-				1FCC940B5365FC032F15927D /* VGContent.m */,
-				F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */,
-				F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */,
-			);
-			path = VGContent;
-			sourceTree = "<group>";
-		};
-		1417F0E6CE2C3A8DAE0CC423 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B13FD6B888BCB7CEC0E9B610 /* UIScrollView_InfiniteScroll.framework */,
-				F32F0A7694E2E31AFC47F942 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2E961AC688F0FF2328BD345D /* VGContentTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5928C7223639D6D4913DC017 /* VGContentTableViewController.h */,
-				17B61E5DCD917178182877D4 /* VGContentTableViewController.m */,
-			);
-			path = VGContentTableViewController;
-			sourceTree = "<group>";
-		};
-		400B70F34F87499ACF95495C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AEA4A4A7B1AC1CAF7F50DEA9 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		43BD97ED25C8EDECD611D60C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */,
-				729B004E7EABD38E4A432013 /* UIScrollView_InfiniteScroll.framework */,
-				4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */,
-				2F5F5B2D83505EB5B99ACDAA /* VGContent.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		442F550536DF77A40AC5B9BA /* UIScrollView-InfiniteScroll */ = {
-			isa = PBXGroup;
-			children = (
-				E8C32F9963B17D8E831F5E73 /* UIScrollView+InfiniteScroll.h */,
-				C309C9B4D708576E0A8ECB5F /* UIScrollView+InfiniteScroll.m */,
-				C84EEDCB62AB6F5E9D2DDBBE /* Support Files */,
-			);
-			path = "UIScrollView-InfiniteScroll";
-			sourceTree = "<group>";
-		};
-		46F31577383D298CFA78A923 /* Pods-VGContent_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				FD65674BEA861EFD5A03EB4A /* Info.plist */,
-				86C9601D2FDAFA41E22C9268 /* Pods-VGContent_Tests.modulemap */,
-				E3322EB5969E070780BEA974 /* Pods-VGContent_Tests-acknowledgements.markdown */,
-				77370E6807ED58F0FAE68B3B /* Pods-VGContent_Tests-acknowledgements.plist */,
-				687CF3750DF2D7AFF2D6A024 /* Pods-VGContent_Tests-dummy.m */,
-				66E5EA532C96C77942869D57 /* Pods-VGContent_Tests-environment.h */,
-				631941C0232C82412192C273 /* Pods-VGContent_Tests-frameworks.sh */,
-				79D6506C42303136F39032C2 /* Pods-VGContent_Tests-resources.sh */,
-				7BCB8D6668103BDA67B07D16 /* Pods-VGContent_Tests-umbrella.h */,
-				9B5A39F73B88CC3D1947F8E3 /* Pods-VGContent_Tests.debug.xcconfig */,
-				EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */,
-			);
-			name = "Pods-VGContent_Tests";
-			path = "Target Support Files/Pods-VGContent_Tests";
-			sourceTree = "<group>";
-		};
-		485AA26BAEF296BAD5042847 /* VGTableViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */,
-				DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */,
-				25453659F5C7F10D8108C822 /* VGTableViewContent.h */,
-				3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */,
-			);
-			path = VGTableViewContent;
-			sourceTree = "<group>";
-		};
-		4A9DC44B144C4DE8BAD3FB43 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				59E3DFD6E339D41CDF8674BC /* VGCarouselContent */,
-				F049F49E9E079B30C4EA05E9 /* VGCollectionViewContent */,
-				0FF81309632740DB16B6FF5E /* VGContent */,
-				485AA26BAEF296BAD5042847 /* VGTableViewContent */,
-				73FD953814CB075060751778 /* VGURLContent */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		59E3DFD6E339D41CDF8674BC /* VGCarouselContent */ = {
-			isa = PBXGroup;
-			children = (
-				1E3BEF5978671811C735CFDD /* VGCarouselContent.h */,
-				4EEA278E9D295EC9AB677993 /* VGCarouselContent.m */,
-				F94BADD591257FCEE20F5389 /* Utils */,
-				BDEC05A0B9B083C7A7882C59 /* VGCarouselContentView */,
-			);
-			path = VGCarouselContent;
-			sourceTree = "<group>";
-		};
-		73FD953814CB075060751778 /* VGURLContent */ = {
-			isa = PBXGroup;
-			children = (
-				80CCBA59243875A60FCE9A75 /* VGURLContent.h */,
-				13D4B25A2693245B9F52755D /* VGURLContent.m */,
-			);
-			path = VGURLContent;
-			sourceTree = "<group>";
-		};
-		7E7CEF1B1B3F58185391C201 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DA9C242B32A4FBA38E53EF14 /* VGContent */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		80642DC48E003EFBE408F3EF = {
-			isa = PBXGroup;
-			children = (
-				21FAE515C675ADFC8B3CBAEE /* Podfile */,
-				7E7CEF1B1B3F58185391C201 /* Development Pods */,
-				1417F0E6CE2C3A8DAE0CC423 /* Frameworks */,
-				AACC8D0EAE010511107BA05E /* Pods */,
-				43BD97ED25C8EDECD611D60C /* Products */,
-				8CF200646424640479F47E87 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8CF200646424640479F47E87 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				46F31577383D298CFA78A923 /* Pods-VGContent_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		A514352F5E5AD36680F9FC9D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				423BC1124F30189FAF26A9DC /* Info.plist */,
-				4DD582A5D15E7BF39EB12029 /* Pods-VGContent_Tests-VGContent.modulemap */,
-				108877B1FD8AFAFDA2B5ED7A /* Pods-VGContent_Tests-VGContent.xcconfig */,
-				694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */,
-				C64CF95629DA04DC5B624B84 /* Pods-VGContent_Tests-VGContent-dummy.m */,
-				EA3842B9B601E21C82D8C70C /* Pods-VGContent_Tests-VGContent-prefix.pch */,
-				42558340916B3B684A3FABCF /* Pods-VGContent_Tests-VGContent-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-VGContent_Tests-VGContent";
-			sourceTree = "<group>";
-		};
-		AACC8D0EAE010511107BA05E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				442F550536DF77A40AC5B9BA /* UIScrollView-InfiniteScroll */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AEA4A4A7B1AC1CAF7F50DEA9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4A9DC44B144C4DE8BAD3FB43 /* Models */,
-				ECF882984D39E3906712B1E1 /* ViewControllers */,
+				59ADF458E073445416A7E8A0D1943D66 /* Models */,
+				98D60692F37D6A7A5B1065784C520814 /* ViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		BDEC05A0B9B083C7A7882C59 /* VGCarouselContentView */ = {
+		1405ACD970B669456D9B9D385170FB4F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81D53BCF51F0A10705A18343 /* VGCarouselContentView.h */,
-				6922AA947D88C5818ECEB591 /* VGCarouselContentView.m */,
-			);
-			path = VGCarouselContentView;
-			sourceTree = "<group>";
-		};
-		C84EEDCB62AB6F5E9D2DDBBE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B0D862988FD593A3D24EDCD1 /* Info.plist */,
-				2FD4D93D0BFAE0ECC6934E2B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap */,
-				10B06AF9EBF0EC3FFD1CE48D /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll.xcconfig */,
-				D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */,
-				1EE9B30954A252B58E8C56D8 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m */,
-				1240BED02091151859D31E0A /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch */,
-				5787F1EA30E00F5F8BAF399B /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h */,
+				0A3315D49959AF1B88E428BBBD3625C2 /* Info.plist */,
+				CFBF45F7D5D5149B15EADC93349E05CE /* VGContent.modulemap */,
+				6F6156B5C56ABCA4AF6F1952D481EEF0 /* VGContent.xcconfig */,
+				3EA5F0B6F10A107B6FAA3F681A109F1F /* VGContent-Private.xcconfig */,
+				E192681E21A6FAABEA95CE40DAF42407 /* VGContent-dummy.m */,
+				FCE7ECCB765FDE16BAC204B7D7866A7A /* VGContent-prefix.pch */,
+				427D13E8070BBCA4E1FFFC496FBEE119 /* VGContent-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
+			path = "Example/Pods/Target Support Files/VGContent";
 			sourceTree = "<group>";
 		};
-		DA9C242B32A4FBA38E53EF14 /* VGContent */ = {
+		167035DEDFDAA49BFCA29AA9C3BC23E6 /* VGContentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				400B70F34F87499ACF95495C /* Pod */,
-				A514352F5E5AD36680F9FC9D /* Support Files */,
+				D70A56F9E92EB43719C88E91DCAFFBC6 /* VGContentViewController.h */,
+				6375F7114FC9A63684AF7FB2DD2D747E /* VGContentViewController.m */,
+			);
+			path = VGContentViewController;
+			sourceTree = "<group>";
+		};
+		1674ECBD9823CD936E236B54E942E355 /* VGContentTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD763B49AF139D5C6BE912778221EE9C /* VGContentTableViewController.h */,
+				040BC42B2455C4F77BFDAEFD7D4F9640 /* VGContentTableViewController.m */,
+			);
+			path = VGContentTableViewController;
+			sourceTree = "<group>";
+		};
+		1ED333C6370D2894A119C03624D2BF3F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5608655374FCD70B714D1912E1730BFE /* Foundation.framework */,
+				D4598912930522E4AD6D792922D73A2C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		238EA50299FA79DC01D994EEC5BC552B /* VGContent */ = {
+			isa = PBXGroup;
+			children = (
+				B65EF568F35909036C467A2C206BFC95 /* Pod */,
+				1405ACD970B669456D9B9D385170FB4F /* Support Files */,
 			);
 			name = VGContent;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		ECF882984D39E3906712B1E1 /* ViewControllers */ = {
+		2AE27965A2766AC54A8F97967389F5C8 /* VGCarouselContent */ = {
 			isa = PBXGroup;
 			children = (
-				2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */,
-				2E961AC688F0FF2328BD345D /* VGContentTableViewController */,
-				FBEF874FF5A2632B102DEAA9 /* VGContentViewController */,
+				B8127163000285F06F111F9A3CAE18BD /* VGCarouselContent.h */,
+				EBA8E1C8135AB0C17476C68EDCE9ED6D /* VGCarouselContent.m */,
+				FD85BEBE86E3AB9D69FA013B4B4806D7 /* Utils */,
+				CFF8929C4D71DE3483886F3B1B51C9C9 /* VGCarouselContentView */,
 			);
-			path = ViewControllers;
+			path = VGCarouselContent;
 			sourceTree = "<group>";
 		};
-		F049F49E9E079B30C4EA05E9 /* VGCollectionViewContent */ = {
+		3B80D925FDB5A058C1D8935FBF783F75 /* VGCollectionViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				BA316766A3E2620EAA522D5C /* UICollectionViewCell+Setup.h */,
-				DD47037249BE945C523E1E6D /* UICollectionViewCell+Setup.m */,
-				5ED613005852EEA7418DFF0C /* VGCollectionViewContent.h */,
-				81CA4C9E7A09362F89393502 /* VGCollectionViewContent.m */,
+				4D554474F4A66C2C0C38CB3DF638D2AC /* UICollectionViewCell+Setup.h */,
+				9BE336C311424F1662524B8E3B76BE15 /* UICollectionViewCell+Setup.m */,
+				D353E49BC62BA738AD93E2FCF7314C82 /* VGCollectionViewContent.h */,
+				817155AD44798DA58632E2FA75444A85 /* VGCollectionViewContent.m */,
 			);
 			path = VGCollectionViewContent;
 			sourceTree = "<group>";
 		};
-		F32F0A7694E2E31AFC47F942 /* iOS */ = {
+		45C461A1DDF07172C7F9B81D0847DC66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99F3662868260F93C4A68247 /* Foundation.framework */,
+				D41542C5D21608DC61CC50ABDCC7B5FB /* UIScrollView_InfiniteScroll.framework */,
+				04CC29093E75091474F6134D0B7B3206 /* iCarousel.framework */,
+				1ED333C6370D2894A119C03624D2BF3F /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F94BADD591257FCEE20F5389 /* Utils */ = {
+		4B4292520FC5D9BB799C53B1DA624C2A /* Pods-VGContent_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1D340C2169EA735F6A2C07E7 /* UIView+Setup.h */,
-				CF97772BE8474D8A0D580E9B /* UIView+Setup.m */,
+				CFE34D457622AD73C90EE7E2DFC16ADB /* Info.plist */,
+				6CC7A455F72859CDE47DA4619428FA06 /* Pods-VGContent_Tests.modulemap */,
+				FE404AF38E950D94319A3D37BC788BFF /* Pods-VGContent_Tests-acknowledgements.markdown */,
+				22CAE77507B7B5CE9DA562CE4FF96354 /* Pods-VGContent_Tests-acknowledgements.plist */,
+				AEC6398A4AAACBBBB77C32B318186135 /* Pods-VGContent_Tests-dummy.m */,
+				7991C276CB60129D00876CBD71977A50 /* Pods-VGContent_Tests-frameworks.sh */,
+				706B51786E99CFEE743D6F485C56710E /* Pods-VGContent_Tests-resources.sh */,
+				9174928131B0D49272A4B85C75A3CF2B /* Pods-VGContent_Tests-umbrella.h */,
+				E9EE32BCD22E5E920C6C2034F39FD531 /* Pods-VGContent_Tests.debug.xcconfig */,
+				F8297DFFE5F06AABB2F2722359644767 /* Pods-VGContent_Tests.release.xcconfig */,
+			);
+			name = "Pods-VGContent_Tests";
+			path = "Target Support Files/Pods-VGContent_Tests";
+			sourceTree = "<group>";
+		};
+		5654D349739B9835CB8A3AA07F9EBA70 /* VGContent */ = {
+			isa = PBXGroup;
+			children = (
+				8555C3B953EA16AFA0A45A037103F84A /* UIView+Identifier.h */,
+				4EDA358AE5EFE5F81FFCCDD2C9277EC2 /* UIView+Identifier.m */,
+				609CE6BD96E825B8768191A7564973E5 /* VGContent.h */,
+				95136E5320E508CE6C3B064F181E0017 /* VGContent.m */,
+				FAF2A310317C3838E2139EB85BB7B2E8 /* VGContentProtocol.h */,
+				59310FA69CBE1C4517B9B33CD0C5A08F /* VGContentSearchProtocol.h */,
+			);
+			path = VGContent;
+			sourceTree = "<group>";
+		};
+		59ADF458E073445416A7E8A0D1943D66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AE27965A2766AC54A8F97967389F5C8 /* VGCarouselContent */,
+				3B80D925FDB5A058C1D8935FBF783F75 /* VGCollectionViewContent */,
+				5654D349739B9835CB8A3AA07F9EBA70 /* VGContent */,
+				6FDBC256AC91A395E3E098AE191CC17D /* VGTableViewContent */,
+				C2E5C36B5E57520C9F5090EB142AF887 /* VGURLContent */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C94EB9F30E2CCE451C0A66F773FEA7F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B4292520FC5D9BB799C53B1DA624C2A /* Pods-VGContent_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		635537B0B1183757896707EA9EBF7AA2 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7341BBA0E68514B73C5BF7193D26A /* iCarousel.h */,
+				C9CA92161FB52387A8A8816D3AF40358 /* iCarousel.m */,
+				7CCD8298D625B1FA526C7918CF4760FB /* Support Files */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		6FDBC256AC91A395E3E098AE191CC17D /* VGTableViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				FA471733C4D452C0CCE814FF311A2552 /* UITableViewCell+Setup.h */,
+				FAD03C98097A531B8BCE7EB95C42C521 /* UITableViewCell+Setup.m */,
+				1179AC8744E09A79A0601EEC201A816D /* VGTableViewContent.h */,
+				935CBFAEFC9C71B6E30D869C4B5ECB5E /* VGTableViewContent.m */,
+			);
+			path = VGTableViewContent;
+			sourceTree = "<group>";
+		};
+		7CCD8298D625B1FA526C7918CF4760FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A083E04A087DF9E862D769162039D60D /* Info.plist */,
+				3E55B47A604C37A450561AFCFEE13599 /* iCarousel.modulemap */,
+				EBBFCF2D2E33DA40CC9B1758468C5913 /* iCarousel.xcconfig */,
+				5A8A25F9AC30C4A631723C0B62FC5911 /* iCarousel-Private.xcconfig */,
+				62EFD8699DBC3334490178609CDD078E /* iCarousel-dummy.m */,
+				1A8705C57C6EC126B743794BAA001BF4 /* iCarousel-prefix.pch */,
+				29975185420AEF3B5CA64762DC067680 /* iCarousel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iCarousel";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				B679D312F9F7A89234AADC74595C3178 /* Development Pods */,
+				45C461A1DDF07172C7F9B81D0847DC66 /* Frameworks */,
+				A5E19403AD1E072F854FACFEC0897F7F /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				5C94EB9F30E2CCE451C0A66F773FEA7F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		98D60692F37D6A7A5B1065784C520814 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EA0027787D8593AC2D83165FB2946A2 /* VGContentControllerProtocol.h */,
+				1674ECBD9823CD936E236B54E942E355 /* VGContentTableViewController */,
+				167035DEDFDAA49BFCA29AA9C3BC23E6 /* VGContentViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5E19403AD1E072F854FACFEC0897F7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2408F634F4D5E22EC86EA90ACA71FBF /* UIScrollView-InfiniteScroll */,
+				635537B0B1183757896707EA9EBF7AA2 /* iCarousel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B65EF568F35909036C467A2C206BFC95 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				050660D72F4320C280A23D2132A06AFA /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		B679D312F9F7A89234AADC74595C3178 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				238EA50299FA79DC01D994EEC5BC552B /* VGContent */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C2E5C36B5E57520C9F5090EB142AF887 /* VGURLContent */ = {
+			isa = PBXGroup;
+			children = (
+				4271F2CE21F232FD2F164368AF43708F /* VGURLContent.h */,
+				568B414EB5D2301F0D33354D115A886C /* VGURLContent.m */,
+			);
+			path = VGURLContent;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6EA5D5E7BCB2BA6DED486A39A27FCD9 /* Pods_VGContent_Tests.framework */,
+				EC50C3D968B2F0D7FB50BB19F38EC360 /* UIScrollView_InfiniteScroll.framework */,
+				C3932591043DDB4E2EAEA6BCE9C307CA /* VGContent.bundle */,
+				398EF2261DBBD76F8FB3C2FEA772B4A4 /* VGContent.framework */,
+				509A7350D6DD56AB72219F4A89F91986 /* iCarousel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFF8929C4D71DE3483886F3B1B51C9C9 /* VGCarouselContentView */ = {
+			isa = PBXGroup;
+			children = (
+				02CA62B935D2F4496057FB375C77B906 /* VGCarouselContentView.h */,
+				DBDB5FFA4841EFE016A4914DF55492B8 /* VGCarouselContentView.m */,
+			);
+			path = VGCarouselContentView;
+			sourceTree = "<group>";
+		};
+		D2408F634F4D5E22EC86EA90ACA71FBF /* UIScrollView-InfiniteScroll */ = {
+			isa = PBXGroup;
+			children = (
+				27B73B5882FDA78726EBA414573198C5 /* UIScrollView+InfiniteScroll.h */,
+				5A68B0961FD9811E3ECDFD44CB778FE7 /* UIScrollView+InfiniteScroll.m */,
+				DB0D02E11779A87D02E6E76B02D648E6 /* Support Files */,
+			);
+			path = "UIScrollView-InfiniteScroll";
+			sourceTree = "<group>";
+		};
+		DB0D02E11779A87D02E6E76B02D648E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				525EE9DA13BCFF64B376D40DD08D6DF2 /* Info.plist */,
+				C792900ACAE934C34166F703192A9DA0 /* UIScrollView-InfiniteScroll.modulemap */,
+				67027169A73D150E36F2C3820A5C5893 /* UIScrollView-InfiniteScroll.xcconfig */,
+				A1632276E234E8C291B8F44B47D818D3 /* UIScrollView-InfiniteScroll-Private.xcconfig */,
+				DF57F50C62B6B7FE423B004AF806C0D2 /* UIScrollView-InfiniteScroll-dummy.m */,
+				4D8DACCDAC5C12B097DD7E93A856461A /* UIScrollView-InfiniteScroll-prefix.pch */,
+				BC44BC81E49A08A72E815CB147491995 /* UIScrollView-InfiniteScroll-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIScrollView-InfiniteScroll";
+			sourceTree = "<group>";
+		};
+		FD85BEBE86E3AB9D69FA013B4B4806D7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				403FA9E43D57150C9F8243414F925988 /* UIView+Setup.h */,
+				9A0BA6C50F07766B508D3AD90D116182 /* UIView+Setup.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		FBEF874FF5A2632B102DEAA9 /* VGContentViewController */ = {
-			isa = PBXGroup;
-			children = (
-				86D477A317395F9420B8036F /* VGContentViewController.h */,
-				26D3F86DF6F601EE332BEEEF /* VGContentViewController.m */,
-			);
-			path = VGContentViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		110F9772C146956398B6D2F6 /* Headers */ = {
+		17013693D1DDD78B45488DAAA4A9B5F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78EF5656FE33E299A697EBD1 /* Pods-VGContent_Tests-umbrella.h in Headers */,
-				F59B1D261B6E151000C1DBC7 /* VGContentProtocol.h in Headers */,
+				FB066EB4D0EC98D06D91A1D1563B32E2 /* UICollectionViewCell+Setup.h in Headers */,
+				180D4243B66AAE083EBD67D6F8281234 /* UITableViewCell+Setup.h in Headers */,
+				DD92B3311E59DE3DBD2D1E0120752B48 /* UIView+Identifier.h in Headers */,
+				F0A1CFA25EA4E1861A6336C88C38B79D /* UIView+Setup.h in Headers */,
+				6E5D66E78FE8058097280024D2A8612A /* VGCarouselContent.h in Headers */,
+				223B611C4D3F5868CF38E0B179FC1D3A /* VGCarouselContentView.h in Headers */,
+				9167A16E66FF5473B24C489BA1CE7E6D /* VGCollectionViewContent.h in Headers */,
+				F96C462E38EC0826FA3C74CD69E261A9 /* VGContent-umbrella.h in Headers */,
+				BD99B1A8176D8FE96BDE6D8446FCE2B4 /* VGContent.h in Headers */,
+				9A923B68293079B5E52F8729A06C9875 /* VGContentControllerProtocol.h in Headers */,
+				977A5FBD590818A8C28A8402A012DA0D /* VGContentProtocol.h in Headers */,
+				1A8178E2BE9DCB7F53CECDB344802BF9 /* VGContentSearchProtocol.h in Headers */,
+				2DDA56D86DBA89103DA1953F9BD40771 /* VGContentTableViewController.h in Headers */,
+				CF916AD9FE8CB2E5211AABB307833C23 /* VGContentViewController.h in Headers */,
+				BB1567AF60C4BF6D17A393A59BB9E862 /* VGTableViewContent.h in Headers */,
+				269B365A72259FA31FB1FBB924AB2B9A /* VGURLContent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7158180C42CF12285A8D03BC /* Headers */ = {
+		1D45AE24F659E5E51210F28697A885D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E91D1A20EE1932BCE2B617 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-umbrella.h in Headers */,
-				DE4B5E0CE32184D86F6565FB /* UIScrollView+InfiniteScroll.h in Headers */,
+				A2B5E888788AFB65C9E89AB41D72608D /* UIScrollView+InfiniteScroll.h in Headers */,
+				678189B315D476930326171219CDC426 /* UIScrollView-InfiniteScroll-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD0CDC2A296105C27F4F036A /* Headers */ = {
+		40EEEBC304853684165654A97A671DEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A11177D6AD8D4EF26AD66C /* Pods-VGContent_Tests-VGContent-umbrella.h in Headers */,
-				8E8B963AB94FE6072C37517A /* UICollectionViewCell+Setup.h in Headers */,
-				E5D479D2399456C6ED30AA12 /* UITableViewCell+Setup.h in Headers */,
-				DC930C993CD98E2D0A874B28 /* UIView+Identifier.h in Headers */,
-				B691A93CD5A617167DFE7AC5 /* UIView+Setup.h in Headers */,
-				37F3F12187F37C2B0F87B7CB /* VGCarouselContent.h in Headers */,
-				E598BCFDE568F760FF7ABC40 /* VGCarouselContentView.h in Headers */,
-				7EBE69440A8295863B414960 /* VGCollectionViewContent.h in Headers */,
-				1D819DD76A0282A09CD0AB89 /* VGContent.h in Headers */,
-				FC018428715E5A0CF5CC63DD /* VGContentControllerProtocol.h in Headers */,
-				35F48B0EFD25F7495F7D44D2 /* VGContentTableViewController.h in Headers */,
-				F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */,
-				37BEABB1F87230BB40FF9457 /* VGTableViewContent.h in Headers */,
-				F5B262731B89E2250062EBC4 /* VGContentSearchProtocol.h in Headers */,
-				F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */,
+				F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */,
+				88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17D6AD83857A946BEA6AC1488E5888D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC12DBAC5F1FDACECE69690B5A253F7 /* Pods-VGContent_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3BD466AB24974CBD1867B251 /* Pods-VGContent_Tests-VGContent */ = {
+		3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66536798AF83F6C564B127B6 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent" */;
+			buildConfigurationList = 5FD84838098E65920773FE786596F03E /* Build configuration list for PBXNativeTarget "iCarousel" */;
 			buildPhases = (
-				A8884C852A3688E4A24A2B92 /* Sources */,
-				FD77196A055E1A6F61289672 /* Frameworks */,
-				AAB29828F05E21D75FA57A78 /* Resources */,
-				BD0CDC2A296105C27F4F036A /* Headers */,
+				B5A1DBA438165C92401162C362D91E3E /* Sources */,
+				C2D32DD2168137C9C50ECCB9FE24BE94 /* Frameworks */,
+				40EEEBC304853684165654A97A671DEC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5929F9D7DD1DA4AFE63B088B /* PBXTargetDependency */,
-				32F12C9AE99E788897C73DBE /* PBXTargetDependency */,
 			);
-			name = "Pods-VGContent_Tests-VGContent";
-			productName = "Pods-VGContent_Tests-VGContent";
-			productReference = 2F5F5B2D83505EB5B99ACDAA /* VGContent.framework */;
+			name = iCarousel;
+			productName = iCarousel;
+			productReference = 509A7350D6DD56AB72219F4A89F91986 /* iCarousel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */ = {
+		739C8103E4E3607080D29593615FBD79 /* VGContent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA06061A108AE697C4F66405 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-UIScrollView-InfiniteScroll" */;
+			buildConfigurationList = 678B55060C3CAD41CFC8E3B0B8F00588 /* Build configuration list for PBXNativeTarget "VGContent" */;
 			buildPhases = (
-				0E2F747D89B0389A70CD9E65 /* Sources */,
-				8525A23655ED25E557FAF42E /* Frameworks */,
-				7158180C42CF12285A8D03BC /* Headers */,
+				3DFEEB98D50C897327A76BD87143DACC /* Sources */,
+				477C02F5D037C309AD996C8434B79680 /* Frameworks */,
+				54DFCAEED4409DBE3FCC44069AA1A65D /* Resources */,
+				17013693D1DDD78B45488DAAA4A9B5F0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19018AE807CED35EEB1540C6F04D9573 /* PBXTargetDependency */,
+				D93078373588396CA15C84FCB5E8CC5F /* PBXTargetDependency */,
+				0067A186F0E3E88ED453F413758DED30 /* PBXTargetDependency */,
 			);
-			name = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
-			productName = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
-			productReference = 729B004E7EABD38E4A432013 /* UIScrollView_InfiniteScroll.framework */;
+			name = VGContent;
+			productName = VGContent;
+			productReference = 398EF2261DBBD76F8FB3C2FEA772B4A4 /* VGContent.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CEB3246E2E62D50BF40864FA /* Pods-VGContent_Tests-VGContent-VGContent */ = {
+		B1E892E618731F66C7D78C356DC6DE15 /* VGContent-VGContent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F62A83F64EBB347964E4069A /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent-VGContent" */;
+			buildConfigurationList = 5C17154B732FF5FE678C47FB26F60B00 /* Build configuration list for PBXNativeTarget "VGContent-VGContent" */;
 			buildPhases = (
-				1709EA0EA8C3D210987A2C93 /* Sources */,
-				78330AE570748A5077FC420F /* Frameworks */,
-				E4D425AC9B2441020C18B396 /* Resources */,
+				E51CDF202472668F9860499C64DDAA5D /* Sources */,
+				FF6A553CD3BD88F3023E44F7D68489FF /* Frameworks */,
+				FE61866AC8D7A5AFF1B6D47400AC00FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-VGContent_Tests-VGContent-VGContent";
-			productName = "Pods-VGContent_Tests-VGContent-VGContent";
-			productReference = 4EF39577A4C1D12F518FB2E5 /* VGContent.bundle */;
+			name = "VGContent-VGContent";
+			productName = "VGContent-VGContent";
+			productReference = C3932591043DDB4E2EAEA6BCE9C307CA /* VGContent.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		E2DABC6DD29ABBCF53C097A7 /* Pods-VGContent_Tests */ = {
+		DC4A7F0AD0F968190759B944FDEA5D33 /* UIScrollView-InfiniteScroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4CBE9A672BA4E2DFDEFD711 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */;
+			buildConfigurationList = CE55C0CE7F50B5A5CF0A687F8842E94D /* Build configuration list for PBXNativeTarget "UIScrollView-InfiniteScroll" */;
 			buildPhases = (
-				9420B4FF8CB2727181CEDA1A /* Sources */,
-				96819D0596F0B9B94EC45178 /* Frameworks */,
-				110F9772C146956398B6D2F6 /* Headers */,
+				A87D4AA3C3D3EFEE1D90B675BB93499A /* Sources */,
+				484E8213ABE693B04C577ED9C3F6F790 /* Frameworks */,
+				1D45AE24F659E5E51210F28697A885D0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F177E2185AED2999EB3EF53 /* PBXTargetDependency */,
-				2D1A97666D3FADCFA47E9C4A /* PBXTargetDependency */,
+			);
+			name = "UIScrollView-InfiniteScroll";
+			productName = "UIScrollView-InfiniteScroll";
+			productReference = EC50C3D968B2F0D7FB50BB19F38EC360 /* UIScrollView_InfiniteScroll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC9AAFDF657858AE22DF19456FD26B30 /* Pods-VGContent_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81486CEFA0495C902782E280239FAAE7 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */;
+			buildPhases = (
+				EB13BBDD96F487E11CAE6625041B502B /* Sources */,
+				DEADEFBD3BDC9E2AC67CD1F4A26257A5 /* Frameworks */,
+				C17D6AD83857A946BEA6AC1488E5888D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				722F293F3408814BBA9421B3B562D0CD /* PBXTargetDependency */,
+				F9B46B99EB83955CF4F684142C458E8E /* PBXTargetDependency */,
+				847FDFC56262CE40A9D46894A93228C1 /* PBXTargetDependency */,
 			);
 			name = "Pods-VGContent_Tests";
 			productName = "Pods-VGContent_Tests";
-			productReference = F20D2025316C68368DFB5327 /* Pods_VGContent_Tests.framework */;
+			productReference = D6EA5D5E7BCB2BA6DED486A39A27FCD9 /* Pods_VGContent_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4E6ACEEF25334D575FA840A9 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = ADC64613839F6530807B1233 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 80642DC48E003EFBE408F3EF;
-			productRefGroup = 43BD97ED25C8EDECD611D60C /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2DABC6DD29ABBCF53C097A7 /* Pods-VGContent_Tests */,
-				6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */,
-				3BD466AB24974CBD1867B251 /* Pods-VGContent_Tests-VGContent */,
-				CEB3246E2E62D50BF40864FA /* Pods-VGContent_Tests-VGContent-VGContent */,
+				EC9AAFDF657858AE22DF19456FD26B30 /* Pods-VGContent_Tests */,
+				DC4A7F0AD0F968190759B944FDEA5D33 /* UIScrollView-InfiniteScroll */,
+				739C8103E4E3607080D29593615FBD79 /* VGContent */,
+				B1E892E618731F66C7D78C356DC6DE15 /* VGContent-VGContent */,
+				3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AAB29828F05E21D75FA57A78 /* Resources */ = {
+		54DFCAEED4409DBE3FCC44069AA1A65D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A556DECA57488F04FDDA91 /* VGContent.bundle in Resources */,
+				2C26F4DB6E5A50ACAB50404C6145FA2F /* VGContent.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D425AC9B2441020C18B396 /* Resources */ = {
+		FE61866AC8D7A5AFF1B6D47400AC00FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -609,148 +709,102 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E2F747D89B0389A70CD9E65 /* Sources */ = {
+		3DFEEB98D50C897327A76BD87143DACC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29A953CC4B51E7BFBEDFDC9 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-dummy.m in Sources */,
-				DF5D6F4A9055E915FF07DC62 /* UIScrollView+InfiniteScroll.m in Sources */,
+				2FCFF8C3E0C199E2EE56ECE65C5F6979 /* UICollectionViewCell+Setup.m in Sources */,
+				9DE9751F3DA6B73ADE4AF9F4B767D221 /* UITableViewCell+Setup.m in Sources */,
+				1B7FD24ED8BAF3B0932A5CB54FA0816A /* UIView+Identifier.m in Sources */,
+				33DC227DD13E6204DCCA59F49E239D7F /* UIView+Setup.m in Sources */,
+				BBA9EA1208595BBA1F04A742AAC933BB /* VGCarouselContent.m in Sources */,
+				EEBBA29B7167A616BF39107C77AA57E5 /* VGCarouselContentView.m in Sources */,
+				9EDCE876032AED646486D2E809FD1F54 /* VGCollectionViewContent.m in Sources */,
+				F56E24C5CA0B77DF5FDEA2591AB67976 /* VGContent-dummy.m in Sources */,
+				F288483BEEB781F6D4E5D03FF6EE42B7 /* VGContent.m in Sources */,
+				2D64B0345B4F70C5E423FEC9A3C6A286 /* VGContentTableViewController.m in Sources */,
+				41D3CB435E5DED4BA8987CDCA5D97CE8 /* VGContentViewController.m in Sources */,
+				08D666A9574FA9330A259F58B9A4ED2E /* VGTableViewContent.m in Sources */,
+				17FEEE034CED37219B2D83AEF241E6EC /* VGURLContent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1709EA0EA8C3D210987A2C93 /* Sources */ = {
+		A87D4AA3C3D3EFEE1D90B675BB93499A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E46F0563BE131C8953CC69D3635328 /* UIScrollView+InfiniteScroll.m in Sources */,
+				507F2F78CF99D908283ADC408F847AAA /* UIScrollView-InfiniteScroll-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A1DBA438165C92401162C362D91E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */,
+				10C86995D04A48756AE4797CFFEDD69A /* iCarousel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E51CDF202472668F9860499C64DDAA5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9420B4FF8CB2727181CEDA1A /* Sources */ = {
+		EB13BBDD96F487E11CAE6625041B502B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2C22DD9916D1028A903007 /* Pods-VGContent_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8884C852A3688E4A24A2B92 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A9925A4CC862AB3382D6D10 /* Pods-VGContent_Tests-VGContent-dummy.m in Sources */,
-				5C1B53938A9D8CB627E09C2A /* UICollectionViewCell+Setup.m in Sources */,
-				EFBFC59867B3092B6B5B502B /* UITableViewCell+Setup.m in Sources */,
-				B664693ED778115C7D7853F1 /* UIView+Identifier.m in Sources */,
-				8F198A615B4D499D7732DC89 /* UIView+Setup.m in Sources */,
-				B3A476227C61E456F108F1FE /* VGCarouselContent.m in Sources */,
-				982A16A50B44A200322FF456 /* VGCarouselContentView.m in Sources */,
-				D24F03F7BA70CC98E1F503CE /* VGCollectionViewContent.m in Sources */,
-				51782BCB1DDEB4C27912E0F7 /* VGContent.m in Sources */,
-				513E6BC5AFF588AEE022818E /* VGContentTableViewController.m in Sources */,
-				1A620CBEEF4890DC14269FB4 /* VGContentViewController.m in Sources */,
-				EF1C47BB529F55706FE8FE37 /* VGTableViewContent.m in Sources */,
-				A1D0F63F46F716A1B1F3CC48 /* VGURLContent.m in Sources */,
+				E5AC8EE9DED2DD3969CC3B71050F308B /* Pods-VGContent_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D1A97666D3FADCFA47E9C4A /* PBXTargetDependency */ = {
+		0067A186F0E3E88ED453F413758DED30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-VGContent_Tests-VGContent";
-			target = 3BD466AB24974CBD1867B251 /* Pods-VGContent_Tests-VGContent */;
-			targetProxy = 8C4783F3FAC6E5F2942ADE53 /* PBXContainerItemProxy */;
+			name = iCarousel;
+			target = 3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */;
+			targetProxy = D4106145C2B2B7C8ACD15D579B64DA9C /* PBXContainerItemProxy */;
 		};
-		2F177E2185AED2999EB3EF53 /* PBXTargetDependency */ = {
+		19018AE807CED35EEB1540C6F04D9573 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
-			target = 6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */;
-			targetProxy = 9346C2098D4261C176891E68 /* PBXContainerItemProxy */;
+			name = "UIScrollView-InfiniteScroll";
+			target = DC4A7F0AD0F968190759B944FDEA5D33 /* UIScrollView-InfiniteScroll */;
+			targetProxy = 2C471A2E5AAF7A83E2D47A7363ECBE78 /* PBXContainerItemProxy */;
 		};
-		32F12C9AE99E788897C73DBE /* PBXTargetDependency */ = {
+		722F293F3408814BBA9421B3B562D0CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-VGContent_Tests-VGContent-VGContent";
-			target = CEB3246E2E62D50BF40864FA /* Pods-VGContent_Tests-VGContent-VGContent */;
-			targetProxy = CC0D45031DF4F0029A2A92B8 /* PBXContainerItemProxy */;
+			name = "UIScrollView-InfiniteScroll";
+			target = DC4A7F0AD0F968190759B944FDEA5D33 /* UIScrollView-InfiniteScroll */;
+			targetProxy = F52F4714F8E52E826538E6B1A7E55A18 /* PBXContainerItemProxy */;
 		};
-		5929F9D7DD1DA4AFE63B088B /* PBXTargetDependency */ = {
+		847FDFC56262CE40A9D46894A93228C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-VGContent_Tests-UIScrollView-InfiniteScroll";
-			target = 6C4F2CE1338C2033B8851749 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll */;
-			targetProxy = F911AC27D0C25F8A0A77523D /* PBXContainerItemProxy */;
+			name = iCarousel;
+			target = 3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */;
+			targetProxy = 0C6D6D4AEAB68F171FAA9A52025B4379 /* PBXContainerItemProxy */;
+		};
+		D93078373588396CA15C84FCB5E8CC5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VGContent-VGContent";
+			target = B1E892E618731F66C7D78C356DC6DE15 /* VGContent-VGContent */;
+			targetProxy = 1C75A6C9179781E05C23FD22F6F292B7 /* PBXContainerItemProxy */;
+		};
+		F9B46B99EB83955CF4F684142C458E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VGContent;
+			target = 739C8103E4E3607080D29593615FBD79 /* VGContent */;
+			targetProxy = 2A2ED3FFF1F07B430DB826C24146B83D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02FBFB84CBAF84BB6AED100B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGContent_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VGContent;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		156BF716639578A86239A30D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = VGContent;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		62ECA88A6D6E31A91DC11C7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIScrollView_InfiniteScroll;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6B48EF3CDD821626EAA242CA /* Release */ = {
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -784,49 +838,34 @@
 			};
 			name = Release;
 		};
-		965E7812DB1785E6A11C4462 /* Debug */ = {
+		09063ABA37CE239D6D7C5A7EBEB936BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B5A39F73B88CC3D1947F8E3 /* Pods-VGContent_Tests.debug.xcconfig */;
+			baseConfigurationReference = 5A8A25F9AC30C4A631723C0B62FC5911 /* iCarousel-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.8.2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests/Pods-VGContent_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_VGContent_Tests;
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = iCarousel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		A61F915F71AE387A4004B0DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGContent_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VGContent;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		B1D77E0B91184A2886639D1F /* Debug */ = {
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -865,23 +904,128 @@
 			};
 			name = Debug;
 		};
-		B48FD55B0B25561A79782A61 /* Release */ = {
+		3692C12114203F9C349EDCF712C477B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 694C6A809A81BBB70BBEA5C6 /* Pods-VGContent_Tests-VGContent-Private.xcconfig */;
+			baseConfigurationReference = A1632276E234E8C291B8F44B47D818D3 /* UIScrollView-InfiniteScroll-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.7.2;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 0.7.2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIScrollView-InfiniteScroll/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-VGContent/Pods-VGContent_Tests-VGContent.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CB67C0B7353244FFB63ABC2B1CF986A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1632276E234E8C291B8F44B47D818D3 /* UIScrollView-InfiniteScroll-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.7.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.7.2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIScrollView-InfiniteScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		410AEEBF3BA574300FC3C1BBA93A3136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA5F0B6F10A107B6FAA3F681A109F1F /* VGContent-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VGContent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		46B271DA763618DD7B4DFFFECF23D924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8A25F9AC30C4A631723C0B62FC5911 /* iCarousel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.8.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7048B4961CF11EC24BB1FA4C0A59D23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA5F0B6F10A107B6FAA3F681A109F1F /* VGContent-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VGContent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7BF14C34E40CB886CC5F3C1CE1C4BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA5F0B6F10A107B6FAA3F681A109F1F /* VGContent-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VGContent/VGContent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VGContent/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VGContent/VGContent.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = VGContent;
 				SDKROOT = iphoneos;
@@ -892,9 +1036,65 @@
 			};
 			name = Release;
 		};
-		DEBB2704BA2468A506DFD454 /* Release */ = {
+		890B55067D64E2AA1612B6A184208A23 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBF5DD1FA219CDA5FD29F53A /* Pods-VGContent_Tests.release.xcconfig */;
+			baseConfigurationReference = E9EE32BCD22E5E920C6C2034F39FD531 /* Pods-VGContent_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests/Pods-VGContent_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_VGContent_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF2B9EAF6C50BFFBC0BC4CAAD5B1DE1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA5F0B6F10A107B6FAA3F681A109F1F /* VGContent-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VGContent/VGContent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VGContent/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VGContent/VGContent.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = VGContent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA07CBBA4309DE2EA9F69B71AAC66715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8297DFFE5F06AABB2F2722359644767 /* Pods-VGContent_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -921,82 +1121,64 @@
 			};
 			name = Release;
 		};
-		FAE29B496D5AB21746FDAC3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D058C54DDD0A270C1024FE02 /* Pods-VGContent_Tests-UIScrollView-InfiniteScroll-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-VGContent_Tests-UIScrollView-InfiniteScroll/Pods-VGContent_Tests-UIScrollView-InfiniteScroll.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIScrollView_InfiniteScroll;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66536798AF83F6C564B127B6 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				156BF716639578A86239A30D /* Debug */,
-				B48FD55B0B25561A79782A61 /* Release */,
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC64613839F6530807B1233 /* Build configuration list for PBXProject "Pods" */ = {
+		5C17154B732FF5FE678C47FB26F60B00 /* Build configuration list for PBXNativeTarget "VGContent-VGContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1D77E0B91184A2886639D1F /* Debug */,
-				6B48EF3CDD821626EAA242CA /* Release */,
+				410AEEBF3BA574300FC3C1BBA93A3136 /* Debug */,
+				7048B4961CF11EC24BB1FA4C0A59D23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA06061A108AE697C4F66405 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-UIScrollView-InfiniteScroll" */ = {
+		5FD84838098E65920773FE786596F03E /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62ECA88A6D6E31A91DC11C7C /* Debug */,
-				FAE29B496D5AB21746FDAC3E /* Release */,
+				46B271DA763618DD7B4DFFFECF23D924 /* Debug */,
+				09063ABA37CE239D6D7C5A7EBEB936BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4CBE9A672BA4E2DFDEFD711 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */ = {
+		678B55060C3CAD41CFC8E3B0B8F00588 /* Build configuration list for PBXNativeTarget "VGContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				965E7812DB1785E6A11C4462 /* Debug */,
-				DEBB2704BA2468A506DFD454 /* Release */,
+				AF2B9EAF6C50BFFBC0BC4CAAD5B1DE1D /* Debug */,
+				7BF14C34E40CB886CC5F3C1CE1C4BA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F62A83F64EBB347964E4069A /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests-VGContent-VGContent" */ = {
+		81486CEFA0495C902782E280239FAAE7 /* Build configuration list for PBXNativeTarget "Pods-VGContent_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A61F915F71AE387A4004B0DB /* Debug */,
-				02FBFB84CBAF84BB6AED100B /* Release */,
+				890B55067D64E2AA1612B6A184208A23 /* Debug */,
+				CA07CBBA4309DE2EA9F69B71AAC66715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE55C0CE7F50B5A5CF0A687F8842E94D /* Build configuration list for PBXNativeTarget "UIScrollView-InfiniteScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB67C0B7353244FFB63ABC2B1CF986A /* Debug */,
+				3692C12114203F9C349EDCF712C477B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4E6ACEEF25334D575FA840A9 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

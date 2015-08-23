@@ -8,8 +8,6 @@
 
 #import "VGCarouselContent.h"
 
-#ifdef ICAROUSEL_IOS
-
 #import "VGCarouselContentView.h"
 
 @interface VGCarouselContent () <iCarouselDataSource, iCarouselDelegate>
@@ -131,5 +129,3 @@
 }
 
 @end
-
-#endif

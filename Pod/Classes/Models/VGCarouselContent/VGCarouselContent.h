@@ -8,8 +8,6 @@
 
 #import "VGURLContent.h"
 
-#ifdef ICAROUSEL_IOS
-
 #import "UIView+Setup.h"
 
 #import <iCarousel/iCarousel.h>
@@ -30,5 +28,3 @@
 - (instancetype)initWithCarousel:(iCarousel *)carousel infinite:(BOOL)infinite;
 
 @end
-
-#endif
