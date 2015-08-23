@@ -29,6 +29,16 @@
  */
 - (void)content:(VGContent *)content didDeselectItem:(id)item;
 
+/**
+ Delegate method that triggered when item added.
+ */
+- (void)content:(VGContent *)content didAddItem:(id)item;
+
+/**
+ Delegate method that triggered when item deleted.
+ */
+- (void)content:(VGContent *)content didDeleteItem:(id)item;
+
 @end
 
 /**
