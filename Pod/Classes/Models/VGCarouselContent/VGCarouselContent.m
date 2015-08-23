@@ -8,7 +8,7 @@
 
 #import "VGCarouselContent.h"
 
-#ifdef ICAROUSEL_H
+#ifdef ICAROUSEL_IOS
 
 #import "VGCarouselContentView.h"
 

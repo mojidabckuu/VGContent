@@ -8,7 +8,7 @@
 
 #import "VGURLContent.h"
 
-#ifdef ICAROUSEL_H
+#ifdef ICAROUSEL_IOS
 
 #import "UIView+Setup.h"
 
