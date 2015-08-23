@@ -42,8 +42,8 @@
 		E5D479D2399456C6ED30AA12 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C4691AC203D047D9A4DDB1 /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF1C47BB529F55706FE8FE37 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3805C26ADC785CDBDDBAC014 /* VGTableViewContent.m */; };
 		EFBFC59867B3092B6B5B502B /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC101437D08F281B6B5E60F /* UITableViewCell+Setup.m */; };
-		F59B1D241B6E14F900C1DBC7 /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */; };
 		F59B1D261B6E151000C1DBC7 /* VGContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D251B6E151000C1DBC7 /* VGContentProtocol.h */; };
+		F5B262731B89E2250062EBC4 /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B1D231B6E14F900C1DBC7 /* VGContentSearchProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CCBA59243875A60FCE9A75 /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D477A317395F9420B8036F /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC018428715E5A0CF5CC63DD /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDB252039E9741C21D89F6A /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -452,7 +452,6 @@
 			files = (
 				78EF5656FE33E299A697EBD1 /* Pods-VGContent_Tests-umbrella.h in Headers */,
 				F59B1D261B6E151000C1DBC7 /* VGContentProtocol.h in Headers */,
-				F59B1D241B6E14F900C1DBC7 /* VGContentSearchProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +481,7 @@
 				35F48B0EFD25F7495F7D44D2 /* VGContentTableViewController.h in Headers */,
 				F9F6A765E1A11D62332F9321 /* VGContentViewController.h in Headers */,
 				37BEABB1F87230BB40FF9457 /* VGTableViewContent.h in Headers */,
+				F5B262731B89E2250062EBC4 /* VGContentSearchProtocol.h in Headers */,
 				F9DDAC44A254616F4D73DEDC /* VGURLContent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
