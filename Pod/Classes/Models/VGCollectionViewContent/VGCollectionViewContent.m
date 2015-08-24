@@ -58,6 +58,7 @@
 
 - (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
     NSArray *indexesToDelete = [self indexPathsWithItems:items];
+    [_items removeObjectsInArray:items];
     [self.collectionView performBatchUpdates:^{
         [self.collectionView deleteItemsAtIndexPaths:indexesToDelete];
     } completion:nil];

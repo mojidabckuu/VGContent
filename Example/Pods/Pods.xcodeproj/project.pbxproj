@@ -51,6 +51,8 @@
 		F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29975185420AEF3B5CA64762DC067680 /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F288483BEEB781F6D4E5D03FF6EE42B7 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 95136E5320E508CE6C3B064F181E0017 /* VGContent.m */; };
 		F56E24C5CA0B77DF5FDEA2591AB67976 /* VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E192681E21A6FAABEA95CE40DAF42407 /* VGContent-dummy.m */; };
+		F57969A11B8B3E0B00749B87 /* VGMapViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = F579699F1B8B3E0B00749B87 /* VGMapViewContent.h */; };
+		F57969A21B8B3E0B00749B87 /* VGMapViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = F57969A01B8B3E0B00749B87 /* VGMapViewContent.m */; };
 		F96C462E38EC0826FA3C74CD69E261A9 /* VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 427D13E8070BBCA4E1FFFC496FBEE119 /* VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB066EB4D0EC98D06D91A1D1563B32E2 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D554474F4A66C2C0C38CB3DF638D2AC /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDC12DBAC5F1FDACECE69690B5A253F7 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9174928131B0D49272A4B85C75A3CF2B /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,6 +170,8 @@
 		EBA8E1C8135AB0C17476C68EDCE9ED6D /* VGCarouselContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
 		EBBFCF2D2E33DA40CC9B1758468C5913 /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
 		EC50C3D968B2F0D7FB50BB19F38EC360 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F579699F1B8B3E0B00749B87 /* VGMapViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMapViewContent.h; sourceTree = "<group>"; };
+		F57969A01B8B3E0B00749B87 /* VGMapViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMapViewContent.m; sourceTree = "<group>"; };
 		F8297DFFE5F06AABB2F2722359644767 /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FA471733C4D452C0CCE814FF311A2552 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
 		FAD03C98097A531B8BCE7EB95C42C521 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
@@ -349,6 +353,7 @@
 		59ADF458E073445416A7E8A0D1943D66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F579699E1B8B3DF300749B87 /* VGMapViewContent */,
 				2AE27965A2766AC54A8F97967389F5C8 /* VGCarouselContent */,
 				3B80D925FDB5A058C1D8935FBF783F75 /* VGCollectionViewContent */,
 				5654D349739B9835CB8A3AA07F9EBA70 /* VGContent */,
@@ -504,6 +509,15 @@
 			path = "../Target Support Files/UIScrollView-InfiniteScroll";
 			sourceTree = "<group>";
 		};
+		F579699E1B8B3DF300749B87 /* VGMapViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				F579699F1B8B3E0B00749B87 /* VGMapViewContent.h */,
+				F57969A01B8B3E0B00749B87 /* VGMapViewContent.m */,
+			);
+			path = VGMapViewContent;
+			sourceTree = "<group>";
+		};
 		FD85BEBE86E3AB9D69FA013B4B4806D7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC12DBAC5F1FDACECE69690B5A253F7 /* Pods-VGContent_Tests-umbrella.h in Headers */,
+				F57969A11B8B3E0B00749B87 /* VGMapViewContent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +773,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57969A21B8B3E0B00749B87 /* VGMapViewContent.m in Sources */,
 				E5AC8EE9DED2DD3969CC3B71050F308B /* Pods-VGContent_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
