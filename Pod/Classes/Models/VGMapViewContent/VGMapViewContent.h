@@ -14,4 +14,9 @@
 
 @property (nonatomic, weak) MKMapView *mapView;
 
+/**
+ This property is to bind model.class with corresponding annotationView.class.
+ */
+@property (nonatomic, strong) NSDictionary *annotationBindings;
+
 @end
