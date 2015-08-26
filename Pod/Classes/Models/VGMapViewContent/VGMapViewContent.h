@@ -12,11 +12,17 @@
 
 @interface VGMapViewContent : VGContent <MKMapViewDelegate>
 
+@property (nonatomic, assign) BOOL showUserLocation;
+
 @property (nonatomic, weak) MKMapView *mapView;
+
+@property (nonatomic, assign) Class annotationClass;
 
 /**
  This property is to bind model.class with corresponding annotationView.class.
  */
 @property (nonatomic, strong) NSDictionary *annotationBindings;
+
+- (void)zoomToFit;
 
 @end

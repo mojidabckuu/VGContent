@@ -53,6 +53,10 @@
 		F56E24C5CA0B77DF5FDEA2591AB67976 /* VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E192681E21A6FAABEA95CE40DAF42407 /* VGContent-dummy.m */; };
 		F57969A11B8B3E0B00749B87 /* VGMapViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = F579699F1B8B3E0B00749B87 /* VGMapViewContent.h */; };
 		F57969A21B8B3E0B00749B87 /* VGMapViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = F57969A01B8B3E0B00749B87 /* VGMapViewContent.m */; };
+		F5CB93471B8DF27B009A0178 /* MKMapView+Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = F5CB93451B8DF27B009A0178 /* MKMapView+Clear.h */; };
+		F5CB93481B8DF27B009A0178 /* MKMapView+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB93461B8DF27B009A0178 /* MKMapView+Clear.m */; };
+		F5CB934B1B8DF2D7009A0178 /* MKMapView+Zoom.h in Headers */ = {isa = PBXBuildFile; fileRef = F5CB93491B8DF2D7009A0178 /* MKMapView+Zoom.h */; };
+		F5CB934C1B8DF2D7009A0178 /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB934A1B8DF2D7009A0178 /* MKMapView+Zoom.m */; };
 		F96C462E38EC0826FA3C74CD69E261A9 /* VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 427D13E8070BBCA4E1FFFC496FBEE119 /* VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB066EB4D0EC98D06D91A1D1563B32E2 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D554474F4A66C2C0C38CB3DF638D2AC /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDC12DBAC5F1FDACECE69690B5A253F7 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9174928131B0D49272A4B85C75A3CF2B /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -172,6 +176,10 @@
 		EC50C3D968B2F0D7FB50BB19F38EC360 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F579699F1B8B3E0B00749B87 /* VGMapViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMapViewContent.h; sourceTree = "<group>"; };
 		F57969A01B8B3E0B00749B87 /* VGMapViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMapViewContent.m; sourceTree = "<group>"; };
+		F5CB93451B8DF27B009A0178 /* MKMapView+Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Clear.h"; sourceTree = "<group>"; };
+		F5CB93461B8DF27B009A0178 /* MKMapView+Clear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Clear.m"; sourceTree = "<group>"; };
+		F5CB93491B8DF2D7009A0178 /* MKMapView+Zoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoom.h"; sourceTree = "<group>"; };
+		F5CB934A1B8DF2D7009A0178 /* MKMapView+Zoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoom.m"; sourceTree = "<group>"; };
 		F8297DFFE5F06AABB2F2722359644767 /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FA471733C4D452C0CCE814FF311A2552 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
 		FAD03C98097A531B8BCE7EB95C42C521 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
@@ -514,6 +522,10 @@
 			children = (
 				F579699F1B8B3E0B00749B87 /* VGMapViewContent.h */,
 				F57969A01B8B3E0B00749B87 /* VGMapViewContent.m */,
+				F5CB93451B8DF27B009A0178 /* MKMapView+Clear.h */,
+				F5CB93461B8DF27B009A0178 /* MKMapView+Clear.m */,
+				F5CB93491B8DF2D7009A0178 /* MKMapView+Zoom.h */,
+				F5CB934A1B8DF2D7009A0178 /* MKMapView+Zoom.m */,
 			);
 			path = VGMapViewContent;
 			sourceTree = "<group>";
@@ -575,8 +587,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CB93471B8DF27B009A0178 /* MKMapView+Clear.h in Headers */,
 				FDC12DBAC5F1FDACECE69690B5A253F7 /* Pods-VGContent_Tests-umbrella.h in Headers */,
 				F57969A11B8B3E0B00749B87 /* VGMapViewContent.h in Headers */,
+				F5CB934B1B8DF2D7009A0178 /* MKMapView+Zoom.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +787,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CB934C1B8DF2D7009A0178 /* MKMapView+Zoom.m in Sources */,
+				F5CB93481B8DF27B009A0178 /* MKMapView+Clear.m in Sources */,
 				F57969A21B8B3E0B00749B87 /* VGMapViewContent.m in Sources */,
 				E5AC8EE9DED2DD3969CC3B71050F308B /* Pods-VGContent_Tests-dummy.m in Sources */,
 			);
