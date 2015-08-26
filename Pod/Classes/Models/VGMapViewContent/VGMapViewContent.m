@@ -47,6 +47,13 @@
     self.annotationsBindings  = [NSMutableDictionary dictionary];
 }
 
+#pragma mark - Modifiers
+
+- (void)setShowUserLocation:(BOOL)showUserLocation {
+    _showUserLocation = showUserLocation;
+    self.mapView.showsUserLocation = showUserLocation;
+}
+
 #pragma mark - Insert management
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
@@ -109,6 +116,7 @@
         MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:self.cellIdentifier];
         if(!annotationView) {
             NSString *annotationClassString = NSStringFromClass(annotation.class);
+            NSAssert(self.annotationBindings[annotationClassString] = nil, @"You haven't corresponding annotation view class from this annotation.");
             NSString *annotationViewClassString = self.annotationBindings[annotationClassString];
             Class annotationViewClass = NSClassFromString(annotationViewClassString);
             annotationView = [[annotationViewClass alloc] initWithAnnotation:annotation reuseIdentifier:self.cellIdentifier];
