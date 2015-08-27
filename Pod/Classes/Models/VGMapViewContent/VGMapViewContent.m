@@ -115,6 +115,15 @@
 
 #pragma mark - MKMapView delegate
 
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    if(self.dropPinAtUpdate) {
+        if(![_items.firstObject isKindOfClass:[MKUserLocation class]]) {
+            [self insertItem:userLocation atIndex:0];
+            [self zoomToFit];
+        }
+    }
+}
+
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;

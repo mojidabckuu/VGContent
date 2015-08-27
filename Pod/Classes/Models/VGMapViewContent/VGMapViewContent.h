@@ -13,6 +13,7 @@
 @interface VGMapViewContent : VGContent <MKMapViewDelegate>
 
 @property (nonatomic, assign) BOOL showUserLocation;
+@property (nonatomic, assign) BOOL dropPinAtUpdate;
 
 @property (nonatomic, weak) MKMapView *mapView;
 
