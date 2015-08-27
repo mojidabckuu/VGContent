@@ -75,7 +75,7 @@
 
 - (void)selectItems:(NSArray *)items animated:(BOOL)animated {
     NSLog(@"WARNING: MKMapView knows how to select only latest annotation in default behaviour. But select will be called on each");
-
+    
     NSArray *annotations = [self.annotationsBindings objectsForKeys:items notFoundMarker:nil];
     for(id<MKAnnotation> annotation in annotations) {
         [self.mapView selectAnnotation:annotation animated:animated];
@@ -85,7 +85,7 @@
 - (void)deselectItem:(id)item animated:(BOOL)animated {
     NSLog(@"WARNING: MKMapView knows how to deselect only latest annotation in default behaviour. But select will be called on each");
     
-    NSArray *annotations = [self.annotationsBindings objectsForKeys:items notFoundMarker:nil];
+    NSArray *annotations = [self.annotationsBindings objectForKey:item];
     for(id<MKAnnotation> annotation in annotations) {
         [self.mapView deselectAnnotation:annotation animated:animated];
     }
@@ -110,33 +110,36 @@
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;
     } else {
-        if(!self.annotationViews.count) {
+        if(!self.annotationBindings.count) {
             return nil;
         }
         MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:self.cellIdentifier];
         if(!annotationView) {
             NSString *annotationClassString = NSStringFromClass(annotation.class);
-            NSAssert(self.annotationBindings[annotationClassString] = nil, @"You haven't corresponding annotation view class from this annotation.");
+            NSAssert(self.annotationBindings[annotationClassString] == nil, @"You haven't corresponding annotation view class from this annotation.");
             NSString *annotationViewClassString = self.annotationBindings[annotationClassString];
             Class annotationViewClass = NSClassFromString(annotationViewClassString);
             annotationView = [[annotationViewClass alloc] initWithAnnotation:annotation reuseIdentifier:self.cellIdentifier];
         } else {
             annotationView.annotation = annotation;
         }
-        [self.annotationViews setObject:annotation forKey:annotationView];
         return annotationView;
     }
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
-        [self.delegate content:self didSelectItem:self.annotationViews[view]];
+        id<MKAnnotation> annotation = view.annotation;
+        id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+        [self.delegate content:self didSelectItem:item];
     }
 }
 
 - (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
     if([self.delegate respondsToSelector:@selector(content:didDeselectItem:)]) {
-        [self.delegate content:self didDeselectItem:self.annotationViews[view]];
+        id<MKAnnotation> annotation = view.annotation;
+        id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+        [self.delegate content:self didDeselectItem:item];
     }
 }
 
