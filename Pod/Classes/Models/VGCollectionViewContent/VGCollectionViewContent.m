@@ -67,14 +67,14 @@
 #pragma mark - Selection management
 
 - (void)selectItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if(item && [_items containsObject:item]) {
         NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
         [self.collectionView selectItemAtIndexPath:indexPath animated:animated scrollPosition:UICollectionViewScrollPositionNone];
     }
 }
 
 - (void)deselectItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if(item && [_items containsObject:item]) {
         NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
         [self.collectionView deselectItemAtIndexPath:indexPath animated:animated];
     }
