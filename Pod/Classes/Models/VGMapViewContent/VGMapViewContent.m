@@ -23,7 +23,7 @@
 
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[MKMapView class]], @"You passed not MKMapView view");
-    MKMapView *mapView = (MKMapView *)mapView;
+    MKMapView *mapView = (MKMapView *)view;
     self = [super initWithView:mapView];
     if(self) {
         self.mapView = mapView;
@@ -54,6 +54,12 @@
     self.mapView.showsUserLocation = showUserLocation;
 }
 
+- (void)setItems:(NSArray *)items {
+    [_items removeAllObjects];
+    [self insertItems:items atIndex:0 animated:YES];
+    [self reload];
+}
+
 #pragma mark - Insert management
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
@@ -66,8 +72,8 @@
 
 - (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
     [_items removeObjectsInArray:items];
-    [self.annotationsBindings removeObjectsForKeys:items];
-    NSArray *deleteAnnotations = [self convertModelsToAnnotations:items];
+    NSArray *deleteAnnotations = [self annotationsForItems:items];
+    [self.annotationsBindings removeObjectsForKeys:[items valueForKeyPath:@"hash"]];
     [self.mapView removeAnnotations:deleteAnnotations];
 }
 
@@ -76,7 +82,7 @@
 - (void)selectItems:(NSArray *)items animated:(BOOL)animated {
     NSLog(@"WARNING: MKMapView knows how to select only latest annotation in default behaviour. But select will be called on each");
     
-    NSArray *annotations = [self.annotationsBindings objectsForKeys:items notFoundMarker:nil];
+    NSArray *annotations = [self annotationsForItems:items];
     for(id<MKAnnotation> annotation in annotations) {
         [self.mapView selectAnnotation:annotation animated:animated];
     }
@@ -85,7 +91,7 @@
 - (void)deselectItem:(id)item animated:(BOOL)animated {
     NSLog(@"WARNING: MKMapView knows how to deselect only latest annotation in default behaviour. But select will be called on each");
     
-    NSArray *annotations = [self.annotationsBindings objectForKey:item];
+    NSArray *annotations = [self annotationsForItems:@[item]];
     for(id<MKAnnotation> annotation in annotations) {
         [self.mapView deselectAnnotation:annotation animated:animated];
     }
@@ -94,14 +100,17 @@
 #pragma mark - Reload management
 
 - (void)reloadItems:(NSArray *)items animated:(BOOL)animated {
-    NSArray *annotations = [self.annotationsBindings objectsForKeys:items notFoundMarker:nil];
+    NSArray *annotations = [self annotationsForItems:items];
     [self.mapView removeAnnotations:annotations];
-    [self.mapView addAnnotations:[self convertModelsToAnnotations:items]];
+    [self.mapView addAnnotations:annotations];
 }
 
 - (void)reload {
     [self.mapView clearAllAnnotationsExceptUsers];
-    [self.mapView addAnnotations:[self convertModelsToAnnotations:self.items]];
+    NSArray *annotations = [self annotationsForItems:_items];
+    if(annotations.count) {
+        [self.mapView addAnnotations:annotations];
+    }
 }
 
 #pragma mark - MKMapView delegate
@@ -116,7 +125,7 @@
         MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:self.cellIdentifier];
         if(!annotationView) {
             NSString *annotationClassString = NSStringFromClass(annotation.class);
-            NSAssert(self.annotationBindings[annotationClassString] == nil, @"You haven't corresponding annotation view class from this annotation.");
+            NSAssert(self.annotationBindings[annotationClassString] != nil, @"You haven't corresponding annotation view class from this annotation.");
             NSString *annotationViewClassString = self.annotationBindings[annotationClassString];
             Class annotationViewClass = NSClassFromString(annotationViewClassString);
             annotationView = [[annotationViewClass alloc] initWithAnnotation:annotation reuseIdentifier:self.cellIdentifier];
@@ -146,7 +155,7 @@
 #pragma mark - Utils
 
 - (NSMutableArray *)convertModelsToAnnotations:(NSArray *)models {
-    NSAssert(self.annotationClass = nil, @"Annotation class can't be nil value");
+    NSAssert(self.annotationClass != nil, @"Annotation class can't be nil value");
     NSMutableArray *annotations = [NSMutableArray array];
     for(id model in models) {
         id annotation = [[self.annotationClass alloc] init];
@@ -155,7 +164,24 @@
             [annotation performSelector:selector withObject:model];
         }
         [annotations addObject:annotation];
-        [self.annotationsBindings setObject:annotation forKey:model];
+        [self.annotationsBindings setObject:annotation forKey:[model valueForKey:@"hash"]];
+    }
+    return annotations;
+}
+
+- (NSArray *)keysForItems:(NSArray *)items {
+    NSArray *keys = [items valueForKey:@"hash"];
+    return keys;
+}
+
+- (NSArray *)annotationsForItems:(NSArray *)items {
+    NSMutableArray *annotations = [NSMutableArray array];
+    NSArray *keys = [self keysForItems:items];
+    for(id key in keys) {
+        id annotation = self.annotationsBindings[key];
+        if(annotation) {
+            [annotations addObject:annotation];
+        }
     }
     return annotations;
 }
