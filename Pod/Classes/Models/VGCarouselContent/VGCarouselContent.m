@@ -79,7 +79,7 @@
 #pragma mark - Items management
 
 - (id)selectedItem {
-    return _items[self.carousel.currentItemIndex];
+    return [self itemAtIndex:self.carousel.currentItemIndex];
 }
 
 #pragma mark - Insert management

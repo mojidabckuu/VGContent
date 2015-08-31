@@ -37,11 +37,15 @@
 #pragma mark - Setup methods
 
 - (void)setupInfiniteScrollingWithScrollView:(UIScrollView *)scrollView {
-    [scrollView addInfiniteScrollWithHandler:^(id scrollView) {
-        if(!self.isAllLoaded) {
-            [self loadMoreItems];
-        }
-    }];
+    // TODO: think about this
+    // iCarousel is not UIScrollView child;
+    if([scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
+        [scrollView addInfiniteScrollWithHandler:^(id scrollView) {
+            if(!self.isAllLoaded) {
+                [self loadMoreItems];
+            }
+        }];
+    }
 }
 
 #pragma mark - Accessors
@@ -57,7 +61,11 @@
 - (void)setIsAllLoaded:(BOOL)isAllLoaded {
     _isAllLoaded = isAllLoaded;
     if(isAllLoaded) {
-        [self.scrollView removeInfiniteScroll];
+        // TODO: think about this
+        // iCarousel is not UIScrollView child;
+        if([self.scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
+            [self.scrollView removeInfiniteScroll];
+        }
     }
 }
 
