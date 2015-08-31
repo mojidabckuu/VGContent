@@ -49,6 +49,11 @@
 }
 
 /**
+ Reference to view.
+ */
+@property (nonatomic, strong) UIView *view;
+
+/**
  Array of items.
  */
 @property (nonatomic, strong, readonly) NSArray *items;

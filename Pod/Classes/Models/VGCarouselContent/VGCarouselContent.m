@@ -16,35 +16,31 @@
 
 @implementation VGCarouselContent
 
+@dynamic delegate;
+
 #pragma mark - VGCarouselContent
 
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[iCarousel class]], @"You passed not iCarousel view");
     iCarousel *carousel = (iCarousel *)view;
-    self = [self initWithCarousel:carousel];
+    self = [super initWithView:carousel];
     if(self) {
+        [self setupiCarousel];
     }
     return self;
 }
 
-- (instancetype)initWithCarousel:(iCarousel *)carousel {
-    self = [self initWithCarousel:carousel infinite:NO];
-    if(self) {
-        self.carousel = carousel;
-        self.carousel.delegate = self;
-        self.carousel.dataSource = self;
-    }
-    return self;
+#pragma mark - Setup
+
+- (void)setupiCarousel {
+    self.carousel.delegate = self;
+    self.carousel.dataSource = self;
 }
 
-- (instancetype)initWithCarousel:(iCarousel *)carousel infinite:(BOOL)infinite {
-    self = [super init];
-    if(self) {
-        self.carousel = carousel;
-        self.carousel.dataSource = self;
-        self.carousel.delegate = self;
-    }
-    return self;
+#pragma mark - Accessors
+
+- (iCarousel *)carousel {
+    return (iCarousel *)self.view;
 }
 
 #pragma mark - iCarousel data source
@@ -69,13 +65,14 @@
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
-        [self.delegate content:self didSelectItem:_items[index]];
+        [self.delegate content:self didSelectItem:[self itemAtIndex:index]];
+
     }
 }
 
 - (void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel {
     if([self.delegate respondsToSelector:@selector(content:didChangeCurrentItem:)]) {
-        [self.delegate content:self didChangeCurrentItem:_items[carousel.currentItemIndex]];
+        [self.delegate content:self didChangeCurrentItem:[self itemAtIndex:carousel.currentItemIndex]];
     }
 }
 
@@ -111,7 +108,9 @@
 - (void)selectItem:(id)item animated:(BOOL)animated {
     if(item) {
         NSInteger index = [_items indexOfObject:item];
-        [self.carousel setCurrentItemIndex:index];
+        if(index != NSNotFound) {
+            [self.carousel setCurrentItemIndex:index];
+        }
     }
 }
 
