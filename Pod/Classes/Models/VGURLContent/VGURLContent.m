@@ -12,7 +12,7 @@
 
 @interface VGURLContent ()
 
-@property (nonatomic, assign) UIScrollView *scrollView;
+@property (nonatomic, readonly, assign) UIScrollView *scrollView;
 
 @end
 
@@ -28,7 +28,6 @@
     self = [super initWithView:view];
     if(self) {
         _isAllLoaded = YES;
-        self.scrollView = (UIScrollView *)view;
         [self setupInfiniteScrollingWithScrollView:self.scrollView];
     }
     return self;
@@ -56,6 +55,10 @@
 
 - (BOOL)isRefreshing {
     return _isRefreshing;
+}
+
+- (UIScrollView *)scrollView {
+    return (UIScrollView *)self.view;
 }
 
 - (void)setIsAllLoaded:(BOOL)isAllLoaded {
