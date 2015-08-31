@@ -38,6 +38,12 @@
     
 }
 
+#pragma mark - Accessors
+
+- (UICollectionView *)collectionView {
+    return (UICollectionView *)self.view;
+}
+
 #pragma mark - Insert management
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {

@@ -24,7 +24,6 @@
     UITableView *tableView = (UITableView *)view;
     self = [super initWithView:view];
     if(self) {
-        self.tableView = tableView;
         [self setupTableVIew];
     }
     return self;
@@ -44,6 +43,10 @@
 }
 
 #pragma mark - Accessors
+
+- (UITableView *)tableView {
+    return (UITableView *)self.view;
+}
 
 - (UIView *)tableFooterView {
     if(!_tableFooterView) {
