@@ -15,19 +15,9 @@
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[UICollectionView class]], @"You passed not UICollectionView view");
     UICollectionView *collectionView = (UICollectionView *)view;
-    self = [self initWithCollectionView:collectionView];
+    self = [super initWithView:collectionView];
     if(self) {
-    }
-    return self;
-}
-
-- (instancetype)initWithCollectionView:(UICollectionView *)collectionView {
-    self = [self init];
-    if(self) {
-        self.collectionView = collectionView;
-        [self setupLayout];
-        self.collectionView.delegate = self;
-        self.collectionView.dataSource = self;
+        [self setupCollectionView];
     }
     return self;
 }
@@ -35,7 +25,12 @@
 #pragma mark - Setup methods
 
 - (void)setupLayout {
-    
+}
+
+- (void)setupCollectionView {
+    [self setupLayout];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
 }
 
 #pragma mark - Accessors

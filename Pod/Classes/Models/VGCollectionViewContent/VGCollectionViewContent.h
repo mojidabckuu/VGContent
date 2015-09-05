@@ -19,8 +19,6 @@
  */
 @property (nonatomic, weak) UICollectionView *collectionView;
 
-- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
-
 /**
  Setup method for UICollectionViewLayout.
  */
