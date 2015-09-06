@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/mojidabckuu/VGContent"
   s.license          = 'MIT'
   s.author           = { "mojidabckuu" => "mojidabckuu.22.06.92@gmail.com" }
-  s.source           = { :git => "https://github.com/mojidabckuu/VGContent.git"}
+  s.source           = { :git => "https://github.com/mojidabckuu/VGContent.git", :tag => "#{s.version}"}
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
