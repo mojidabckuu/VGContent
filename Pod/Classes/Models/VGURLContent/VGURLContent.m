@@ -12,7 +12,7 @@
 
 @interface VGURLContent ()
 
-@property (nonatomic, assign) UIScrollView *scrollView;
+@property (nonatomic, readonly, assign) UIScrollView *scrollView;
 
 @end
 
@@ -22,26 +22,11 @@
 @synthesize isAllLoaded = _isAllLoaded;
 @synthesize isLoading = _isLoading;
 
-#pragma mark - VGURLContent lifecycle
-
-- (instancetype)initWithView:(UIView *)view {
-    self = [super initWithView:view];
-    if(self) {
-        _isAllLoaded = YES;
-        self.scrollView = (UIScrollView *)view;
-        [self setupInfiniteScrollingWithScrollView:self.scrollView];
-    }
-    return self;
-}
-
 #pragma mark - Setup methods
 
-- (void)setupInfiniteScrollingWithScrollView:(UIScrollView *)scrollView {
-    [scrollView addInfiniteScrollWithHandler:^(id scrollView) {
-        if(!self.isAllLoaded) {
-            [self loadMoreItems];
-        }
-    }];
+- (void)setup {
+    self.isAllLoaded = NO;
+    [super setup];
 }
 
 #pragma mark - Accessors
@@ -54,10 +39,26 @@
     return _isRefreshing;
 }
 
+- (UIScrollView *)scrollView {
+    return (UIScrollView *)self.view;
+}
+
 - (void)setIsAllLoaded:(BOOL)isAllLoaded {
     _isAllLoaded = isAllLoaded;
+    // TODO: think about this
+    // iCarousel is not UIScrollView child;
     if(isAllLoaded) {
-        [self.scrollView removeInfiniteScroll];
+        if([self.scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
+            [self.scrollView removeInfiniteScroll];
+        }
+    } else {
+        if([self.scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
+            if(!self.isAllLoaded) {
+                [self.scrollView addInfiniteScrollWithHandler:^(id scrollView) {
+                    [self loadMoreItems];
+                }];
+            }
+        }
     }
 }
 

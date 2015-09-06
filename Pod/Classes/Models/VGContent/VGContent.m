@@ -25,8 +25,11 @@
 }
 
 - (instancetype)initWithView:(UIView *)view {
-    self = [self init];
+    self = [super init];
     if(self) {
+        _items = [[NSMutableArray alloc] init];
+        self.view = view;
+        [self setup];
     }
     return self;
 }
@@ -171,12 +174,19 @@
 }
 
 - (void)searchWithString:(NSString *)string keyPath:(NSString *)keyPath {
-    NSPredicate *predicate = nil;
-    if (keyPath) {
-        predicate = [NSPredicate predicateWithFormat:@"self.%K contains[cd] %@", keyPath, string];
-    }
-    else {
-        predicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", string];
+    if(string.length) {
+        NSPredicate *predicate = nil;
+        if (keyPath) {
+            predicate = [NSPredicate predicateWithFormat:@"self.%K contains[cd] %@", keyPath, string];
+        }
+        else {
+            predicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", string];
+        }
+        self.filteredItems = [self.originalItems filteredArrayUsingPredicate:predicate];
+        _items = [NSMutableArray arrayWithArray:self.filteredItems];
+    } else {
+        self.filteredItems = nil;
+        _items = self.originalItems;
     }
 }
 

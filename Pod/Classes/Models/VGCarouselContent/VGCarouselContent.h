@@ -8,8 +8,6 @@
 
 #import "VGURLContent.h"
 
-#ifdef ICAROUSEL_H
-
 #import "UIView+Setup.h"
 
 #import <iCarousel/iCarousel.h>
@@ -23,12 +21,7 @@
 
 @interface VGCarouselContent : VGURLContent
 
-@property (nonatomic, weak) iCarousel *carousel;
+@property (nonatomic, weak, readonly) iCarousel *carousel;
 @property (nonatomic, assign) id<VGCarouselContentDelegate> delegate;
 
-- (instancetype)initWithCarousel:(iCarousel *)carousel;
-- (instancetype)initWithCarousel:(iCarousel *)carousel infinite:(BOOL)infinite;
-
 @end
-
-#endif

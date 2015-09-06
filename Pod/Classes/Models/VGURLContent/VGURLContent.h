@@ -46,6 +46,11 @@
 @interface VGURLContent : VGContent
 
 /**
+ List of criterias
+ */
+@property (nonatomic, strong) NSArray *criterias;
+
+/**
  An object who responds to data delegate methods `VGURLContentDelegate`.
  */
 @property (nonatomic, assign) id<VGURLContentDataDelegate> dataDelegate;

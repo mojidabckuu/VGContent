@@ -24,7 +24,6 @@
     UITableView *tableView = (UITableView *)view;
     self = [super initWithView:view];
     if(self) {
-        self.tableView = tableView;
         [self setupTableVIew];
     }
     return self;
@@ -44,6 +43,10 @@
 }
 
 #pragma mark - Accessors
+
+- (UITableView *)tableView {
+    return (UITableView *)self.view;
+}
 
 - (UIView *)tableFooterView {
     if(!_tableFooterView) {
@@ -154,6 +157,11 @@
     }
     NSArray *indexesToInsert = [self indexPathsWithItems:items];
     [self.tableView insertRowsAtIndexPaths:indexesToInsert withRowAnimation:animation];
+    if([self.delegate respondsToSelector:@selector(content:didAddItem:)]) {
+        for (NSInteger i = 0; i < items.count; i++) {
+            [self.delegate content:self didAddItem:items[i]];
+        }
+    }
 }
 
 #pragma mark - Delete management
@@ -173,6 +181,11 @@
     NSArray *indexesToDelete = [self indexPathsWithItems:items];
     [_items removeObjectsInArray:items];
     [self.tableView deleteRowsAtIndexPaths:indexesToDelete withRowAnimation:animation];
+    if([self.delegate respondsToSelector:@selector(content:didDeleteItem:)]) {
+        for (NSInteger i = 0; i < items.count; i++) {
+            [self.delegate content:self didDeleteItem:items[i]];
+        }
+    }
 }
 
 #pragma mark - Selection managemtn

@@ -1,8 +1,6 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_FRAMEWORK_BUILD_PATH"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_FRAMEWORK_BUILD_PATH/UIScrollView_InfiniteScroll.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/VGContent.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "UIScrollView_InfiniteScroll" -framework "VGContent"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/UIScrollView_InfiniteScroll.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/VGContent.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/iCarousel.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "UIScrollView_InfiniteScroll" -framework "VGContent" -framework "iCarousel"
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGContent_Tests
 PODS_ROOT = ${SRCROOT}/Pods

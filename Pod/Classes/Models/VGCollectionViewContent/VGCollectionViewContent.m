@@ -15,19 +15,9 @@
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[UICollectionView class]], @"You passed not UICollectionView view");
     UICollectionView *collectionView = (UICollectionView *)view;
-    self = [self initWithCollectionView:collectionView];
+    self = [super initWithView:collectionView];
     if(self) {
-    }
-    return self;
-}
-
-- (instancetype)initWithCollectionView:(UICollectionView *)collectionView {
-    self = [self init];
-    if(self) {
-        self.collectionView = collectionView;
-        [self setupLayout];
-        self.collectionView.delegate = self;
-        self.collectionView.dataSource = self;
+        [self setupCollectionView];
     }
     return self;
 }
@@ -35,7 +25,18 @@
 #pragma mark - Setup methods
 
 - (void)setupLayout {
-    
+}
+
+- (void)setupCollectionView {
+    [self setupLayout];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+}
+
+#pragma mark - Accessors
+
+- (UICollectionView *)collectionView {
+    return (UICollectionView *)self.view;
 }
 
 #pragma mark - Insert management
@@ -58,6 +59,7 @@
 
 - (void)deleteItems:(NSArray *)items animated:(BOOL)animated {
     NSArray *indexesToDelete = [self indexPathsWithItems:items];
+    [_items removeObjectsInArray:items];
     [self.collectionView performBatchUpdates:^{
         [self.collectionView deleteItemsAtIndexPaths:indexesToDelete];
     } completion:nil];
@@ -66,14 +68,20 @@
 #pragma mark - Selection management
 
 - (void)selectItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if(item && [_items containsObject:item]) {
         NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
         [self.collectionView selectItemAtIndexPath:indexPath animated:animated scrollPosition:UICollectionViewScrollPositionNone];
     }
 }
 
+- (void)selectItems:(NSArray *)items animated:(BOOL)animated {
+    for(id item in items) {
+        [self selectItem:item animated:animated];
+    }
+}
+
 - (void)deselectItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if(item && [_items containsObject:item]) {
         NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
         [self.collectionView deselectItemAtIndexPath:indexPath animated:animated];
     }

@@ -1,1 +1,0 @@
-../../../../../Pod/Classes/ViewControllers/VGContentViewController/VGContentViewController.h

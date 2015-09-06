@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_VGContent_Tests_UIScrollView_InfiniteScroll : NSObject
-@end
-@implementation PodsDummy_Pods_VGContent_Tests_UIScrollView_InfiniteScroll
-@end

@@ -29,6 +29,16 @@
  */
 - (void)content:(VGContent *)content didDeselectItem:(id)item;
 
+/**
+ Delegate method that triggered when item added.
+ */
+- (void)content:(VGContent *)content didAddItem:(id)item;
+
+/**
+ Delegate method that triggered when item deleted.
+ */
+- (void)content:(VGContent *)content didDeleteItem:(id)item;
+
 @end
 
 /**
@@ -37,6 +47,11 @@
 @interface VGContent :  NSObject <VGContentProtocol, VGContentSearchProtocol> {
     NSMutableArray *_items;
 }
+
+/**
+ Reference to view.
+ */
+@property (nonatomic, strong) UIView *view;
 
 /**
  Array of items.
