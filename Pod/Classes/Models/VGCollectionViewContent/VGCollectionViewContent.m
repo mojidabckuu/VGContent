@@ -74,6 +74,12 @@
     }
 }
 
+- (void)selectItems:(NSArray *)items animated:(BOOL)animated {
+    for(id item in items) {
+        [self selectItem:item animated:animated];
+    }
+}
+
 - (void)deselectItem:(id)item animated:(BOOL)animated {
     if(item && [_items containsObject:item]) {
         NSIndexPath *indexPath = [self indexPathsWithItems:@[item]].firstObject;
