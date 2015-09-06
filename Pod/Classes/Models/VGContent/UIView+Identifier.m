@@ -10,8 +10,10 @@
 
 @implementation UIView (Identifier)
 
+// Swift realisation NSStringFromClass() returns module name separated by '.'
 + (NSString*)identifier {
-    return NSStringFromClass([self class]);
+    NSString *className = NSStringFromClass([self class]);
+    return [[className componentsSeparatedByString:@"."] lastObject];
 }
 
 @end
