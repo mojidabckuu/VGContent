@@ -9,6 +9,7 @@
 #import "VGCarouselContent.h"
 
 #import "VGCarouselContentView.h"
+#import "UIView+Identifier.h"
 
 @interface VGCarouselContent () <iCarouselDataSource, iCarouselDelegate>
 
@@ -52,7 +53,7 @@
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(VGCarouselContentView *)view {
     if (view == nil) {
         view = [[VGCarouselContentView alloc] initWithFrame:carousel.bounds];
-        Class class = self.cellIdentifier ? NSClassFromString(self.cellIdentifier) : [UIView class];
+        Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
         UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
         reuseView.backgroundColor = [UIColor clearColor];
         view.contentView = reuseView;

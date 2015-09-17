@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+Class ClassFromString(NSString *className);
+
 @interface UIView (Identifier)
 
 + (NSString*)identifier;
