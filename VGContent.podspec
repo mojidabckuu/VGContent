@@ -11,16 +11,10 @@ Pod::Spec.new do |s|
   s.name             = "VGContent"
   s.version          = "0.1.0"
   s.summary          = "Small DRY workaround on UITableView, UICollectionView, iCarousel delegates."
-#s.description      = <<-DESC
-#                       An optional longer description of VGContent
-#
-#                      * Markdown format.
-#                      * Don't worry about the indent, we strip it!
-#                      DESC
   s.homepage         = "https://github.com/mojidabckuu/VGContent"
   s.license          = 'MIT'
   s.author           = { "mojidabckuu" => "mojidabckuu.22.06.92@gmail.com" }
-  s.source           = { :git => "https://github.com/mojidabckuu/VGContent.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/mojidabckuu/VGContent.git", :tag => "#{s.version}"}
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -30,8 +24,6 @@ Pod::Spec.new do |s|
     'VGContent' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'UIScrollView-InfiniteScroll', '~> 0.7.2'
   s.dependency 'iCarousel'
 end

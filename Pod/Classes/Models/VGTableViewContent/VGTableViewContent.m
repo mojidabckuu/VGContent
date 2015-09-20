@@ -22,7 +22,7 @@
 - (instancetype)initWithView:(UIView *)view {
     NSAssert([view isKindOfClass:[UITableView class]], @"You passed not UITableView view");
     UITableView *tableView = (UITableView *)view;
-    self = [super initWithView:view];
+    self = [super initWithView:tableView];
     if(self) {
         [self setupTableVIew];
     }

@@ -170,7 +170,10 @@
         id annotation = [[self.annotationClass alloc] init];
         SEL selector = NSSelectorFromString(@"setupWithItem:");
         if([annotation respondsToSelector:selector]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             [annotation performSelector:selector withObject:model];
+#pragma clang diagnostic pop
         }
         [annotations addObject:annotation];
         [self.annotationsBindings setObject:annotation forKey:[model valueForKey:@"hash"]];
