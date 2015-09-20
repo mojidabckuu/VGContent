@@ -56,6 +56,9 @@
         Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
         UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
         reuseView.backgroundColor = [UIColor clearColor];
+        CGRect viewFrame = [self carousel:carousel frameForItem:_items[index] view:reuseView];
+        reuseView.frame = viewFrame;
+        view = [[VGCarouselContentView alloc] initWithFrame:CGRectMake(0, 0, viewFrame.size.width + 0, viewFrame.size.height)];
         view.contentView = reuseView;
     }
     [view.contentView setupWithItem:_items[index]];
@@ -67,7 +70,6 @@
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
         [self.delegate content:self didSelectItem:[self itemAtIndex:index]];
-
     }
 }
 
@@ -126,6 +128,12 @@
 
 - (void)reload {
     [self.carousel reloadData];
+}
+
+#pragma mark - Utils
+
+- (CGRect)carousel:(iCarousel *)carousel frameForItem:(id)item view:(UIView *)view {
+    return carousel.bounds;
 }
 
 @end

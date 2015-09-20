@@ -24,4 +24,6 @@
 @property (nonatomic, weak, readonly) iCarousel *carousel;
 @property (nonatomic, assign) id<VGCarouselContentDelegate> delegate;
 
+- (CGRect)carousel:(iCarousel *)carousel frameForItem:(id)item view:(UIView *)view;
+
 @end
