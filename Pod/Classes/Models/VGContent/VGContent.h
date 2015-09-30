@@ -89,4 +89,9 @@
  */
 - (NSArray *)indexPathsWithItems:(NSArray *)items;
 
+/**
+ Register cells.
+ */
+- (BOOL)registerCellIdentifier:(NSString *)cellIdentifier;
+
 @end

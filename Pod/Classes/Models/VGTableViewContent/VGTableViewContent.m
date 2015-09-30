@@ -71,28 +71,7 @@
 
 - (void)setCellIdentifier:(NSString *)cellIdentifier {
     [super setCellIdentifier:cellIdentifier];
-    
-    id cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if(cell) {
-        return;
-    }
-    
-    BOOL registered = NO;
-    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
-    if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
-        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
-        if(nib) {
-            [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
-            registered = YES;
-        }
-    }
-    if(!registered) {
-        Class class = NSClassFromString(cellIdentifier);
-        if(!class) {
-            class = [UITableViewCell class];
-        }
-        [self.tableView registerClass:class forCellReuseIdentifier:cellIdentifier];
-    }
+    [self registerCellIdentifier:cellIdentifier];
 }
 
 #pragma mark - UITableView data source
@@ -236,6 +215,34 @@
 
 - (void)reload {
     [self.tableView reloadData];
+}
+
+#pragma mark - Utils
+
+- (BOOL)registerCellIdentifier:(NSString *)cellIdentifier {
+    id cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if(cell) {
+        return YES;
+    }
+    
+    BOOL registered = NO;
+    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
+    if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
+        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
+        if(nib) {
+            [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+            registered = YES;
+        }
+    }
+    if(!registered) {
+        Class class = NSClassFromString(cellIdentifier);
+        if(!class) {
+            class = [UITableViewCell class];
+        }
+        [self.tableView registerClass:class forCellReuseIdentifier:cellIdentifier];
+        registered = YES;
+    }
+    return registered;
 }
 
 @end

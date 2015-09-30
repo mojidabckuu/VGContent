@@ -206,4 +206,8 @@
     return [NSArray arrayWithArray:indexPaths];
 }
 
+- (BOOL)registerCellIdentifier:(NSString *)cellIdentifier {
+    return FALSE;
+}
+
 @end
