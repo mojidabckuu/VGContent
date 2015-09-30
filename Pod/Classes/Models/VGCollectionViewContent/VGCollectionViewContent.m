@@ -103,7 +103,7 @@
 - (id)selectedItem {
     NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems.firstObject;
     if (indexPath) {
-        return _items[indexPath.row];
+        return [self itemAtIndex:indexPath.row];
     }
     return nil;
 }
@@ -121,7 +121,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if(self.cellIdentifier) {
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.cellIdentifier forIndexPath:indexPath];
-        [cell setupWithItem:_items[indexPath.row]];
+        [cell setupWithItem:[self itemAtIndex:indexPath.row]];
         return cell;
     } else {
         return nil;
@@ -132,13 +132,13 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
-        [self.delegate content:self didSelectItem:_items[indexPath.row]];
+        [self.delegate content:self didSelectItem:[self itemAtIndex:indexPath.row]];
     }
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(content:didDeselectItem:)]) {
-        [self.delegate content:self didDeselectItem:_items[indexPath.row]];
+        [self.delegate content:self didDeselectItem:[self itemAtIndex:indexPath.row]];
     }
 }
 

@@ -62,7 +62,7 @@
 - (id)selectedItem {
     NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
     if(indexPath) {
-        return _items[indexPath.row];
+        return [self itemAtIndex:indexPath.row];
     }
     return nil;
 }
@@ -87,7 +87,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = self.cellIdentifier ?: [UITableViewCell identifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    [cell setupWithItem:_items[indexPath.row]];
+    [cell setupWithItem:[self itemAtIndex:indexPath.row]];
     if(!self.cellIdentifier) {
         cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     }
@@ -102,13 +102,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
-        [self.delegate content:self didSelectItem:_items[indexPath.row]];
+        [self.delegate content:self didSelectItem:[self itemAtIndex:indexPath.row]];
     }
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     if([self.delegate respondsToSelector:@selector(content:didDeselectItem:)]) {
-        [self.delegate content:self didDeselectItem:_items[indexPath.row]];
+        [self.delegate content:self didDeselectItem:[self itemAtIndex:indexPath.row]];
     }
 }
 
