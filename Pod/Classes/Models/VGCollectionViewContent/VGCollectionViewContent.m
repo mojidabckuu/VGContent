@@ -39,6 +39,35 @@
     return (UICollectionView *)self.view;
 }
 
+#pragma mark - Modifiers
+
+- (void)setCellIdentifier:(NSString *)cellIdentifier {
+    [super setCellIdentifier:cellIdentifier];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    id cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:cell forIndexPath:indexPath];
+    if(cell) {
+        return;
+    }
+    
+    BOOL registered = NO;
+    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
+    if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
+        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
+        if(nib) {
+            [self.collectionView registerNib:nib forCellWithReuseIdentifier:cellIdentifier];
+            registered = YES;
+        }
+    }
+    if(!registered) {
+        Class class = NSClassFromString(cellIdentifier);
+        if(!class) {
+            class = [UITableViewCell class];
+        }
+        [self.collectionView registerClass:class forCellWithReuseIdentifier:cellIdentifier];
+    }
+}
+
 #pragma mark - Insert management
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
