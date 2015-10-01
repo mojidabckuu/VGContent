@@ -53,7 +53,7 @@
 /**
  Reference to view.
  */
-@property (nonatomic, strong) UIView *view;
+@property (nonatomic, weak) UIView *view;
 
 /**
  Array of items.
@@ -68,7 +68,7 @@
 /**
  An object which responds to `VGContentDelegate`.
  */
-@property (nonatomic, assign) id<VGContentDelegate> delegate;
+@property (nonatomic, weak) id<VGContentDelegate> delegate;
 
 #pragma mark - Lifecycle
 /**
