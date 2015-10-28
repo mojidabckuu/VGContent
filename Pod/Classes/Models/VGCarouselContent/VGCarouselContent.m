@@ -69,6 +69,8 @@
     if (view == nil) {
         if(self.nibExists) {
             view = [[ClassFromString(self.cellIdentifier) alloc] init];
+            CGRect frame = [self carousel:carousel frameForItem:item view:view];
+            view.frame = frame;
         } else {
             Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
             UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
