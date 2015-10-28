@@ -98,7 +98,9 @@
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;
-    [self.scrollView finishInfiniteScroll];
+    if([self.scrollView respondsToSelector:@selector(finishInfiniteScroll)]) {
+        [self.scrollView finishInfiniteScroll];
+    }
 }
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
