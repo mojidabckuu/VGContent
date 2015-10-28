@@ -13,6 +13,8 @@
 
 @interface VGCarouselContent () <iCarouselDataSource, iCarouselDelegate>
 
+@property (nonatomic, assign) BOOL nibExists;
+
 @end
 
 @implementation VGCarouselContent
@@ -38,6 +40,17 @@
     self.carousel.dataSource = self;
 }
 
+- (BOOL)registerCellIdentifier:(NSString *)cellIdentifier {
+    self.nibExists = NO;
+    NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
+    if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
+        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
+        if(nib) {
+            self.nibExists = YES;
+        }
+    }
+}
+
 #pragma mark - Accessors
 
 - (iCarousel *)carousel {
@@ -52,7 +65,6 @@
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(VGCarouselContentView *)view {
     if (view == nil) {
-        view = [[VGCarouselContentView alloc] initWithFrame:carousel.bounds];
         Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
         UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
         reuseView.backgroundColor = [UIColor clearColor];
@@ -130,7 +142,7 @@
     [self.carousel reloadData];
 }
 
-#pragma mark - Utils
+#pragma mark - Layout
 
 - (CGRect)carousel:(iCarousel *)carousel frameForItem:(id)item view:(UIView *)view {
     return carousel.bounds;
