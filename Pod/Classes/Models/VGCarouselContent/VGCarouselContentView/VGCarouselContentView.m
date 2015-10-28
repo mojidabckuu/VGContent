@@ -8,6 +8,8 @@
 
 #import "VGCarouselContentView.h"
 
+#import "UIView+Setup.h"
+
 @implementation VGCarouselContentView
 
 #pragma mark - Layout
@@ -17,7 +19,13 @@
     self.contentView.frame = self.bounds;
 }
 
-#pragma mark - Mutators
+#pragma mark - Setup
+
+- (void)setupWithItem:(id)item {
+    [self.contentView setupWithItem:item];
+}
+
+#pragma mark - Modifiers
 
 - (void)setContentView:(UIView *)contentView {
     _contentView = contentView;

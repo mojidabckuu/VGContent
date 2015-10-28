@@ -49,6 +49,7 @@
             self.nibExists = YES;
         }
     }
+    return self.nibExists;
 }
 
 #pragma mark - Accessors
@@ -64,16 +65,21 @@
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(VGCarouselContentView *)view {
+    id item = [self itemAtIndex:index];
     if (view == nil) {
-        Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
-        UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
-        reuseView.backgroundColor = [UIColor clearColor];
-        CGRect viewFrame = [self carousel:carousel frameForItem:_items[index] view:reuseView];
-        reuseView.frame = viewFrame;
-        view = [[VGCarouselContentView alloc] initWithFrame:CGRectMake(0, 0, viewFrame.size.width + 0, viewFrame.size.height)];
-        view.contentView = reuseView;
+        if(self.nibExists) {
+            view = [[ClassFromString(self.cellIdentifier) alloc] init];
+        } else {
+            Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
+            UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
+            reuseView.backgroundColor = [UIColor clearColor];
+            CGRect viewFrame = [self carousel:carousel frameForItem:item view:reuseView];
+            reuseView.frame = viewFrame;
+            view = [[VGCarouselContentView alloc] initWithFrame:CGRectMake(0, 0, viewFrame.size.width + 0, viewFrame.size.height)];
+            view.contentView = reuseView;
+        }
     }
-    [view.contentView setupWithItem:_items[index]];
+    [view setupWithItem:item];
     return view;
 }
 
