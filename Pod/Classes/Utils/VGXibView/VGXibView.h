@@ -10,10 +10,7 @@
 
 @interface VGXibView : UIView
 
-@property (strong, nonatomic) UIView *contentView;
-
-- (NSString*)xibName;
-- (id)loadFromXib;
-- (id)loadFromXibWithName:(NSString *)xibName numberInXib:(NSInteger)number;
++ (instancetype)loadFromNib;
++ (instancetype)loadFromNibNamed:(NSString*)nibName;
 
 @end

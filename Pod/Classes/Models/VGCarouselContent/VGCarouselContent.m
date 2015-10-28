@@ -11,6 +11,8 @@
 #import "VGCarouselContentView.h"
 #import "UIView+Identifier.h"
 
+#import "VGXibView.h"
+
 @interface VGCarouselContent () <iCarouselDataSource, iCarouselDelegate>
 
 @property (nonatomic, assign) BOOL nibExists;
@@ -40,14 +42,21 @@
     self.carousel.dataSource = self;
 }
 
+#pragma mark - Modifiers
+
+- (void)setCellIdentifier:(NSString *)cellIdentifier {
+    [super setCellIdentifier:cellIdentifier];
+    [self registerCellIdentifier:cellIdentifier];
+}
+
 - (BOOL)registerCellIdentifier:(NSString *)cellIdentifier {
     self.nibExists = NO;
     NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(cellIdentifier)];
     if ([bundle pathForResource:cellIdentifier ofType:@"nib"]) {
-        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
-        if(nib) {
-            self.nibExists = YES;
-        }
+        //        UINib *nib = [UINib nibWithNibName:cellIdentifier bundle:nil];
+        //        if(nib) {
+        self.nibExists = YES;
+        //        }
     }
     return self.nibExists;
 }
@@ -67,21 +76,22 @@
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(VGCarouselContentView *)view {
     id item = [self itemAtIndex:index];
     if (view == nil) {
+        UIView *contentView = nil;
         if(self.nibExists) {
-            view = [[ClassFromString(self.cellIdentifier) alloc] init];
-            CGRect frame = [self carousel:carousel frameForItem:item view:view];
-            view.frame = frame;
+            contentView = [ClassFromString(self.cellIdentifier) loadFromNib];
+            CGRect frame = [self carousel:carousel frameForItem:item view:contentView];
+            contentView.frame = frame;
         } else {
             Class class = self.cellIdentifier ? ClassFromString(self.cellIdentifier) : [UIView class];
-            UIView *reuseView = [[class alloc] initWithFrame:self.carousel.bounds];
-            reuseView.backgroundColor = [UIColor clearColor];
-            CGRect viewFrame = [self carousel:carousel frameForItem:item view:reuseView];
-            reuseView.frame = viewFrame;
-            view = [[VGCarouselContentView alloc] initWithFrame:CGRectMake(0, 0, viewFrame.size.width + 0, viewFrame.size.height)];
-            view.contentView = reuseView;
+            contentView = [[class alloc] initWithFrame:self.carousel.bounds];
+            contentView.backgroundColor = [UIColor clearColor];
+            CGRect viewFrame = [self carousel:carousel frameForItem:item view:contentView];
+            contentView.frame = viewFrame;
         }
+        view = [[VGCarouselContentView alloc] initWithFrame:contentView.bounds];
+        view.contentView = contentView;
     }
-    [view setupWithItem:item];
+    [view.contentView setupWithItem:item];
     return view;
 }
 
@@ -110,7 +120,7 @@
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
     for(NSInteger i = 0; i < items.count; i++) {
         NSInteger insertIndex = i + index;
-        [_items insertObject:items atIndex:insertIndex];
+        [_items insertObject:items[i] atIndex:insertIndex];
         [self.carousel insertItemAtIndex:insertIndex animated:animated];
     }
 }
