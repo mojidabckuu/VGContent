@@ -59,7 +59,7 @@
 		EB713E318FB97EC9D5E62EF0D42BDB95 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 51FE7065BD2E85664E5992393F66C0C8 /* UIView+Identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB36960E6045AA2E28012344960DB6D /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F567E4141BE0DFB7006FA9C2 /* VGXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = F567E4111BE0DFB2006FA9C2 /* VGXibView.m */; settings = {ASSET_TAGS = (); }; };
-		F567E4151BE0E1A9006FA9C2 /* VGXibView.h in Headers */ = {isa = PBXBuildFile; fileRef = F567E4101BE0DFB2006FA9C2 /* VGXibView.h */; settings = {ASSET_TAGS = (); }; };
+		F567E4151BE0E1A9006FA9C2 /* VGXibView.h in Headers */ = {isa = PBXBuildFile; fileRef = F567E4101BE0DFB2006FA9C2 /* VGXibView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC8E403250B325DB6282238D7AC57BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B003D0D2173319BD270EB68483B34F9 /* Foundation.framework */; };
 		FAF59F39E2353D59BEE0055C6EC754F8 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6655EE862F9EE7AD87021AB23E6A3C66 /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
