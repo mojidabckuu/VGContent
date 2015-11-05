@@ -140,6 +140,7 @@
             NSString *annotationViewClassString = self.annotationBindings[annotationClassString];
             Class annotationViewClass = NSClassFromString(annotationViewClassString);
             annotationView = [[annotationViewClass alloc] initWithAnnotation:annotation reuseIdentifier:self.cellIdentifier];
+            annotationView.draggable = self.allowDragging;
         } else {
             annotationView.annotation = annotation;
         }
