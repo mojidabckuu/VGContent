@@ -118,7 +118,9 @@
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     if(self.dropPinAtUpdate) {
         if(![_items.firstObject isKindOfClass:[MKUserLocation class]]) {
-            [self insertItem:userLocation atIndex:0];
+            id<MKAnnotation> annotation = [[[self annotationClass] alloc] init];
+            [annotation setCoordinate:userLocation.coordinate];
+            [self insertItem:annotation atIndex:0];
             [self zoomToFit];
         }
     }
@@ -167,16 +169,25 @@
     NSAssert(self.annotationClass != nil, @"Annotation class can't be nil value");
     NSMutableArray *annotations = [NSMutableArray array];
     for(id model in models) {
-        id annotation = [[self.annotationClass alloc] init];
-        SEL selector = NSSelectorFromString(@"setupWithItem:");
-        if([annotation respondsToSelector:selector]) {
+        id annotation = nil;
+        if([model conformsToProtocol:@protocol(MKAnnotation)]) {
+            annotation = model;
+        } else {
+            annotation = [[self.annotationClass alloc] init];
+            SEL selector = NSSelectorFromString(@"setupWithItem:");
+            if([annotation respondsToSelector:selector]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [annotation performSelector:selector withObject:model];
+                [annotation performSelector:selector withObject:model];
 #pragma clang diagnostic pop
+            }
         }
-        [annotations addObject:annotation];
-        [self.annotationsBindings setObject:annotation forKey:[model valueForKey:@"hash"]];
+        if(annotation) {
+            [annotations addObject:annotation];
+            [self.annotationsBindings setObject:annotation forKey:[model valueForKey:@"hash"]];
+        } else {
+            
+        }
     }
     return annotations;
 }
