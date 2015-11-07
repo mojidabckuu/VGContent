@@ -15,6 +15,7 @@
 @property (nonatomic, assign) BOOL showUserLocation;
 @property (nonatomic, assign) BOOL dropPinAtUpdate;
 @property (nonatomic, assign) BOOL allowDragging;
+@property (nonatomic, assign) BOOL canShowCallout;
 
 @property (nonatomic, weak) MKMapView *mapView;
 

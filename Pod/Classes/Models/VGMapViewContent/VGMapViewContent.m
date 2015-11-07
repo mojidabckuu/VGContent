@@ -141,6 +141,7 @@
             Class annotationViewClass = NSClassFromString(annotationViewClassString);
             annotationView = [[annotationViewClass alloc] initWithAnnotation:annotation reuseIdentifier:self.cellIdentifier];
             annotationView.draggable = self.allowDragging;
+            annotationView.canShowCallout = self.canShowCallout;
         } else {
             annotationView.annotation = annotation;
         }
