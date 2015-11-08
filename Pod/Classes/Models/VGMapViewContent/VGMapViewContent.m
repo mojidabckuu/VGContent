@@ -80,21 +80,28 @@
 #pragma mark - Select management
 
 - (void)selectItems:(NSArray *)items animated:(BOOL)animated {
-    NSLog(@"WARNING: MKMapView knows how to select only latest annotation in default behaviour. But select will be called on each");
+    NSLog(@"WARNING: MKMapView knows how to select only last annotation in default behaviour. But select will be called on each");
     
     NSArray *annotations = [self annotationsForItems:items];
     for(id<MKAnnotation> annotation in annotations) {
         [self.mapView selectAnnotation:annotation animated:animated];
+        [self zoomToAnnotation:annotation];
     }
 }
 
 - (void)deselectItem:(id)item animated:(BOOL)animated {
-    NSLog(@"WARNING: MKMapView knows how to deselect only latest annotation in default behaviour. But select will be called on each");
+    NSLog(@"WARNING: MKMapView knows how to deselect only last annotation in default behaviour. But select will be called on each");
     
     NSArray *annotations = [self annotationsForItems:@[item]];
     for(id<MKAnnotation> annotation in annotations) {
         [self.mapView deselectAnnotation:annotation animated:animated];
     }
+}
+
+- (void)zoomToAnnotation:(id<MKAnnotation>)annotation {
+    CLLocationDistance distance = 0.5;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, distance, distance);
+    [self.mapView setRegion:region animated:YES];
 }
 
 #pragma mark - Reload management
