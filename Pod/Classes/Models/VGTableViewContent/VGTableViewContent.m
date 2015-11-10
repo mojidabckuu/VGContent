@@ -126,11 +126,6 @@
 }
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animation:(UITableViewRowAnimation)animation {
-    if(self.isRefreshing) {
-        [_items removeAllObjects];
-        //TODO: refreshing animation
-        [self.tableView reloadData];
-    }
     for(NSInteger i = 0; i < items.count; i++) {
         [_items insertObject:items[i] atIndex:i + index];
     }

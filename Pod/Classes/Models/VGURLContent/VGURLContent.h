@@ -8,6 +8,8 @@
 
 #import "VGContent.h"
 
+extern NSString *const VGReloadOnRefresh;
+
 @class VGURLContent;
 
 /**
@@ -75,6 +77,11 @@
  Current content offset.
  */
 @property (nonatomic, assign) NSInteger offset;
+
+/**
+ Content settings.
+ */
+@property (nonatomic, strong) NSDictionary *settings;
 
 ///---------------------
 /// @name Loading management

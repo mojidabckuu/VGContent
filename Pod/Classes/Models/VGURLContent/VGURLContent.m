@@ -10,6 +10,8 @@
 
 #import <UIScrollView-InfiniteScroll/UIScrollView+InfiniteScroll.h>
 
+NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
+
 @interface VGURLContent ()
 
 @property (nonatomic, readonly, assign) UIScrollView *scrollView;
@@ -93,8 +95,12 @@
         self.originalItems = [NSMutableArray arrayWithArray:items];
         [_items removeAllObjects];
     }
-    
-    [self insertItems:items atIndex:_items.count animated:YES];
+    if([self.settings[VGReloadOnRefresh] boolValue]) {
+        [_items addObjectsFromArray:items];
+        [self reload];
+    } else {
+        [self insertItems:items atIndex:_items.count animated:YES];
+    }
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;
