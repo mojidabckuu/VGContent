@@ -131,11 +131,7 @@
     }
     NSArray *indexesToInsert = [self indexPathsWithItems:items];
     [self.tableView insertRowsAtIndexPaths:indexesToInsert withRowAnimation:animation];
-    if([self.delegate respondsToSelector:@selector(content:didAddItem:)]) {
-        for (NSInteger i = 0; i < items.count; i++) {
-            [self.delegate content:self didAddItem:items[i]];
-        }
-    }
+    [super insertItems:items atIndex:index animated:animation == UITableViewRowAnimationNone];
 }
 
 #pragma mark - Delete management

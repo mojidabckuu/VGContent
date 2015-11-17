@@ -48,10 +48,13 @@
     NSArray *indexPathsToInsert = [self indexPathsWithItems:items];
     if(_items.count == 1) {
         [self.collectionView reloadData];
+        [super insertItems:items atIndex:index animated:animated];
     } else {
         [self.collectionView performBatchUpdates:^{
             [self.collectionView insertItemsAtIndexPaths:indexPathsToInsert];
-        } completion:nil];
+        } completion:^(BOOL finished) {
+            [super insertItems:items atIndex:index animated:animated];
+        }];
     }
 }
 

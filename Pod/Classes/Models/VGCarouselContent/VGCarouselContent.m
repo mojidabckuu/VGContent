@@ -123,6 +123,7 @@
         [_items insertObject:items[i] atIndex:insertIndex];
         [self.carousel insertItemAtIndex:insertIndex animated:animated];
     }
+    [super insertItems:items atIndex:index animated:animated];
 }
 
 #pragma mark - Delete management

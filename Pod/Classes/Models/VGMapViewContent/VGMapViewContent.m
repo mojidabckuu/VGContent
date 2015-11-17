@@ -66,6 +66,7 @@
     [_items addObjectsFromArray:items];
     NSArray *insertAnnotations = [self convertModelsToAnnotations:items];
     [self.mapView addAnnotations:insertAnnotations];
+    [super insertItems:items atIndex:index animated:animated];
 }
 
 #pragma mark - Delete manag ement
@@ -169,6 +170,14 @@
         id<MKAnnotation> annotation = view.annotation;
         id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
         [self.delegate content:self didDeselectItem:item];
+    }
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState {
+    if ([self.delegate respondsToSelector:@selector(content:didDragItem:)]) {
+        if (newState == MKAnnotationViewDragStateNone){
+            [self.delegate content:self didDragItem:view.annotation];
+        }
     }
 }
 

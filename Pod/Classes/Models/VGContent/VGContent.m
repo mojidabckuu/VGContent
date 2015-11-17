@@ -94,7 +94,11 @@
 }
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
-    @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
+    if([self.delegate respondsToSelector:@selector(content:didAddItem:)]) {
+        for (id item in items) {
+            [self.delegate content:self didAddItem:item];
+        }
+    }
 }
 
 #pragma mark - Delete management
