@@ -125,7 +125,7 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     if(self.dropPinAtUpdate) {
-        if(![_items.firstObject isKindOfClass:[MKUserLocation class]]) {
+        if(!_items.count) {
             id<MKAnnotation> annotation = [[[self annotationClass] alloc] init];
             [annotation setCoordinate:userLocation.coordinate];
             [self insertItem:annotation atIndex:0];
