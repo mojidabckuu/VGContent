@@ -37,6 +37,7 @@
 @optional
 
 @property (nonatomic, assign, readonly) id selectedItem;
+@property (nonatomic, assign, readonly) id selectedItems;
 
 - (void)insertItem:(id)item atIndex:(NSInteger)index;
 - (void)insertItem:(id)item atIndex:(NSInteger)index animated:(BOOL)animated;

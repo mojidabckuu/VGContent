@@ -67,6 +67,18 @@
     return nil;
 }
 
+- (id)selectedItems {
+    NSArray *indexPaths = self.tableView.indexPathsForSelectedRows;
+    NSMutableArray *items = [NSMutableArray array];
+    for(NSIndexPath *indexPath in indexPaths) {
+        id item = [self itemAtIndex:indexPath.row];
+        if(item) {
+            [items addObject:item];
+        }
+    }
+    return items;
+}
+
 #pragma mark - Modifiers
 
 - (void)setCellIdentifier:(NSString *)cellIdentifier {
