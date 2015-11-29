@@ -76,7 +76,12 @@ extern NSString *const VGReloadOnRefresh;
 /**
  Current content offset.
  */
-@property (nonatomic, assign) NSInteger offset;
+@property (nonatomic, strong) id offset;
+
+/**
+ Length helper. Default is 20
+ */
+@property (nonatomic, strong) id length;
 
 /**
  Content settings.
