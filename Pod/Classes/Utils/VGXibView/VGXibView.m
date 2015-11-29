@@ -79,9 +79,10 @@ void VGSwizzleMethodsFrom(Class onClass, SEL fromMethod, Class fromClass, SEL to
     return [self loadFromNibNamed:[self xibName]];
 }
 
+// Swift realisation NSStringFromClass() returns module name separated by '.'
 + (NSString*)xibName {
     NSString *className = NSStringFromClass([self class]);
-    return className;
+    return [[className componentsSeparatedByString:@"."] lastObject];
 }
 
 @end
