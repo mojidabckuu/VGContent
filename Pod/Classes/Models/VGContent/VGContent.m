@@ -53,6 +53,10 @@
     return nil;
 }
 
+- (id)selectedItems {
+    return nil;
+}
+
 - (void)setItems:(NSArray *)items {
     [_items removeAllObjects];
     [_items addObjectsFromArray:items];
