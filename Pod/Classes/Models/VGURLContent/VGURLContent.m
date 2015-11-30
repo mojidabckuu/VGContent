@@ -33,8 +33,17 @@ NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
 
 #pragma mark - Accessors
 
-- (NSInteger)offset {
-    return _isRefreshing ? 0 : _offset;
+- (id)offset {
+    id item = [_items lastObject];
+    NSNumber *offset = @0;
+    if([item respondsToSelector:@selector(identifier)]) {
+        offset = [item valueForKeyPath:@"identifier"];
+    }
+    return _isRefreshing ? @0 : offset;
+}
+
+- (NSNumber *)length {
+    return @20;
 }
 
 - (BOOL)isRefreshing {
