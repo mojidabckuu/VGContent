@@ -42,7 +42,7 @@ NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
     return _isRefreshing ? @0 : offset;
 }
 
-- (id)length {
+- (NSNumber *)length {
     return @20;
 }
 

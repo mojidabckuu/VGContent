@@ -81,7 +81,7 @@ extern NSString *const VGReloadOnRefresh;
 /**
  Length helper. Default is 20
  */
-@property (nonatomic, strong) id length;
+@property (nonatomic, strong) NSNumber *length;
 
 /**
  Content settings.
