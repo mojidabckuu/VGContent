@@ -118,6 +118,7 @@
 #pragma mark - Insert management
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
+    [self reload];
     for(NSInteger i = 0; i < items.count; i++) {
         NSInteger insertIndex = i + index;
         [_items insertObject:items[i] atIndex:insertIndex];
