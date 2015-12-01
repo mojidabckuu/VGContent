@@ -46,6 +46,10 @@ NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
     return @20;
 }
 
+- (NSArray *)criterias {
+    return _criterias ?: @[];
+}
+
 - (BOOL)isRefreshing {
     return _isRefreshing;
 }
