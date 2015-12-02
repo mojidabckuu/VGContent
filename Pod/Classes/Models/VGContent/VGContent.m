@@ -25,7 +25,13 @@
 }
 
 - (instancetype)initWithView:(UIView *)view {
-    return [self initWithView:view controller:nil];
+    self = [super init];
+    if(self) {
+        _items = [[NSMutableArray alloc] init];
+        self.view = view;
+        [self setup];
+    }
+    return self;
 }
 
 - (instancetype)initWithView:(UIView *)view controller:(UIViewController *)controller {
