@@ -56,6 +56,11 @@
 @property (nonatomic, weak) UIView *view;
 
 /**
+ Reference to controller.
+ */
+@property (nonatomic, weak) UIViewController *viewController;
+
+/**
  Array of items.
  */
 @property (nonatomic, strong, readonly) NSArray *items;
@@ -75,6 +80,11 @@
  General method to init VGContent.
  */
 - (instancetype)initWithView:(UIView *)view;
+
+/**
+ General method to init VGContent.
+ */
+- (instancetype)initWithView:(UIView *)view controller:(UIViewController *)controller;
 
 #pragma mark - Setup methods
 /**
