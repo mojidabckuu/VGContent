@@ -17,12 +17,16 @@
     UICollectionView *collectionView = (UICollectionView *)view;
     self = [super initWithView:collectionView];
     if(self) {
-        [self setupCollectionView];
     }
     return self;
 }
 
 #pragma mark - Setup methods
+
+- (void)setup {
+    [super setup];
+    [self setupCollectionView];
+}
 
 - (void)setupLayout {
 }

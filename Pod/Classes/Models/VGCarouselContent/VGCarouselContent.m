@@ -30,12 +30,16 @@
     iCarousel *carousel = (iCarousel *)view;
     self = [super initWithView:carousel];
     if(self) {
-        [self setupiCarousel];
     }
     return self;
 }
 
 #pragma mark - Setup
+
+- (void)setup {
+    [super setup];
+    [self setupiCarousel];
+}
 
 - (void)setupiCarousel {
     self.carousel.delegate = self;

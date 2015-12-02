@@ -24,7 +24,6 @@
     UITableView *tableView = (UITableView *)view;
     self = [super initWithView:tableView];
     if(self) {
-        [self setupTableVIew];
     }
     return self;
 }
@@ -36,6 +35,11 @@
 }
 
 #pragma mark - Setup
+
+- (void)setup {
+    [super setup];
+    [self setupTableVIew];
+}
 
 - (void)setupTableVIew {
     self.tableView.delegate = self;

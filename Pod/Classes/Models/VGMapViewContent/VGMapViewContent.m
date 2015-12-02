@@ -26,8 +26,6 @@
     MKMapView *mapView = (MKMapView *)view;
     self = [super initWithView:mapView];
     if(self) {
-        self.mapView = mapView;
-        [self setupMapView];
     }
     return self;
 }
@@ -44,6 +42,7 @@
 
 - (void)setup {
     [super setup];
+    [self setupMapView];
     self.annotationsBindings  = [NSMutableDictionary dictionary];
 }
 
