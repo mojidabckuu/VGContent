@@ -232,7 +232,7 @@
 
 - (void)raiseSelectItemWithView:(UIView *)view {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)view];
-    [self selectItem:[self itemAtIndex:indexPath.row] animated:YES];
+    [self selectItem:[self itemAtIndex:indexPath.row] animated:YES delegate:YES];
 }
 
 - (void)raiseDeselectItemWithView:(UIView *)view {
