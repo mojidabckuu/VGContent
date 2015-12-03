@@ -140,6 +140,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if(self.cellIdentifier) {
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.cellIdentifier forIndexPath:indexPath];
+        cell.content = self;
         [cell setupWithItem:[self itemAtIndex:indexPath.row]];
         return cell;
     } else {

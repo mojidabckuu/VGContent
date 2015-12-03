@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class VGContent;
+
 @interface UICollectionViewCell (Setup)
+
+@property (nonatomic, weak) VGContent *content;
 
 - (void)setupWithItem:(id)item;
 

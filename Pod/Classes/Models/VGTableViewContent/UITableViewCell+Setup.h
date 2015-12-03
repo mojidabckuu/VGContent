@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class VGContent;
+
 @interface UITableViewCell (Setup)
+
+@property (nonatomic, weak) VGContent *content;
 
 - (void)setupWithItem:(id)item;
 

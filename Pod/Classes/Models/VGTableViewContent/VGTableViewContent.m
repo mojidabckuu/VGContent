@@ -103,6 +103,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = self.cellIdentifier ?: [UITableViewCell identifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.content = self;
     [cell setupWithItem:[self itemAtIndex:indexPath.row]];
     if(!self.cellIdentifier) {
         cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
