@@ -107,6 +107,30 @@
     [self.collectionView reloadData];
 }
 
+#pragma mark - Raised actions
+
+- (void)raiseSelectItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:(UICollectionViewCell *)view];
+    [self selectItem:[self itemAtIndex:indexPath.row] animated:YES];
+}
+
+- (void)raiseDeselectItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:(UICollectionViewCell *)view];
+    [self deselectItem:[self itemAtIndex:indexPath.row] animated:YES];
+}
+
+- (void)raiseDeleteItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:(UICollectionViewCell *)view];
+    [self deleteItem:[self itemAtIndex:indexPath.row] animated:YES];
+}
+
+- (void)raiseAddItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:(UICollectionViewCell *)view];
+    [self insertItem:[self itemAtIndex:indexPath.row] atIndex:indexPath.row animated:YES];
+}
+
+#pragma mark - Accessors
+
 - (id)selectedItem {
     NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems.firstObject;
     if (indexPath) {

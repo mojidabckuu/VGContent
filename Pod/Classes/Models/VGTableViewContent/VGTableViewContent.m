@@ -225,6 +225,28 @@
     [self.tableView reloadData];
 }
 
+#pragma mark - Raised actions
+
+- (void)raiseSelectItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)view];
+    [self selectItem:[self itemAtIndex:indexPath.row] animated:YES];
+}
+
+- (void)raiseDeselectItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)view];
+    [self deselectItem:[self itemAtIndex:indexPath.row] animated:YES];
+}
+
+- (void)raiseDeleteItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)view];
+    [self deleteItem:[self itemAtIndex:indexPath.row] animated:YES];
+}
+
+- (void)raiseAddItemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)view];
+    [self insertItem:[self itemAtIndex:indexPath.row] atIndex:indexPath.row animated:YES];
+}
+
 #pragma mark - Utils
 
 - (BOOL)registerCellIdentifier:(NSString *)cellIdentifier {
