@@ -177,18 +177,21 @@
 
 #pragma mark - Selection managemtn
 
-- (void)selectItem:(id)item animated:(BOOL)animated {
+- (void)selectItem:(id)item animated:(BOOL)animated delegate:(BOOL)delegate {
     if([_items containsObject:item]) {
         NSInteger index = [_items indexOfObject:item];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
         [self.tableView selectRowAtIndexPath:indexPath animated:animated scrollPosition:UITableViewScrollPositionNone];
+        if(delegate) {
+            [self.delegate content:self didSelectItem:item];
+        }
     }
 }
 
-- (void)selectItems:(NSArray *)items animated:(BOOL)animated {
+- (void)selectItems:(NSArray *)items animated:(BOOL)animated delegate:(BOOL)delegate {
     for(id item in items) {
         if([_items containsObject:item]) {
-            [self selectItem:item animated:animated];
+            [self selectItem:item animated:animated delegate:delegate];
         }
     }
 }

@@ -143,6 +143,10 @@
 }
 
 - (void)selectItem:(id)item animated:(BOOL)animated {
+    [self selectItem:item animated:animated delegate:NO];
+}
+
+- (void)selectItem:(id)item animated:(BOOL)animated delegate:(BOOL)delegate {
     @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
 }
 
@@ -151,6 +155,10 @@
 }
 
 - (void)selectItems:(NSArray *)items animated:(BOOL)animated {
+    [self selectItems:items animated:animated delegate:NO];
+}
+
+- (void)selectItem:(id)item animated:(BOOL)animated delegate:(BOOL)delegate {
     @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
 }
 

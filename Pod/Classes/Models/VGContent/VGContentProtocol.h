@@ -51,8 +51,10 @@
 
 - (void)selectItem:(id)item;
 - (void)selectItem:(id)item animated:(BOOL)animated;
+- (void)selectItem:(id)item animated:(BOOL)animated delegate:(BOOL)delegate;
 - (void)selectItems:(NSArray *)items;
 - (void)selectItems:(NSArray *)items animated:(BOOL)animated;
+- (void)selectItems:(NSArray *)items animated:(BOOL)animated delegate:(BOOL)delegate;
 
 - (void)deselectItem:(id)item;
 - (void)deselectItem:(id)item animated:(BOOL)animated;
