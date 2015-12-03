@@ -43,10 +43,26 @@
 
 @end
 
+@protocol VGContentActionsProtocol <NSObject>
+
+/**
+ Select management
+ */
+- (void)raiseSelectItemWithView:(UIView *)view;
+- (void)raiseDeselectItemWithView:(UIView *)view;
+
+/**
+ Add/Delete management
+ */
+- (void)raiseAddItemWithView:(UIView *)view;
+- (void)raiseDeleteItemWithView:(UIView *)view;
+
+@end
+
 /**
  `VGContent` is class that manages items and their behaviour.
  */
-@interface VGContent :  NSObject <VGContentProtocol, VGContentSearchProtocol> {
+@interface VGContent :  NSObject <VGContentProtocol, VGContentSearchProtocol, VGContentActionsProtocol> {
     NSMutableArray *_items;
 }
 

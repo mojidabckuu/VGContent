@@ -40,28 +40,12 @@ extern NSString *const VGReloadOnRefresh;
 
 @end
 
-@protocol VGContentActionsProtocol <NSObject>
-
-/**
- Select management
- */
-- (void)raiseSelectItemWithView:(UIView *)view;
-- (void)raiseDeselectItemWithView:(UIView *)view;
-
-/**
- Add/Delete management
- */
-- (void)raiseAddItemWithView:(UIView *)view;
-- (void)raiseDeleteItemWithView:(UIView *)view;
-
-@end
-
 /**
  `VGURLContent` gives flexible managing of your data with high level of abstraction.
  Inherited from `VGContent` class.
  */
 
-@interface VGURLContent : VGContent<VGContentActionsProtocol>
+@interface VGURLContent : VGContent
 
 /**
  List of criterias
