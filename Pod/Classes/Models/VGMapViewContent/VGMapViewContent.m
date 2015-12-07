@@ -46,6 +46,12 @@
     self.annotationsBindings  = [NSMutableDictionary dictionary];
 }
 
+#pragma mark - Accessors
+
+- (MKMapView *)mapView {
+    return (MKMapView *)self.view;
+}
+
 #pragma mark - Modifiers
 
 - (void)setShowUserLocation:(BOOL)showUserLocation {
