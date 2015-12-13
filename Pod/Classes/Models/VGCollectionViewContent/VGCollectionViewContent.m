@@ -43,6 +43,14 @@
     return (UICollectionView *)self.view;
 }
 
+
+#pragma mark - Modifiers
+
+- (void)setCellIdentifier:(NSString *)cellIdentifier {
+    [super setCellIdentifier:cellIdentifier];
+    [self registerCellIdentifier:cellIdentifier];
+}
+
 #pragma mark - Insert management
 
 - (void)insertItems:(NSArray *)items atIndex:(NSInteger)index animated:(BOOL)animated {
