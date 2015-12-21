@@ -80,8 +80,10 @@
 
 /**
  Array of items.
+ @warning it is NSMutableArray because Swift transforms regular NSArray to struct Array and adresses are different.
+ Strgly do not reccommend use self.items as mutable array.
  */
-@property (nonatomic, strong, readonly) NSArray *items;
+@property (nonatomic, strong, readonly) NSMutableArray *items;
 
 /**
  UIView that represents model reuse identifier.
