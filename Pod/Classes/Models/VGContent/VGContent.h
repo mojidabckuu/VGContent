@@ -57,6 +57,8 @@
 - (void)raiseAddItemWithView:(UIView *)view;
 - (void)raiseDeleteItemWithView:(UIView *)view;
 
+- (void)raiseActionWithKey:(NSString *)key;
+
 @end
 
 /**
