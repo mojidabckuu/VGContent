@@ -163,9 +163,11 @@
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
-    if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
-        id<MKAnnotation> annotation = view.annotation;
-        id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+    id<MKAnnotation> annotation = view.annotation;
+    id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+    if([self.delegate respondsToSelector:@selector(content:didSelectItem:action:)]) {
+        [self.delegate content:self didSelectItem:item action:VGActionShow];
+    } else if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
         [self.delegate content:self didSelectItem:item];
     }
 }

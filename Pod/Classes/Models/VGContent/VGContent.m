@@ -8,6 +8,8 @@
 
 #import "VGContent.h"
 
+NSString *const VGActionShow;
+
 @implementation VGContent
 
 @synthesize filteredItems = _filteredItems;

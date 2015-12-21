@@ -175,7 +175,9 @@
 #pragma mark - UICollectionView delegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
+    if([self.delegate respondsToSelector:@selector(content:didSelectItem:action:)]) {
+        [self.delegate content:self didSelectItem:[self itemAtIndex:indexPath.row] action:VGActionShow];
+    } else if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
         [self.delegate content:self didSelectItem:[self itemAtIndex:indexPath.row]];
     }
 }

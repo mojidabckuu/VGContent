@@ -13,6 +13,8 @@
 
 @class VGContent;
 
+extern NSString *const VGActionShow;
+
 /**
  `VGContentDelegate` delegates callback for events.
  */
@@ -23,6 +25,7 @@
  Delegate method that triggered when item selected.
  */
 - (void)content:(VGContent *)content didSelectItem:(id)item;
+- (void)content:(VGContent *)content didSelectItem:(id)item action:(NSString *)action;
 
 /**
  Delegate method that triggered when item deselected.
