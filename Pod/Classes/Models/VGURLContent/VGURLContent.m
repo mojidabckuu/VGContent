@@ -115,7 +115,6 @@ NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
             [self insertItems:items atIndex:_items.count animated:YES];
         } else {
             [_items removeAllObjects];
-            [_items addObjectsFromArray:items];
             _offset = nil;
             [self reload];
             [self insertItems:items atIndex:_items.count animated:NO];
