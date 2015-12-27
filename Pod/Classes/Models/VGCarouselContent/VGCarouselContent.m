@@ -102,7 +102,9 @@
 #pragma mark - iCarousel delegate
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index {
-    if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
+    if([self.delegate respondsToSelector:@selector(content:didSelectItem:action:)]) {
+        [self.delegate content:self didSelectItem:[self itemAtIndex:index] action:VGActionShow];
+    } else if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
         [self.delegate content:self didSelectItem:[self itemAtIndex:index]];
     }
 }

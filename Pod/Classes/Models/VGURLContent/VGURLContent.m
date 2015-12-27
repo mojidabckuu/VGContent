@@ -10,7 +10,7 @@
 
 #import <UIScrollView-InfiniteScroll/UIScrollView+InfiniteScroll.h>
 
-NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
+NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
 
 @interface VGURLContent ()
 
@@ -34,12 +34,15 @@ NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
 #pragma mark - Accessors
 
 - (id)offset {
-    id item = [_items lastObject];
-    NSNumber *offset = @0;
-    if([item respondsToSelector:@selector(identifier)]) {
-        offset = [item valueForKeyPath:@"identifier"];
+    if(!_offset) {
+        id item = [_items lastObject];
+        NSNumber *offset = @0;
+        if([item respondsToSelector:@selector(identifier)]) {
+            offset = [item valueForKeyPath:@"identifier"];
+        }
+        return _isRefreshing ? @0 : offset;
     }
-    return _isRefreshing ? @0 : offset;
+    return _offset;
 }
 
 - (NSNumber *)length {
@@ -106,13 +109,16 @@ NSString *const VGReloadOnRefresh = @"ReloadOnRefresh";
     }
     if (_isRefreshing) { // TODO: handle situations when can infinite scroll with search string.
         self.originalItems = [NSMutableArray arrayWithArray:items];
-        [_items removeAllObjects];
-    }
-    if([self.settings[VGReloadOnRefresh] boolValue]) {
-        [_items addObjectsFromArray:items];
-        [self reload];
-    } else {
-        [self insertItems:items atIndex:_items.count animated:YES];
+        if([self.settings[VGAnimatedRefresh] boolValue]) {
+            _offset = nil;
+            [self deleteItems:_items animated:YES];
+            [self insertItems:items atIndex:_items.count animated:YES];
+        } else {
+            [_items removeAllObjects];
+            _offset = nil;
+            [self reload];
+            [self insertItems:items atIndex:_items.count animated:NO];
+        }
     }
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;

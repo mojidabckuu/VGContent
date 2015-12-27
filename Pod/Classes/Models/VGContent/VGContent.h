@@ -13,6 +13,8 @@
 
 @class VGContent;
 
+extern NSString *const VGActionShow;
+
 /**
  `VGContentDelegate` delegates callback for events.
  */
@@ -23,6 +25,7 @@
  Delegate method that triggered when item selected.
  */
 - (void)content:(VGContent *)content didSelectItem:(id)item;
+- (void)content:(VGContent *)content didSelectItem:(id)item action:(NSString *)action;
 
 /**
  Delegate method that triggered when item deselected.
@@ -57,6 +60,8 @@
 - (void)raiseAddItemWithView:(UIView *)view;
 - (void)raiseDeleteItemWithView:(UIView *)view;
 
+- (void)raiseActionWithKey:(NSString *)key view:(UIView *)view;
+
 @end
 
 /**
@@ -78,8 +83,10 @@
 
 /**
  Array of items.
+ @warning it is NSMutableArray because Swift transforms regular NSArray to struct Array and adresses are different.
+ Strgly do not reccommend use self.items as mutable array.
  */
-@property (nonatomic, strong, readonly) NSArray *items;
+@property (nonatomic, strong, readonly) NSMutableArray *items;
 
 /**
  UIView that represents model reuse identifier.
