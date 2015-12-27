@@ -54,11 +54,16 @@
         [self.collectionView reloadData];
         [super insertItems:items atIndex:index animated:animated];
     } else {
-        [self.collectionView performBatchUpdates:^{
-            [self.collectionView insertItemsAtIndexPaths:indexPathsToInsert];
-        } completion:^(BOOL finished) {
+        if(animated) {
+            [self.collectionView performBatchUpdates:^{
+                [self.collectionView insertItemsAtIndexPaths:indexPathsToInsert];
+            } completion:^(BOOL finished) {
+                [super insertItems:items atIndex:index animated:animated];
+            }];
+        } else {
+            [self.collectionView reloadData];
             [super insertItems:items atIndex:index animated:animated];
-        }];
+        }
     }
 }
 
