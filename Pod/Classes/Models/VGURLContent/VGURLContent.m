@@ -119,6 +119,8 @@ NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
             [self reload];
             [self insertItems:items atIndex:_items.count animated:NO];
         }
+    } else {
+        [self insertItems:items atIndex:_items.count animated:YES];
     }
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
