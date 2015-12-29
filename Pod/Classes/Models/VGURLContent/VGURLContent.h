@@ -9,6 +9,7 @@
 #import "VGContent.h"
 
 extern NSString *const VGAnimatedRefresh;
+extern NSString *const VGReloadOnRefresh;
 
 @class VGURLContent;
 

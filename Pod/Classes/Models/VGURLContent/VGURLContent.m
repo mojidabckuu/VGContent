@@ -11,6 +11,7 @@
 #import <UIScrollView-InfiniteScroll/UIScrollView+InfiniteScroll.h>
 
 NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
+NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
 
 @interface VGURLContent ()
 
@@ -116,8 +117,13 @@ NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
         } else {
             [_items removeAllObjects];
             _offset = nil;
-            [self reload];
-            [self insertItems:items atIndex:_items.count animated:NO];
+            if([self.settings[VGReloadOnRefresh] boolValue]) {
+                [_items addObjectsFromArray:items];
+                [self reload];
+            } else {
+                [self reload];
+                [self insertItems:items atIndex:_items.count animated:NO];
+            }
         }
     } else {
         [self insertItems:items atIndex:_items.count animated:YES];
