@@ -8,7 +8,7 @@
 
 #import "VGContent.h"
 
-NSString *const VGActionShow;
+NSString *const VGActionShow = @"VGActionShow";
 
 @implementation VGContent
 
