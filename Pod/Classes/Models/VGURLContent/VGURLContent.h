@@ -100,7 +100,7 @@ extern NSString *const VGReloadOnRefresh;
  Call `loadItems`.
  */
 - (void)refresh;
-
+- (void)initialize;
 /**
  Method that start load more items process.
  Raise notification that will load items.

@@ -32,6 +32,10 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
     [super setup];
 }
 
+- (void)initialize {
+    [self setIsAllLoaded:self.isAllLoaded];
+}
+
 #pragma mark - Accessors
 
 - (id)offset {
@@ -68,6 +72,7 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
     // iCarousel is not UIScrollView child;
     if(isAllLoaded) {
         if([self.scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
+            [self.scrollView finishInfiniteScroll];
             [self.scrollView removeInfiniteScroll];
         }
     } else {
