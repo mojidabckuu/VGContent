@@ -7,61 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02887965F0DF9E70B15290C655C07766 /* VGMapViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DEE9394F87C117A73BE388448AE8B2A /* VGMapViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02BD501303C26138718DC05FD40D41B2 /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 23360404B17825EC05C167978F425B11 /* UITableViewCell+Setup.m */; };
-		02FFC790EC96F71C8F7805936EA15E1D /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 684FEFCC859E6895AD8532F00EEC61E3 /* VGURLContent.m */; };
+		0A3654AC3B63E7B5F937DFE0FD6303EA /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8623C3EA781E574F36F561426CCB2AC4 /* VGCarouselContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9D6168493FF8B4AAA08A67609DEDD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B003D0D2173319BD270EB68483B34F9 /* Foundation.framework */; };
+		0B42B8EFC06FFB4E91D9F0AA14321CFE /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A9AB6822D88F45B64F102E91B32B3169 /* VGContentSearchProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		103BFCB39E652FE290093151982423A2 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3799CE8111AE8C007581278CA77A44 /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10C86995D04A48756AE4797CFFEDD69A /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2FFA97E2FF2C7F86D9ADC032BC33AA /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		15519B1B7E2FC97B79EE42256F8DA0A6 /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EBBE53462CB9F47D1A194D721A3D3DC /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		158EE2B6CC4E7E6EDD6A2A29504CA9EC /* UIScrollView_InfiniteScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EBAA99AE6A244E364CF95FE2B1416C /* UIScrollView_InfiniteScroll.framework */; };
-		1D0F7B1C97A4F92CB1D3A5805D65212B /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCAB6D66425896A439B6DE39C398218 /* VGContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FB01AC32B4D5D16CF805446E8F8236C /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1F0E05FE47089DF517C2D809D3F1 /* VGContentTableViewController.m */; };
-		263368CEB24543FEE38E114437EAD05C /* MKMapView+Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E9E3A0731B546F42D05B5152597120 /* MKMapView+Clear.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C215F00535AE3133EEBC8E9B38A0C7C /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = A83BF1FD43340CA9ED1009237062185E /* VGTableViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1707BDBCB76A5D96A355D6A8986D5744 /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = A246C53F7F1D385301145CD6EA89662A /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E599C6780F85AE30FFD08C561A6BB8C /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1919D1488BEC125308A9E9AC42E5F2A6 /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8D975029F4668DD71AFD5B1CAE0FB4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F9FC28431B02906C95EEC6EEAEFEAF /* QuartzCore.framework */; };
-		338A7AEBB6FC723D7B436AA3B40952B6 /* VGContentControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 598A37A65B8C41CACC938B3E0293871D /* VGContentControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3854F32496A89BFA75BC0000CE17F74E /* MKMapView+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560625DFFD5B7E072FF1D9B83BB6855 /* MKMapView+Clear.m */; };
+		3A8C6205E593CF2735A1E7620C35C9A9 /* MKMapView+Zoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7730B5E38BA43B4247E9D0D24430EE /* MKMapView+Zoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C93E7B9A0D93A7CFAEAEC4AF4F3F26F /* UIScrollView-InfiniteScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB61F5CA6D1D3D89F082F18EBA532C6B /* UIScrollView-InfiniteScroll-dummy.m */; };
-		5414DC8DC187470AB45E57187C1854FE /* VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C978634655C695DFC6B7C61D4A3292C /* VGContent-dummy.m */; };
-		5A276B51CC70C437A8A43E735B1AAA07 /* VGContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7F54C2ED2AFC564E416C74AE15F60F /* VGContentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B85D49A61BA1742113C632A65697AE5 /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B84BEC142491F10A635FA6A4A14224A6 /* UIView+Identifier.m */; };
-		5F1F6AF30C339EAA4554586C9884D909 /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AE50F5611615C02B64BBA4EED76402 /* VGTableViewContent.m */; };
+		3E2C1EE4A37EDB96DD86A81CE9ECC10F /* UIView+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F95589F7FF76B3F9559F004B434A724 /* UIView+Identifier.m */; };
+		40827F9AFF989DE9497D53AC7C808B32 /* VGMapViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B5A435EA42BFDA7AB10B3A88F96BB /* VGMapViewContent.m */; };
+		4564ACD644A3D025FA6D1A03F4D20A9F /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 994965D83054771E972F4DFC0691852A /* VGCarouselContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C54629A05A32A9970182DDC0912AC9B /* VGContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 93950C0ADED5A77B32E73416D9457921 /* VGContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55208C53B8DD78E1EEC6AE1703C745D8 /* VGContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1092DC3B240C3A04EA067900693E31D1 /* VGContentTableViewController.m */; };
+		58D22670B84E026022FCCEF4DADACD16 /* VGTableViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = EBED420A96C88DDB497D709BE2B401D9 /* VGTableViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DB82F954F67C3E7EE8925D270B53F7E /* VGMapViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F77EF68A2D8CC1663A40084ECEE092D /* VGMapViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63D584C9CE68AB1ECF2EC448692C5356 /* iCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467445F730690F2CA795984236674840 /* iCarousel.framework */; };
-		6C1642D9B2A1236078D61EDD9E790108 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 235FB06D26E3D67BE95EA3D1F21E91DF /* VGContentTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64FEBAC067A8058CA1AAB708F84AD760 /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 065E8FEB60AF1FEB76EEE8F3D4C8C5A4 /* VGCollectionViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A3EDF857E330E68D4F1C924085B75C /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 42277701DF836DD93529D7A7C1459C6E /* UIView+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A3731542567299803E63CC18319DF1E /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = BC685587F342D528F7A724C70A2A5F8C /* VGCollectionViewContent.m */; };
+		6B90C52F66358F23EC0EDB9EB049A52E /* UITableViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A8AAE21FFE719BDFFE47A2F7437CF0 /* UITableViewCell+Setup.m */; };
 		6C8E5169E051CE03710BBA0F6F218FBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B003D0D2173319BD270EB68483B34F9 /* Foundation.framework */; };
-		7546D09B2F5E1C8F414E78FCEBAB6B70 /* UICollectionViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = BF110B9C5D2D1D421E6EDFE814B29B6D /* UICollectionViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D977E034691917C849BDF2974315125 /* VGContentTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEE6C7A94E8E162D0B7BB7E62AD72F6 /* VGContentTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76DCA1BC2D4E4480AFB9EBD3CB9254F0 /* UIScrollView-InfiniteScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFAD885EB3B06EAE08547D03B6011B9 /* UIScrollView-InfiniteScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79137A1D0E8B5C5CF3A2A57A43E75B04 /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9A6872D7564B47CA445FDF21FC7D /* UIView+Setup.m */; };
-		7DF7302C498B3749C95339663E48A30B /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCE25E8E4F57DB3B48BFAFD1CA92554 /* MKMapView+Zoom.m */; };
-		7EA5CBDBBE4E5EF1845B0AD86132CF53 /* VGCollectionViewContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FB91BC3DDEE755CFD9752700A0217D0 /* VGCollectionViewContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFF03BD59E8007342916444D2C337F7 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D79C46ACF72BA39F584A10882D9C931 /* UIView+Identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A20CB43DAACC41E35634829F53A7E6 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA21ED88AE62E0A19F263BF226E1F88 /* VGMapViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F40B227588D665F570D5C1010FB78A /* VGMapViewContent.m */; };
-		B3C4431A95515C8D64DB13CE71CF991B /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 589792B8A6453BF89BE0D69B07D6FF3F /* UICollectionViewCell+Setup.m */; };
-		B8842F33A697ADB3AF4D6375BD6D96D5 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 943B973BE3CDD1F645CE1DDC155C1986 /* VGContent.m */; };
-		B9ADA7EA96AF3893AB297DA664F2DEB4 /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = F394D1832859EA2ABBEF73A85D845239 /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE99D383E4C85332939CFB1B57AD241F /* UITableViewCell+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCA8DBF40BE498FDBF60DF01D549571 /* UITableViewCell+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F93207D5C384FAD01687300510A3E65 /* VGContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B758AA13C545CD3E134106CA581010 /* VGContent.m */; };
+		8FD457093CD3E0EA0C4DD91A5DA8F730 /* VGURLContent.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB515D412BB32EDA5DDF2E5FA16CD25 /* VGURLContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F937967AEE6CC8603BC8F87EE7FB91 /* VGXibView.h in Headers */ = {isa = PBXBuildFile; fileRef = D30C3705AA6FC87192978C7982463C26 /* VGXibView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94C1DB95D43BE8FCCE4961190FD24E01 /* UICollectionViewCell+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F41995B9CA01FD66B881E323B81BB3 /* UICollectionViewCell+Setup.m */; };
+		952218A6E84CE361F578E58CE49B77BF /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = BD599425DB9CA71E9796575F7AD69168 /* UIView+Setup.m */; };
+		9773370268EA265AF7A24FC91AF7C922 /* VGXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34615D24A8E79D467A06691A604699 /* VGXibView.m */; };
+		A93B3AD3FB8C49FE2CCD78A590825DE7 /* VGContentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E41954DFBEF48E063F5789A800EA73E /* VGContentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB8A29FC03CD8FDAAF001119A8E634FC /* VGTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 419C83F289329D6807384B5496ED2F10 /* VGTableViewContent.m */; };
 		C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ECE7266D5C0D1C982118686E4E5AC9 /* iCarousel-dummy.m */; };
-		C41CE65A91E9C3982B0BC5C95E48ED85 /* VGCarouselContent.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE182F6D1003C13A4CD2090D9668D1B /* VGCarouselContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C53A89E974E0AC0F6738E8BD2A8F2190 /* VGContent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84194C155A86F0C805985CE6ED70D499 /* VGContent.bundle */; };
-		C6081AFEA9255BC779CA0A5064678F61 /* VGContentSearchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F64242AA464B9482A46B520F44B2D1 /* VGContentSearchProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C88F0A474D2BF2D0CC7A899B9CC4CC0D /* VGCollectionViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EA0318F27CE5399183848456D75FDF /* VGCollectionViewContent.m */; };
-		CDC6DF3127C97C8C2D273BCB1042FC41 /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919FBF5EEBFD284D9A022F0B6A289313 /* VGContentViewController.m */; };
 		CDCC907C8458AECCAD4490E2C9B66F1E /* UIScrollView+InfiniteScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 5901A08F68DC0015ABAB44F395422AB8 /* UIScrollView+InfiniteScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0623C9859B01CF99AE5C667728C8619 /* MKMapView+Zoom.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9B68B4A563CCA7F72F2794E4E82857 /* MKMapView+Zoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0B51EEA5B463FA22ADFBDE1F9D48BC1 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DE4B667E20F3B747B579EA178A7A6C /* VGCarouselContentView.m */; };
 		D2496F73C4DDCF8E03BC57E380A97CA5 /* Pods-VGContent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A92B3C4A4FFC8D694741B3A7C77B3 /* Pods-VGContent_Tests-dummy.m */; };
-		D59CE1E1962CB1192CC3B55C8FE225AE /* UIView+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C283375361B03970F6F8BEBA66B62F /* UIView+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D645E3ECC295CEE70B2EA222C0A45A8B /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 68010833A513852A87588FDCDAD4828C /* VGCarouselContent.m */; };
-		D941AFE0DD9D0F536382B917A4B16615 /* VGCarouselContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F859C3CDF59D7A1BE7290260F37138E9 /* VGCarouselContentView.m */; };
-		D9A624167E2B1FEA9478526A9328E277 /* VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ABE8049E35DB20AE7D422A2F59822AC /* VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D56C271CF98FB2390824F2DAD8384A98 /* MKMapView+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 08755840F1AE7DC84ECF3AB9FFC357BE /* MKMapView+Clear.m */; };
 		DE42831D31EF322C58576E18D14149FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B003D0D2173319BD270EB68483B34F9 /* Foundation.framework */; };
-		E08F314E22876DB6F1A531CAC25D0F98 /* VGCarouselContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = A514E37E98D12D9CBFD06CB26A8B7D30 /* VGCarouselContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3EE0735A27AD1DA3640E63B20BF46D0 /* VGContent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C978634655C695DFC6B7C61D4A3292C /* VGContent-dummy.m */; };
 		E5BB5C81029E8CC38AE2CC471D9D859C /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = D40B9D556CC95EC8EF80502866CEF441 /* UIScrollView+InfiniteScroll.m */; };
-		E5FCFCC41375FCEC41AEBE8FBD1376AD /* VGContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7924FFF04FD7FAA979A89370D6F51DD1 /* VGContentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB713E318FB97EC9D5E62EF0D42BDB95 /* UIView+Identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 51FE7065BD2E85664E5992393F66C0C8 /* UIView+Identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E871773281E6B1D0C40623A62D7FDEB4 /* VGContent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ABE8049E35DB20AE7D422A2F59822AC /* VGContent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E92386F5A9834A75542E63FAA4113BDD /* VGContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F70EA3DA8A7F127DDE64D050D8FCCCC /* VGContentViewController.m */; };
+		E965E09473DB75E75D5256788BF0DC4E /* VGURLContent.m in Sources */ = {isa = PBXBuildFile; fileRef = E000B1E4DCAD77D9529F329DF9A9ABD2 /* VGURLContent.m */; };
+		EBC1814431C437D2F35B346EE0960CDD /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 86234A8624727DB5A0CC8865C007BB4F /* MKMapView+Zoom.m */; };
 		F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB36960E6045AA2E28012344960DB6D /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F567E4141BE0DFB7006FA9C2 /* VGXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = F567E4111BE0DFB2006FA9C2 /* VGXibView.m */; settings = {ASSET_TAGS = (); }; };
-		F567E4151BE0E1A9006FA9C2 /* VGXibView.h in Headers */ = {isa = PBXBuildFile; fileRef = F567E4101BE0DFB2006FA9C2 /* VGXibView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2A0BA5433F031F56E514585D56B2D74 /* VGCarouselContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F804AD75579A33B64C945622AE8E503 /* VGCarouselContent.m */; };
+		F54D9A531C704EA400EB3C1A /* Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = F54D9A4F1C704E6C00EB3C1A /* Swizzling.h */; };
+		F54D9A541C704EA400EB3C1A /* Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F54D9A501C704E6C00EB3C1A /* Swizzling.m */; };
 		FAC8E403250B325DB6282238D7AC57BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B003D0D2173319BD270EB68483B34F9 /* Foundation.framework */; };
 		FAF59F39E2353D59BEE0055C6EC754F8 /* Pods-VGContent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6655EE862F9EE7AD87021AB23E6A3C66 /* Pods-VGContent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEB17B633F90D945C52A3DE3DC2A8FBA /* MKMapView+Clear.h in Headers */ = {isa = PBXBuildFile; fileRef = B85748CC0B9241FF6681C0CC7C385CE4 /* MKMapView+Clear.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,82 +112,84 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F64242AA464B9482A46B520F44B2D1 /* VGContentSearchProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentSearchProtocol.h; sourceTree = "<group>"; };
 		0117BFA39604BD48BBC63DBE5EAB0D95 /* VGContent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VGContent.xcconfig; sourceTree = "<group>"; };
+		065E8FEB60AF1FEB76EEE8F3D4C8C5A4 /* VGCollectionViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
+		08755840F1AE7DC84ECF3AB9FFC357BE /* MKMapView+Clear.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Clear.m"; sourceTree = "<group>"; };
+		0D3799CE8111AE8C007581278CA77A44 /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
+		1092DC3B240C3A04EA067900693E31D1 /* VGContentTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
 		10C517FC4FFABA13821F396AD07F909B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10CB188B1684AAB1B64B9ACEE67CFB63 /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		133B2FB4D2B92D107C8284322FE89977 /* UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
 		18B4AA2A5B48B6E9C79FBEB54A713727 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BCAB6D66425896A439B6DE39C398218 /* VGContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
+		1919D1488BEC125308A9E9AC42E5F2A6 /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
 		1CED139A351B2FFF1EEBE17A2414AED0 /* UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
-		1DBE1F0E05FE47089DF517C2D809D3F1 /* VGContentTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentTableViewController.m; sourceTree = "<group>"; };
-		1DEE9394F87C117A73BE388448AE8B2A /* VGMapViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGMapViewContent.h; sourceTree = "<group>"; };
 		21E576818D2886F47500A9A0357181D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CAE77507B7B5CE9DA562CE4FF96354 /* Pods-VGContent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGContent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		23360404B17825EC05C167978F425B11 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
-		235FB06D26E3D67BE95EA3D1F21E91DF /* VGContentTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
-		2560625DFFD5B7E072FF1D9B83BB6855 /* MKMapView+Clear.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Clear.m"; sourceTree = "<group>"; };
+		25F41995B9CA01FD66B881E323B81BB3 /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
 		27A20CB43DAACC41E35634829F53A7E6 /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
 		286CBB13BBC9A335D97EAD30A4C36F09 /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
 		2DAC8B0726AC9E2124F63A179F069A1A /* VGContent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VGContent-prefix.pch"; sourceTree = "<group>"; };
 		3B1A92B3C4A4FFC8D694741B3A7C77B3 /* Pods-VGContent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGContent_Tests-dummy.m"; sourceTree = "<group>"; };
-		3FB91BC3DDEE755CFD9752700A0217D0 /* VGCollectionViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCollectionViewContent.h; sourceTree = "<group>"; };
+		419C83F289329D6807384B5496ED2F10 /* VGTableViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
 		41A381C3729A5D718B7AFF2E5EE162C0 /* VGContent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VGContent.modulemap; sourceTree = "<group>"; };
+		42277701DF836DD93529D7A7C1459C6E /* UIView+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
 		467445F730690F2CA795984236674840 /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49F40B227588D665F570D5C1010FB78A /* VGMapViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGMapViewContent.m; sourceTree = "<group>"; };
-		4DCA8DBF40BE498FDBF60DF01D549571 /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
-		51FE7065BD2E85664E5992393F66C0C8 /* UIView+Identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
-		52EA0318F27CE5399183848456D75FDF /* VGCollectionViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
-		589792B8A6453BF89BE0D69B07D6FF3F /* UICollectionViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Setup.m"; sourceTree = "<group>"; };
+		4F70EA3DA8A7F127DDE64D050D8FCCCC /* VGContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
+		4FEE6C7A94E8E162D0B7BB7E62AD72F6 /* VGContentTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentTableViewController.h; sourceTree = "<group>"; };
 		5901A08F68DC0015ABAB44F395422AB8 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
-		598A37A65B8C41CACC938B3E0293871D /* VGContentControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentControllerProtocol.h; sourceTree = "<group>"; };
 		5DE38E53CB7FF144DF49460D4F889236 /* Pods_VGContent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGContent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E477EB4468F12E55074C916F80DBBCA /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6655EE862F9EE7AD87021AB23E6A3C66 /* Pods-VGContent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGContent_Tests-umbrella.h"; sourceTree = "<group>"; };
-		68010833A513852A87588FDCDAD4828C /* VGCarouselContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
-		684FEFCC859E6895AD8532F00EEC61E3 /* VGURLContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
 		6B003D0D2173319BD270EB68483B34F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6CC7A455F72859CDE47DA4619428FA06 /* Pods-VGContent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGContent_Tests.modulemap"; sourceTree = "<group>"; };
+		6E41954DFBEF48E063F5789A800EA73E /* VGContentProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentProtocol.h; sourceTree = "<group>"; };
+		6F77EF68A2D8CC1663A40084ECEE092D /* VGMapViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGMapViewContent.h; sourceTree = "<group>"; };
 		706B51786E99CFEE743D6F485C56710E /* Pods-VGContent_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-resources.sh"; sourceTree = "<group>"; };
-		77C283375361B03970F6F8BEBA66B62F /* UIView+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
+		72B758AA13C545CD3E134106CA581010 /* VGContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
 		77EBAA99AE6A244E364CF95FE2B1416C /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7924FFF04FD7FAA979A89370D6F51DD1 /* VGContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
 		7991C276CB60129D00876CBD71977A50 /* Pods-VGContent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGContent_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7ABE8049E35DB20AE7D422A2F59822AC /* VGContent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VGContent-umbrella.h"; sourceTree = "<group>"; };
+		7EBBE53462CB9F47D1A194D721A3D3DC /* VGContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentViewController.h; sourceTree = "<group>"; };
 		7EFAD885EB3B06EAE08547D03B6011B9 /* UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
 		84194C155A86F0C805985CE6ED70D499 /* VGContent.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGContent.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A7F54C2ED2AFC564E416C74AE15F60F /* VGContentProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentProtocol.h; sourceTree = "<group>"; };
+		86234A8624727DB5A0CC8865C007BB4F /* MKMapView+Zoom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoom.m"; sourceTree = "<group>"; };
+		8623C3EA781E574F36F561426CCB2AC4 /* VGCarouselContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
+		89A8AAE21FFE719BDFFE47A2F7437CF0 /* UITableViewCell+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Setup.m"; sourceTree = "<group>"; };
 		8B2F68AA1D17385AC2577C2C2ACF471B /* VGContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEA2841FD86EB23D6A2C1B3D538E45A /* Pods-VGContent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGContent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		919FBF5EEBFD284D9A022F0B6A289313 /* VGContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContentViewController.m; sourceTree = "<group>"; };
-		943B973BE3CDD1F645CE1DDC155C1986 /* VGContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGContent.m; sourceTree = "<group>"; };
+		8D79C46ACF72BA39F584A10882D9C931 /* UIView+Identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Identifier.h"; sourceTree = "<group>"; };
+		8F804AD75579A33B64C945622AE8E503 /* VGCarouselContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContent.m; sourceTree = "<group>"; };
+		93950C0ADED5A77B32E73416D9457921 /* VGContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContent.h; sourceTree = "<group>"; };
+		994965D83054771E972F4DFC0691852A /* VGCarouselContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
 		9C978634655C695DFC6B7C61D4A3292C /* VGContent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VGContent-dummy.m"; sourceTree = "<group>"; };
+		9E7730B5E38BA43B4247E9D0D24430EE /* MKMapView+Zoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoom.h"; sourceTree = "<group>"; };
+		9F95589F7FF76B3F9559F004B434A724 /* UIView+Identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
+		A246C53F7F1D385301145CD6EA89662A /* UITableViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Setup.h"; sourceTree = "<group>"; };
 		A2CC91C8DDF212ED6D20D7D9CC37AA13 /* iCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iCarousel.modulemap; sourceTree = "<group>"; };
 		A2ECE7266D5C0D1C982118686E4E5AC9 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
-		A514E37E98D12D9CBFD06CB26A8B7D30 /* VGCarouselContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContentView.h; sourceTree = "<group>"; };
-		A83BF1FD43340CA9ED1009237062185E /* VGTableViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
-		B4E9E3A0731B546F42D05B5152597120 /* MKMapView+Clear.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Clear.h"; sourceTree = "<group>"; };
+		A9AB6822D88F45B64F102E91B32B3169 /* VGContentSearchProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGContentSearchProtocol.h; sourceTree = "<group>"; };
 		B4F9FC28431B02906C95EEC6EEAEFEAF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		B84BEC142491F10A635FA6A4A14224A6 /* UIView+Identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Identifier.m"; sourceTree = "<group>"; };
+		B85748CC0B9241FF6681C0CC7C385CE4 /* MKMapView+Clear.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Clear.h"; sourceTree = "<group>"; };
 		BA2FFA97E2FF2C7F86D9ADC032BC33AA /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB61F5CA6D1D3D89F082F18EBA532C6B /* UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
-		BBE182F6D1003C13A4CD2090D9668D1B /* VGCarouselContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCarouselContent.h; sourceTree = "<group>"; };
+		BC685587F342D528F7A724C70A2A5F8C /* VGCollectionViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCollectionViewContent.m; sourceTree = "<group>"; };
+		BD599425DB9CA71E9796575F7AD69168 /* UIView+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
 		BD5F772B45E5B6DA96B162D68E2BD266 /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
-		BF110B9C5D2D1D421E6EDFE814B29B6D /* UICollectionViewCell+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Setup.h"; sourceTree = "<group>"; };
+		BE34615D24A8E79D467A06691A604699 /* VGXibView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGXibView.m; sourceTree = "<group>"; };
 		C722138CEC3FEA0D8E9B8A709EC6357B /* UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
-		C7AE50F5611615C02B64BBA4EED76402 /* VGTableViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGTableViewContent.m; sourceTree = "<group>"; };
 		CFB36960E6045AA2E28012344960DB6D /* iCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-umbrella.h"; sourceTree = "<group>"; };
 		CFE34D457622AD73C90EE7E2DFC16ADB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DE4B667E20F3B747B579EA178A7A6C /* VGCarouselContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
+		D30C3705AA6FC87192978C7982463C26 /* VGXibView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGXibView.h; sourceTree = "<group>"; };
 		D40B9D556CC95EC8EF80502866CEF441 /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
-		E6AD9A6872D7564B47CA445FDF21FC7D /* UIView+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
-		ED9B68B4A563CCA7F72F2794E4E82857 /* MKMapView+Zoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoom.h"; sourceTree = "<group>"; };
+		DEB515D412BB32EDA5DDF2E5FA16CD25 /* VGURLContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
+		E000B1E4DCAD77D9529F329DF9A9ABD2 /* VGURLContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGURLContent.m; sourceTree = "<group>"; };
+		EBED420A96C88DDB497D709BE2B401D9 /* VGTableViewContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGTableViewContent.h; sourceTree = "<group>"; };
+		ED9B5A435EA42BFDA7AB10B3A88F96BB /* VGMapViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGMapViewContent.m; sourceTree = "<group>"; };
 		EEA661C119634F9D1828EA94D1DC104C /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFCE25E8E4F57DB3B48BFAFD1CA92554 /* MKMapView+Zoom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoom.m"; sourceTree = "<group>"; };
-		F394D1832859EA2ABBEF73A85D845239 /* VGURLContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGURLContent.h; sourceTree = "<group>"; };
-		F567E4101BE0DFB2006FA9C2 /* VGXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGXibView.h; sourceTree = "<group>"; };
-		F567E4111BE0DFB2006FA9C2 /* VGXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGXibView.m; sourceTree = "<group>"; };
-		F859C3CDF59D7A1BE7290260F37138E9 /* VGCarouselContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCarouselContentView.m; sourceTree = "<group>"; };
+		F54D9A4F1C704E6C00EB3C1A /* Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swizzling.h; sourceTree = "<group>"; };
+		F54D9A501C704E6C00EB3C1A /* Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swizzling.m; sourceTree = "<group>"; };
 		FE404AF38E950D94319A3D37BC788BFF /* Pods-VGContent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGContent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,13 +239,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08D2CE37306835D67D61193D95878FA0 /* VGCarouselContentView */ = {
+		02F13FD4370B4B4D3CE34B3487252C50 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A514E37E98D12D9CBFD06CB26A8B7D30 /* VGCarouselContentView.h */,
-				F859C3CDF59D7A1BE7290260F37138E9 /* VGCarouselContentView.m */,
+				42277701DF836DD93529D7A7C1459C6E /* UIView+Setup.h */,
+				BD599425DB9CA71E9796575F7AD69168 /* UIView+Setup.m */,
 			);
-			path = VGCarouselContentView;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0568EE550BF1101A8D92FF684F51CA07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1919D1488BEC125308A9E9AC42E5F2A6 /* VGContentControllerProtocol.h */,
+				ED6A0CE1005DF5E27A6D00A451A638BB /* VGContentTableViewController */,
+				438CA0D0DEDBEDDA5D22AF2D0CFBD189 /* VGContentViewController */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		0BC62B913F3E63443151EF94A2F66B40 /* UIScrollView-InfiniteScroll */ = {
@@ -254,23 +268,14 @@
 			path = "UIScrollView-InfiniteScroll";
 			sourceTree = "<group>";
 		};
-		0CC5D7C4970C72509179A923B7699060 /* Classes */ = {
+		1004D8F2266DAF2E3CA4CD7DFCF5B75D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F567E40E1BE0DFA1006FA9C2 /* Utils */,
-				6D6B3785F78EC0BDF9C0D255296681E3 /* Models */,
-				AA07EE806F0A7340AD1B1B2E55B2A0E3 /* ViewControllers */,
+				E0A9D423C452FC29D5E513D4FC2AC871 /* Models */,
+				7D0D89FFC436F5BADE8585C30EDB208B /* Utils */,
+				0568EE550BF1101A8D92FF684F51CA07 /* ViewControllers */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		279140E3F2A726DD6E199A22F64E1E20 /* VGContentTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				235FB06D26E3D67BE95EA3D1F21E91DF /* VGContentTableViewController.h */,
-				1DBE1F0E05FE47089DF517C2D809D3F1 /* VGContentTableViewController.m */,
-			);
-			path = VGContentTableViewController;
 			sourceTree = "<group>";
 		};
 		27D1B34C9BF94AC4E48102D414CC33F5 /* Support Files */ = {
@@ -287,6 +292,28 @@
 			path = "../Target Support Files/iCarousel";
 			sourceTree = "<group>";
 		};
+		2E54DB34FDDFBBE0DA30A42B3475B9DC /* VGCollectionViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				0D3799CE8111AE8C007581278CA77A44 /* UICollectionViewCell+Setup.h */,
+				25F41995B9CA01FD66B881E323B81BB3 /* UICollectionViewCell+Setup.m */,
+				065E8FEB60AF1FEB76EEE8F3D4C8C5A4 /* VGCollectionViewContent.h */,
+				BC685587F342D528F7A724C70A2A5F8C /* VGCollectionViewContent.m */,
+			);
+			path = VGCollectionViewContent;
+			sourceTree = "<group>";
+		};
+		30905D9AA746A1086B57C9F4E44D74B4 /* VGTableViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				A246C53F7F1D385301145CD6EA89662A /* UITableViewCell+Setup.h */,
+				89A8AAE21FFE719BDFFE47A2F7437CF0 /* UITableViewCell+Setup.m */,
+				EBED420A96C88DDB497D709BE2B401D9 /* VGTableViewContent.h */,
+				419C83F289329D6807384B5496ED2F10 /* VGTableViewContent.m */,
+			);
+			path = VGTableViewContent;
+			sourceTree = "<group>";
+		};
 		3839A25AEE01612C104CB21039B420DF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,35 +328,13 @@
 			path = "../Target Support Files/UIScrollView-InfiniteScroll";
 			sourceTree = "<group>";
 		};
-		4320C6E430218933D428E54AD2792BA3 /* VGContent */ = {
+		438CA0D0DEDBEDDA5D22AF2D0CFBD189 /* VGContentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				51FE7065BD2E85664E5992393F66C0C8 /* UIView+Identifier.h */,
-				B84BEC142491F10A635FA6A4A14224A6 /* UIView+Identifier.m */,
-				1BCAB6D66425896A439B6DE39C398218 /* VGContent.h */,
-				943B973BE3CDD1F645CE1DDC155C1986 /* VGContent.m */,
-				8A7F54C2ED2AFC564E416C74AE15F60F /* VGContentProtocol.h */,
-				00F64242AA464B9482A46B520F44B2D1 /* VGContentSearchProtocol.h */,
-			);
-			path = VGContent;
-			sourceTree = "<group>";
-		};
-		466442F42DF6D1A06F06DAAED4556542 /* VGContentViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7924FFF04FD7FAA979A89370D6F51DD1 /* VGContentViewController.h */,
-				919FBF5EEBFD284D9A022F0B6A289313 /* VGContentViewController.m */,
+				7EBBE53462CB9F47D1A194D721A3D3DC /* VGContentViewController.h */,
+				4F70EA3DA8A7F127DDE64D050D8FCCCC /* VGContentViewController.m */,
 			);
 			path = VGContentViewController;
-			sourceTree = "<group>";
-		};
-		47E2A5C0F2CEE7B258A9BD93175F0E1B /* VGURLContent */ = {
-			isa = PBXGroup;
-			children = (
-				F394D1832859EA2ABBEF73A85D845239 /* VGURLContent.h */,
-				684FEFCC859E6895AD8532F00EEC61E3 /* VGURLContent.m */,
-			);
-			path = VGURLContent;
 			sourceTree = "<group>";
 		};
 		4B4292520FC5D9BB799C53B1DA624C2A /* Pods-VGContent_Tests */ = {
@@ -382,11 +387,22 @@
 		57688EAD8E2E8FFAC16F8F709B688EF9 /* VGContent */ = {
 			isa = PBXGroup;
 			children = (
-				7D7B2374AED82D84B0C781BF82FDFF9D /* Pod */,
+				D4FDC6AD9589D574A6876416D72BF5B8 /* Pod */,
 				79450718B57321DF10D1A349CFBFA3F3 /* Support Files */,
 			);
 			name = VGContent;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		5AB7A85216650C189E875C35680BC6AC /* VGCarouselContent */ = {
+			isa = PBXGroup;
+			children = (
+				994965D83054771E972F4DFC0691852A /* VGCarouselContent.h */,
+				8F804AD75579A33B64C945622AE8E503 /* VGCarouselContent.m */,
+				02F13FD4370B4B4D3CE34B3487252C50 /* Utils */,
+				AA23F7D47380FC748C9D91F66CB92809 /* VGCarouselContentView */,
+			);
+			path = VGCarouselContent;
 			sourceTree = "<group>";
 		};
 		5C94EB9F30E2CCE451C0A66F773FEA7F /* Targets Support Files */ = {
@@ -397,30 +413,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6ACF0326FF30A70683C98D87801446C9 /* VGMapViewContent */ = {
+		5E5302448E139302844E07B9D28C6201 /* VGContent */ = {
 			isa = PBXGroup;
 			children = (
-				B4E9E3A0731B546F42D05B5152597120 /* MKMapView+Clear.h */,
-				2560625DFFD5B7E072FF1D9B83BB6855 /* MKMapView+Clear.m */,
-				ED9B68B4A563CCA7F72F2794E4E82857 /* MKMapView+Zoom.h */,
-				EFCE25E8E4F57DB3B48BFAFD1CA92554 /* MKMapView+Zoom.m */,
-				1DEE9394F87C117A73BE388448AE8B2A /* VGMapViewContent.h */,
-				49F40B227588D665F570D5C1010FB78A /* VGMapViewContent.m */,
+				8D79C46ACF72BA39F584A10882D9C931 /* UIView+Identifier.h */,
+				9F95589F7FF76B3F9559F004B434A724 /* UIView+Identifier.m */,
+				93950C0ADED5A77B32E73416D9457921 /* VGContent.h */,
+				72B758AA13C545CD3E134106CA581010 /* VGContent.m */,
+				6E41954DFBEF48E063F5789A800EA73E /* VGContentProtocol.h */,
+				A9AB6822D88F45B64F102E91B32B3169 /* VGContentSearchProtocol.h */,
 			);
-			path = VGMapViewContent;
+			path = VGContent;
 			sourceTree = "<group>";
 		};
-		6D6B3785F78EC0BDF9C0D255296681E3 /* Models */ = {
+		610C94B561FFFD4D45C794FE04B6CFCB /* VGURLContent */ = {
 			isa = PBXGroup;
 			children = (
-				8282C9FF5A99FB07350FEF60BFD1F756 /* VGCarouselContent */,
-				8D09CA16BBB514960568B7D34CF0BF41 /* VGCollectionViewContent */,
-				4320C6E430218933D428E54AD2792BA3 /* VGContent */,
-				6ACF0326FF30A70683C98D87801446C9 /* VGMapViewContent */,
-				9B449AC753B15048E93DA5FB402F7848 /* VGTableViewContent */,
-				47E2A5C0F2CEE7B258A9BD93175F0E1B /* VGURLContent */,
+				DEB515D412BB32EDA5DDF2E5FA16CD25 /* VGURLContent.h */,
+				E000B1E4DCAD77D9529F329DF9A9ABD2 /* VGURLContent.m */,
 			);
-			path = Models;
+			path = VGURLContent;
+			sourceTree = "<group>";
+		};
+		65143B635E6A0DFA986851F4DDCC7C05 /* VGXibView */ = {
+			isa = PBXGroup;
+			children = (
+				D30C3705AA6FC87192978C7982463C26 /* VGXibView.h */,
+				BE34615D24A8E79D467A06691A604699 /* VGXibView.m */,
+			);
+			path = VGXibView;
 			sourceTree = "<group>";
 		};
 		79450718B57321DF10D1A349CFBFA3F3 /* Support Files */ = {
@@ -437,12 +458,14 @@
 			path = "Example/Pods/Target Support Files/VGContent";
 			sourceTree = "<group>";
 		};
-		7D7B2374AED82D84B0C781BF82FDFF9D /* Pod */ = {
+		7D0D89FFC436F5BADE8585C30EDB208B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0CC5D7C4970C72509179A923B7699060 /* Classes */,
+				65143B635E6A0DFA986851F4DDCC7C05 /* VGXibView */,
+				F54D9A4F1C704E6C00EB3C1A /* Swizzling.h */,
+				F54D9A501C704E6C00EB3C1A /* Swizzling.m */,
 			);
-			path = Pod;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -457,37 +480,17 @@
 			);
 			sourceTree = "<group>";
 		};
-		8282C9FF5A99FB07350FEF60BFD1F756 /* VGCarouselContent */ = {
+		8C678ABCBC7219BBCB1488E17EF8A2E9 /* VGMapViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				BBE182F6D1003C13A4CD2090D9668D1B /* VGCarouselContent.h */,
-				68010833A513852A87588FDCDAD4828C /* VGCarouselContent.m */,
-				BE3293472D7B2A6E399BE6E0D075F521 /* Utils */,
-				08D2CE37306835D67D61193D95878FA0 /* VGCarouselContentView */,
+				B85748CC0B9241FF6681C0CC7C385CE4 /* MKMapView+Clear.h */,
+				08755840F1AE7DC84ECF3AB9FFC357BE /* MKMapView+Clear.m */,
+				9E7730B5E38BA43B4247E9D0D24430EE /* MKMapView+Zoom.h */,
+				86234A8624727DB5A0CC8865C007BB4F /* MKMapView+Zoom.m */,
+				6F77EF68A2D8CC1663A40084ECEE092D /* VGMapViewContent.h */,
+				ED9B5A435EA42BFDA7AB10B3A88F96BB /* VGMapViewContent.m */,
 			);
-			path = VGCarouselContent;
-			sourceTree = "<group>";
-		};
-		8D09CA16BBB514960568B7D34CF0BF41 /* VGCollectionViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				BF110B9C5D2D1D421E6EDFE814B29B6D /* UICollectionViewCell+Setup.h */,
-				589792B8A6453BF89BE0D69B07D6FF3F /* UICollectionViewCell+Setup.m */,
-				3FB91BC3DDEE755CFD9752700A0217D0 /* VGCollectionViewContent.h */,
-				52EA0318F27CE5399183848456D75FDF /* VGCollectionViewContent.m */,
-			);
-			path = VGCollectionViewContent;
-			sourceTree = "<group>";
-		};
-		9B449AC753B15048E93DA5FB402F7848 /* VGTableViewContent */ = {
-			isa = PBXGroup;
-			children = (
-				4DCA8DBF40BE498FDBF60DF01D549571 /* UITableViewCell+Setup.h */,
-				23360404B17825EC05C167978F425B11 /* UITableViewCell+Setup.m */,
-				A83BF1FD43340CA9ED1009237062185E /* VGTableViewContent.h */,
-				C7AE50F5611615C02B64BBA4EED76402 /* VGTableViewContent.m */,
-			);
-			path = VGTableViewContent;
+			path = VGMapViewContent;
 			sourceTree = "<group>";
 		};
 		A810B5143700D9696EAFE6A8E60D9EAB /* Products */ = {
@@ -502,14 +505,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA07EE806F0A7340AD1B1B2E55B2A0E3 /* ViewControllers */ = {
+		AA23F7D47380FC748C9D91F66CB92809 /* VGCarouselContentView */ = {
 			isa = PBXGroup;
 			children = (
-				598A37A65B8C41CACC938B3E0293871D /* VGContentControllerProtocol.h */,
-				279140E3F2A726DD6E199A22F64E1E20 /* VGContentTableViewController */,
-				466442F42DF6D1A06F06DAAED4556542 /* VGContentViewController */,
+				8623C3EA781E574F36F561426CCB2AC4 /* VGCarouselContentView.h */,
+				D1DE4B667E20F3B747B579EA178A7A6C /* VGCarouselContentView.m */,
 			);
-			path = ViewControllers;
+			path = VGCarouselContentView;
 			sourceTree = "<group>";
 		};
 		B679D312F9F7A89234AADC74595C3178 /* Development Pods */ = {
@@ -520,30 +522,34 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BE3293472D7B2A6E399BE6E0D075F521 /* Utils */ = {
+		D4FDC6AD9589D574A6876416D72BF5B8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				77C283375361B03970F6F8BEBA66B62F /* UIView+Setup.h */,
-				E6AD9A6872D7564B47CA445FDF21FC7D /* UIView+Setup.m */,
+				1004D8F2266DAF2E3CA4CD7DFCF5B75D /* Classes */,
 			);
-			path = Utils;
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		F567E40E1BE0DFA1006FA9C2 /* Utils */ = {
+		E0A9D423C452FC29D5E513D4FC2AC871 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F567E40F1BE0DFA9006FA9C2 /* VGXibView */,
+				5AB7A85216650C189E875C35680BC6AC /* VGCarouselContent */,
+				2E54DB34FDDFBBE0DA30A42B3475B9DC /* VGCollectionViewContent */,
+				5E5302448E139302844E07B9D28C6201 /* VGContent */,
+				8C678ABCBC7219BBCB1488E17EF8A2E9 /* VGMapViewContent */,
+				30905D9AA746A1086B57C9F4E44D74B4 /* VGTableViewContent */,
+				610C94B561FFFD4D45C794FE04B6CFCB /* VGURLContent */,
 			);
-			path = Utils;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		F567E40F1BE0DFA9006FA9C2 /* VGXibView */ = {
+		ED6A0CE1005DF5E27A6D00A451A638BB /* VGContentTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F567E4101BE0DFB2006FA9C2 /* VGXibView.h */,
-				F567E4111BE0DFB2006FA9C2 /* VGXibView.m */,
+				4FEE6C7A94E8E162D0B7BB7E62AD72F6 /* VGContentTableViewController.h */,
+				1092DC3B240C3A04EA067900693E31D1 /* VGContentTableViewController.m */,
 			);
-			path = VGXibView;
+			path = VGContentTableViewController;
 			sourceTree = "<group>";
 		};
 		FC00EFCB5217648FAD43E329660F916E /* iOS */ = {
@@ -584,30 +590,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC6A8354404B93BEFD57A8EE56ECBE3D /* Headers */ = {
+		E6D828AE46D3CADB4CA148890B75F94F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263368CEB24543FEE38E114437EAD05C /* MKMapView+Clear.h in Headers */,
-				D0623C9859B01CF99AE5C667728C8619 /* MKMapView+Zoom.h in Headers */,
-				7546D09B2F5E1C8F414E78FCEBAB6B70 /* UICollectionViewCell+Setup.h in Headers */,
-				BE99D383E4C85332939CFB1B57AD241F /* UITableViewCell+Setup.h in Headers */,
-				F567E4151BE0E1A9006FA9C2 /* VGXibView.h in Headers */,
-				EB713E318FB97EC9D5E62EF0D42BDB95 /* UIView+Identifier.h in Headers */,
-				D59CE1E1962CB1192CC3B55C8FE225AE /* UIView+Setup.h in Headers */,
-				C41CE65A91E9C3982B0BC5C95E48ED85 /* VGCarouselContent.h in Headers */,
-				E08F314E22876DB6F1A531CAC25D0F98 /* VGCarouselContentView.h in Headers */,
-				7EA5CBDBBE4E5EF1845B0AD86132CF53 /* VGCollectionViewContent.h in Headers */,
-				D9A624167E2B1FEA9478526A9328E277 /* VGContent-umbrella.h in Headers */,
-				1D0F7B1C97A4F92CB1D3A5805D65212B /* VGContent.h in Headers */,
-				338A7AEBB6FC723D7B436AA3B40952B6 /* VGContentControllerProtocol.h in Headers */,
-				5A276B51CC70C437A8A43E735B1AAA07 /* VGContentProtocol.h in Headers */,
-				C6081AFEA9255BC779CA0A5064678F61 /* VGContentSearchProtocol.h in Headers */,
-				6C1642D9B2A1236078D61EDD9E790108 /* VGContentTableViewController.h in Headers */,
-				E5FCFCC41375FCEC41AEBE8FBD1376AD /* VGContentViewController.h in Headers */,
-				02887965F0DF9E70B15290C655C07766 /* VGMapViewContent.h in Headers */,
-				2C215F00535AE3133EEBC8E9B38A0C7C /* VGTableViewContent.h in Headers */,
-				B9ADA7EA96AF3893AB297DA664F2DEB4 /* VGURLContent.h in Headers */,
+				FEB17B633F90D945C52A3DE3DC2A8FBA /* MKMapView+Clear.h in Headers */,
+				3A8C6205E593CF2735A1E7620C35C9A9 /* MKMapView+Zoom.h in Headers */,
+				103BFCB39E652FE290093151982423A2 /* UICollectionViewCell+Setup.h in Headers */,
+				1707BDBCB76A5D96A355D6A8986D5744 /* UITableViewCell+Setup.h in Headers */,
+				7EFF03BD59E8007342916444D2C337F7 /* UIView+Identifier.h in Headers */,
+				66A3EDF857E330E68D4F1C924085B75C /* UIView+Setup.h in Headers */,
+				4564ACD644A3D025FA6D1A03F4D20A9F /* VGCarouselContent.h in Headers */,
+				0A3654AC3B63E7B5F937DFE0FD6303EA /* VGCarouselContentView.h in Headers */,
+				64FEBAC067A8058CA1AAB708F84AD760 /* VGCollectionViewContent.h in Headers */,
+				E871773281E6B1D0C40623A62D7FDEB4 /* VGContent-umbrella.h in Headers */,
+				F54D9A531C704EA400EB3C1A /* Swizzling.h in Headers */,
+				4C54629A05A32A9970182DDC0912AC9B /* VGContent.h in Headers */,
+				1E599C6780F85AE30FFD08C561A6BB8C /* VGContentControllerProtocol.h in Headers */,
+				A93B3AD3FB8C49FE2CCD78A590825DE7 /* VGContentProtocol.h in Headers */,
+				0B42B8EFC06FFB4E91D9F0AA14321CFE /* VGContentSearchProtocol.h in Headers */,
+				6D977E034691917C849BDF2974315125 /* VGContentTableViewController.h in Headers */,
+				15519B1B7E2FC97B79EE42256F8DA0A6 /* VGContentViewController.h in Headers */,
+				5DB82F954F67C3E7EE8925D270B53F7E /* VGMapViewContent.h in Headers */,
+				58D22670B84E026022FCCEF4DADACD16 /* VGTableViewContent.h in Headers */,
+				8FD457093CD3E0EA0C4DD91A5DA8F730 /* VGURLContent.h in Headers */,
+				91F937967AEE6CC8603BC8F87EE7FB91 /* VGXibView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,10 +659,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14394028EA082061EF1D2999AC5B9ABF /* Build configuration list for PBXNativeTarget "VGContent" */;
 			buildPhases = (
-				C32C1F4D4FA6574D938935321734B931 /* Sources */,
+				6E9C304F349407D7C4493CABFC26898B /* Sources */,
 				10322D38B3A57D06847081694423A55B /* Frameworks */,
 				A0A80D4952CF52919188B26BBEFACF22 /* Resources */,
-				DC6A8354404B93BEFD57A8EE56ECBE3D /* Headers */,
+				E6D828AE46D3CADB4CA148890B75F94F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -712,7 +719,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -770,6 +777,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E9C304F349407D7C4493CABFC26898B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56C271CF98FB2390824F2DAD8384A98 /* MKMapView+Clear.m in Sources */,
+				EBC1814431C437D2F35B346EE0960CDD /* MKMapView+Zoom.m in Sources */,
+				94C1DB95D43BE8FCCE4961190FD24E01 /* UICollectionViewCell+Setup.m in Sources */,
+				6B90C52F66358F23EC0EDB9EB049A52E /* UITableViewCell+Setup.m in Sources */,
+				3E2C1EE4A37EDB96DD86A81CE9ECC10F /* UIView+Identifier.m in Sources */,
+				952218A6E84CE361F578E58CE49B77BF /* UIView+Setup.m in Sources */,
+				F2A0BA5433F031F56E514585D56B2D74 /* VGCarouselContent.m in Sources */,
+				F54D9A541C704EA400EB3C1A /* Swizzling.m in Sources */,
+				D0B51EEA5B463FA22ADFBDE1F9D48BC1 /* VGCarouselContentView.m in Sources */,
+				6A3731542567299803E63CC18319DF1E /* VGCollectionViewContent.m in Sources */,
+				E3EE0735A27AD1DA3640E63B20BF46D0 /* VGContent-dummy.m in Sources */,
+				8F93207D5C384FAD01687300510A3E65 /* VGContent.m in Sources */,
+				55208C53B8DD78E1EEC6AE1703C745D8 /* VGContentTableViewController.m in Sources */,
+				E92386F5A9834A75542E63FAA4113BDD /* VGContentViewController.m in Sources */,
+				40827F9AFF989DE9497D53AC7C808B32 /* VGMapViewContent.m in Sources */,
+				BB8A29FC03CD8FDAAF001119A8E634FC /* VGTableViewContent.m in Sources */,
+				E965E09473DB75E75D5256788BF0DC4E /* VGURLContent.m in Sources */,
+				9773370268EA265AF7A24FC91AF7C922 /* VGXibView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89AC277E06C673F3CAEB1E026B8F70EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -785,30 +817,6 @@
 			files = (
 				C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */,
 				10C86995D04A48756AE4797CFFEDD69A /* iCarousel.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C32C1F4D4FA6574D938935321734B931 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3854F32496A89BFA75BC0000CE17F74E /* MKMapView+Clear.m in Sources */,
-				7DF7302C498B3749C95339663E48A30B /* MKMapView+Zoom.m in Sources */,
-				B3C4431A95515C8D64DB13CE71CF991B /* UICollectionViewCell+Setup.m in Sources */,
-				02BD501303C26138718DC05FD40D41B2 /* UITableViewCell+Setup.m in Sources */,
-				5B85D49A61BA1742113C632A65697AE5 /* UIView+Identifier.m in Sources */,
-				79137A1D0E8B5C5CF3A2A57A43E75B04 /* UIView+Setup.m in Sources */,
-				D645E3ECC295CEE70B2EA222C0A45A8B /* VGCarouselContent.m in Sources */,
-				D941AFE0DD9D0F536382B917A4B16615 /* VGCarouselContentView.m in Sources */,
-				C88F0A474D2BF2D0CC7A899B9CC4CC0D /* VGCollectionViewContent.m in Sources */,
-				5414DC8DC187470AB45E57187C1854FE /* VGContent-dummy.m in Sources */,
-				B8842F33A697ADB3AF4D6375BD6D96D5 /* VGContent.m in Sources */,
-				1FB01AC32B4D5D16CF805446E8F8236C /* VGContentTableViewController.m in Sources */,
-				CDC6DF3127C97C8C2D273BCB1042FC41 /* VGContentViewController.m in Sources */,
-				8BA21ED88AE62E0A19F263BF226E1F88 /* VGMapViewContent.m in Sources */,
-				5F1F6AF30C339EAA4554586C9884D909 /* VGTableViewContent.m in Sources */,
-				F567E4141BE0DFB7006FA9C2 /* VGXibView.m in Sources */,
-				02FFC790EC96F71C8F7805936EA15E1D /* VGURLContent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,6 +951,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 286CBB13BBC9A335D97EAD30A4C36F09 /* iCarousel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -960,6 +969,7 @@
 				PRODUCT_NAME = iCarousel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1150,6 +1160,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 286CBB13BBC9A335D97EAD30A4C36F09 /* iCarousel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

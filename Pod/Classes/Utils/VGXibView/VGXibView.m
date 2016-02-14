@@ -8,20 +8,7 @@
 
 #import "VGXibView.h"
 
-#import <objc/runtime.h>
-
-void VGSwizzleMethodsFrom(Class onClass, SEL fromMethod, Class fromClass, SEL toMethod) {
-    Method originalMethod = class_getInstanceMethod(onClass, fromMethod);
-    Method swizzledMethod = class_getInstanceMethod(fromClass, toMethod);
-    
-    BOOL didAddMethod = class_addMethod(onClass, fromMethod, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
-    
-    if (didAddMethod) {
-        class_replaceMethod(onClass, toMethod, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
-    } else {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
-}
+#import "Swizzling.h"
 
 @interface EPPZViewInstantiator : NSObject
 @property (nonatomic, strong) IBOutlet UIView *view;
@@ -50,7 +37,10 @@ void VGSwizzleMethodsFrom(Class onClass, SEL fromMethod, Class fromClass, SEL to
         NSString *selectorString = [NSString stringWithFormat:@"set%@:", [self capFirst:key]];
         SEL selector = NSSelectorFromString(selectorString);
         if([self.view respondsToSelector:selector]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             [self.view performSelector:selector withObject:self.values[key]];
+#pragma clang diagnostic pop
         }
     }
 }
