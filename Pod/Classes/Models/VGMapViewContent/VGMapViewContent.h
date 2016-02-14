@@ -13,7 +13,7 @@
 @protocol VGMapViewContentDelegate <VGContentDelegate>
 
 @optional
-- (void)content:(VGURLContent *)content didDragItem:(id)item;
+- (void)content:(VGContent *)content didDragItem:(id)item;
 
 @end
 
