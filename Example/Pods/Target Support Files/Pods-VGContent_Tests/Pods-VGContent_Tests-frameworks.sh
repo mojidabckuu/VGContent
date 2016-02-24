@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-VGContent_Tests/UIScrollView_InfiniteScroll.framework"
   install_framework "Pods-VGContent_Tests/VGContent.framework"
+  install_framework "Pods-VGContent_Tests/VGInfiniteControl.framework"
   install_framework "Pods-VGContent_Tests/iCarousel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-VGContent_Tests/UIScrollView_InfiniteScroll.framework"
   install_framework "Pods-VGContent_Tests/VGContent.framework"
+  install_framework "Pods-VGContent_Tests/VGInfiniteControl.framework"
   install_framework "Pods-VGContent_Tests/iCarousel.framework"
 fi

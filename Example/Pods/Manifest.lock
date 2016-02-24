@@ -1,9 +1,9 @@
 PODS:
   - iCarousel (1.8.2)
-  - UIScrollView-InfiniteScroll (0.7.3)
   - VGContent (0.1.0):
     - iCarousel
-    - UIScrollView-InfiniteScroll (~> 0.7.2)
+    - VGInfiniteControl
+  - VGInfiniteControl (0.1.0)
 
 DEPENDENCIES:
   - VGContent (from `../`)
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
-  UIScrollView-InfiniteScroll: b6c7d6d155dca7f9c5dd43813ecffeb301b3d50c
-  VGContent: ffb143b456534d745bbdbe652ac33254686b7dba
+  VGContent: ffdf303df508ae195da98e9a7878d60b9166aa7d
+  VGInfiniteControl: ebe8f4903e4cb9eea9c8fef01e9d2a01cec02e66
 
 COCOAPODS: 0.39.0

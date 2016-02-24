@@ -13,6 +13,13 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		B5977AEA442B5730FD3670C6 /* Pods_VGContent_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68361D40A9DD177D3DF96E86 /* Pods_VGContent_Tests.framework */; };
+		F553C4AD1C7DBDB0006A1BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F553C4AC1C7DBDB0006A1BFA /* main.m */; };
+		F553C4B01C7DBDB0006A1BFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F553C4AF1C7DBDB0006A1BFA /* AppDelegate.m */; };
+		F553C4B31C7DBDB0006A1BFA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F553C4B21C7DBDB0006A1BFA /* MasterViewController.m */; };
+		F553C4B61C7DBDB0006A1BFA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F553C4B51C7DBDB0006A1BFA /* DetailViewController.m */; };
+		F553C4B91C7DBDB0006A1BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F553C4B71C7DBDB0006A1BFA /* Main.storyboard */; };
+		F553C4BB1C7DBDB0006A1BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F553C4BA1C7DBDB0006A1BFA /* Assets.xcassets */; };
+		F553C4BE1C7DBDB0006A1BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F553C4BC1C7DBDB0006A1BFA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,18 @@
 		AB0420AFED129F0345DE65A3 /* VGContent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VGContent.podspec; path = ../VGContent.podspec; sourceTree = "<group>"; };
 		AFAB8483349C877C904ACD94 /* Pods-VGContent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGContent_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VGContent_Tests/Pods-VGContent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D45AF607C88447639FB2C6B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F553C4A91C7DBDB0006A1BFA /* VGContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F553C4AC1C7DBDB0006A1BFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F553C4AE1C7DBDB0006A1BFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F553C4AF1C7DBDB0006A1BFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F553C4B11C7DBDB0006A1BFA /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		F553C4B21C7DBDB0006A1BFA /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		F553C4B41C7DBDB0006A1BFA /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F553C4B51C7DBDB0006A1BFA /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F553C4B81C7DBDB0006A1BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F553C4BA1C7DBDB0006A1BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F553C4BD1C7DBDB0006A1BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F553C4BF1C7DBDB0006A1BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F553C4A61C7DBDB0006A1BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +79,7 @@
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
+				F553C4AA1C7DBDB0006A1BFA /* VGContent */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				66F5AE991BFF6001E2D1AC7A /* Pods */,
@@ -63,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				6003F5AE195388D20070C39A /* VGContent_Tests.xctest */,
+				F553C4A91C7DBDB0006A1BFA /* VGContent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +145,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F553C4AA1C7DBDB0006A1BFA /* VGContent */ = {
+			isa = PBXGroup;
+			children = (
+				F553C4AE1C7DBDB0006A1BFA /* AppDelegate.h */,
+				F553C4AF1C7DBDB0006A1BFA /* AppDelegate.m */,
+				F553C4B11C7DBDB0006A1BFA /* MasterViewController.h */,
+				F553C4B21C7DBDB0006A1BFA /* MasterViewController.m */,
+				F553C4B41C7DBDB0006A1BFA /* DetailViewController.h */,
+				F553C4B51C7DBDB0006A1BFA /* DetailViewController.m */,
+				F553C4B71C7DBDB0006A1BFA /* Main.storyboard */,
+				F553C4BA1C7DBDB0006A1BFA /* Assets.xcassets */,
+				F553C4BC1C7DBDB0006A1BFA /* LaunchScreen.storyboard */,
+				F553C4BF1C7DBDB0006A1BFA /* Info.plist */,
+				F553C4AB1C7DBDB0006A1BFA /* Supporting Files */,
+			);
+			path = VGContent;
+			sourceTree = "<group>";
+		};
+		F553C4AB1C7DBDB0006A1BFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F553C4AC1C7DBDB0006A1BFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +194,23 @@
 			productReference = 6003F5AE195388D20070C39A /* VGContent_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F553C4A81C7DBDB0006A1BFA /* VGContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F553C4C01C7DBDB0006A1BFA /* Build configuration list for PBXNativeTarget "VGContent" */;
+			buildPhases = (
+				F553C4A51C7DBDB0006A1BFA /* Sources */,
+				F553C4A61C7DBDB0006A1BFA /* Frameworks */,
+				F553C4A71C7DBDB0006A1BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VGContent;
+			productName = VGContent;
+			productReference = F553C4A91C7DBDB0006A1BFA /* VGContent.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +223,9 @@
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					F553C4A81C7DBDB0006A1BFA = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -169,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				6003F5AD195388D20070C39A /* VGContent_Tests */,
+				F553C4A81C7DBDB0006A1BFA /* VGContent */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +254,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553C4A71C7DBDB0006A1BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F553C4BE1C7DBDB0006A1BFA /* LaunchScreen.storyboard in Resources */,
+				F553C4BB1C7DBDB0006A1BFA /* Assets.xcassets in Resources */,
+				F553C4B91C7DBDB0006A1BFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +326,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F553C4A51C7DBDB0006A1BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F553C4B01C7DBDB0006A1BFA /* AppDelegate.m in Sources */,
+				F553C4B31C7DBDB0006A1BFA /* MasterViewController.m in Sources */,
+				F553C4AD1C7DBDB0006A1BFA /* main.m in Sources */,
+				F553C4B61C7DBDB0006A1BFA /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -250,6 +346,22 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F553C4B71C7DBDB0006A1BFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F553C4B81C7DBDB0006A1BFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F553C4BC1C7DBDB0006A1BFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F553C4BD1C7DBDB0006A1BFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -367,6 +479,42 @@
 			};
 			name = Release;
 		};
+		F553C4C11C7DBDB0006A1BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = VGContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladgorbenko..VGContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F553C4C21C7DBDB0006A1BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = VGContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladgorbenko..VGContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,6 +535,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F553C4C01C7DBDB0006A1BFA /* Build configuration list for PBXNativeTarget "VGContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F553C4C11C7DBDB0006A1BFA /* Debug */,
+				F553C4C21C7DBDB0006A1BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

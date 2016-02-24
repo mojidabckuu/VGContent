@@ -1,11 +1,9 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## UIScrollView-InfiniteScroll
+## VGContent
 
-The MIT License (MIT)
-
-Copyright (c) 2013-2015 Andrei Mihailov
+Copyright (c) 2015 mojidabckuu <mojidabckuu.22.06.92@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## VGContent
+## VGInfiniteControl
 
-Copyright (c) 2015 mojidabckuu <mojidabckuu.22.06.92@gmail.com>
+Copyright (c) 2016 Vlad Gorbenko <mojidabckuu.22.06.92@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

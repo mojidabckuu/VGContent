@@ -8,8 +8,13 @@
 
 #import "VGContent.h"
 
+#import "VGAnimableControl.h"
+
 extern NSString *const VGAnimatedRefresh;
 extern NSString *const VGReloadOnRefresh;
+
+extern NSString *const VGPullToRefreshControlClass;
+extern NSString *const VGInfiniteControlClass;
 
 @class VGURLContent;
 
@@ -84,11 +89,6 @@ extern NSString *const VGReloadOnRefresh;
  */
 @property (nonatomic, strong) NSNumber *length;
 
-/**
- Content settings.
- */
-@property (nonatomic, strong) NSDictionary *settings;
-
 ///---------------------
 /// @name Loading management
 ///---------------------
@@ -142,5 +142,10 @@ extern NSString *const VGReloadOnRefresh;
  @param error Error
  */
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error;
+
+#pragma mark - Controls
+
+- (UIControl<VGAnimableControl> *)refreshControl;
+- (UIControl<VGAnimableControl> *)infiniteControl;
 
 @end

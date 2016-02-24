@@ -8,6 +8,8 @@
 
 #import "VGContent.h"
 
+#import "VGContentConfiguration.h"
+
 NSString *const VGActionShow = @"VGActionShow";
 
 @implementation VGContent
@@ -20,16 +22,25 @@ NSString *const VGActionShow = @"VGActionShow";
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _items = [[NSMutableArray alloc] init];
+        [self privateSetup];
         [self setup];
     }
     return self;
 }
 
 - (instancetype)initWithView:(UIView *)view {
+    return [self initWithView:view configuration:@{}];
+}
+
+- (instancetype)initWithView:(UIView *)view configuration:(NSDictionary *)configuration {
     self = [super init];
     if(self) {
-        _items = [[NSMutableArray alloc] init];
+        [self privateSetup];
+        NSSet *keysToRemove = [configuration keysOfEntriesPassingTest:^BOOL(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            return [obj isKindOfClass:[NSNull class]];
+        }];
+        [self.configuration addEntriesFromDictionary:configuration];
+        [self.configuration removeObjectsForKeys:[keysToRemove allObjects]];
         self.view = view;
         [self setup];
     }
@@ -39,7 +50,7 @@ NSString *const VGActionShow = @"VGActionShow";
 - (instancetype)initWithView:(UIView *)view controller:(UIViewController *)controller {
     self = [super init];
     if(self) {
-        _items = [[NSMutableArray alloc] init];
+        [self privateSetup];
         self.view = view;
         self.viewController = controller;
         [self setup];
@@ -52,6 +63,12 @@ NSString *const VGActionShow = @"VGActionShow";
 }
 
 #pragma mark - Setup methods
+
+- (void)privateSetup {
+    _items = [[NSMutableArray alloc] init];
+    _configuration = [NSMutableDictionary dictionary];
+    [_configuration addEntriesFromDictionary:[[VGContentConfiguration sharedInstance] contentDefaults]];
+}
 
 - (void)setup {
 }

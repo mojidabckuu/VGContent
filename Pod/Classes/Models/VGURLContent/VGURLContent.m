@@ -8,10 +8,30 @@
 
 #import "VGURLContent.h"
 
-#import <UIScrollView-InfiniteScroll/UIScrollView+InfiniteScroll.h>
+#import "VGControls.h"
+
+#import "UIView+Subviews.h"
+#import "UIView+Identifier.h"
+
+#import "VGContentConfiguration.h"
+
+#import <objc/runtime.h>
 
 NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
 NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
+
+NSString *const VGPullToRefreshControlClass = @"VGPullToRefreshControlClass";
+NSString *const VGInfiniteControlClass = @"VGInfiniteControlClass";
+
+Class NSClassFromAnyObject(id anyObject) {
+    if(class_isMetaClass(object_getClass(anyObject))) {
+        return anyObject;
+    }
+    if([anyObject isKindOfClass:[NSString class]]) {
+        return ClassFromString(anyObject);
+    }
+    return nil;
+}
 
 @interface VGURLContent ()
 
@@ -30,6 +50,34 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
 - (void)setup {
     self.isAllLoaded = NO;
     [super setup];
+    [self setupControls];
+}
+
+- (void)setupControls {
+    if(self.configuration[VGPullToRefreshControlClass]) {
+        id UIRefreshControlClass = self.configuration[VGPullToRefreshControlClass];
+        Class realClass = NSClassFromAnyObject(UIRefreshControlClass);
+        NSAssert(realClass, @"Pull to refresh class doesn't exist");
+        if(![self.scrollView containsViewWithClass:realClass]) {
+            UIControl<VGAnimableControl> *pullToRefreshControl = [[realClass alloc] init];
+            NSAssert([pullToRefreshControl conformsToProtocol:@protocol(VGAnimableControl)], @"Control should respond to VGAnimable protocol");
+            pullToRefreshControl.tintColor = self.configuration[VGRefreshControlTintColor];
+            [self.scrollView addSubview:pullToRefreshControl];
+            [pullToRefreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+        }
+    }
+    if(self.configuration[VGInfiniteControlClass]) {
+        id UIInfiniteControl = self.configuration[VGInfiniteControlClass];
+        Class realClass = NSClassFromAnyObject(UIInfiniteControl);
+        NSAssert(realClass, @"Infinte control class doesn't exist");
+        if(![self.scrollView containsViewWithClass:realClass]) {
+            UIControl *infiniteControl = [[realClass alloc] init];
+            NSAssert([infiniteControl conformsToProtocol:@protocol(VGAnimableControl)], @"Control should respond to VGAnimable protocol");
+            infiniteControl.tintColor = self.configuration[VGInfiniteControlTintColor];
+            [self.scrollView addSubview:infiniteControl];
+            [infiniteControl addTarget:self action:@selector(loadMoreItems) forControlEvents:UIControlEventValueChanged];
+        }
+    }
 }
 
 - (void)initialize {
@@ -66,24 +114,27 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
     return (UIScrollView *)self.view;
 }
 
+- (id <VGAnimableControl>)refreshControl {
+    if(self.configuration[VGPullToRefreshControlClass]) {
+        return (id <VGAnimableControl>)[self.scrollView subviewWithClass:NSClassFromAnyObject(self.configuration[VGPullToRefreshControlClass])];
+    }
+    return nil;
+}
+
+- (id <VGAnimableControl>)infiniteControl {
+    if(self.configuration[VGInfiniteControlClass]) {
+        return (id <VGAnimableControl>)[self.scrollView subviewWithClass:NSClassFromAnyObject(self.configuration[VGInfiniteControlClass])];
+    }
+    return nil;
+}
+
+#pragma mark - Modifiers
+
 - (void)setIsAllLoaded:(BOOL)isAllLoaded {
     _isAllLoaded = isAllLoaded;
     // TODO: think about this
     // iCarousel is not UIScrollView child;
-    if(isAllLoaded) {
-        if([self.scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
-            [self.scrollView finishInfiniteScroll];
-            [self.scrollView removeInfiniteScroll];
-        }
-    } else {
-        if([self.scrollView respondsToSelector:@selector(addInfiniteScrollWithHandler:)]) {
-            if(!self.isAllLoaded) {
-                [self.scrollView addInfiniteScrollWithHandler:^(id scrollView) {
-                    [self loadMoreItems];
-                }];
-            }
-        }
-    }
+    [[self infiniteControl] setEnabled:!isAllLoaded];
 }
 
 #pragma mark - VGURLContent management
@@ -92,12 +143,19 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
 }
 
 - (void)refresh {
+    if (_isRefreshing) {
+        return;
+    }
     _isRefreshing = YES;
+    [[self infiniteControl] startAnimating];
     [self notifyWillLoad];
     [self loadItems];
 }
 
 - (void)loadMoreItems {
+    if(_isLoading) {
+        return;
+    }
     _isLoading = YES;
     [self notifyWillLoad];
     [self loadItems];
@@ -114,15 +172,16 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
         return;
     }
     if (_isRefreshing) { // TODO: handle situations when can infinite scroll with search string.
+        [[self infiniteControl] stopAnimating];
         self.originalItems = [NSMutableArray arrayWithArray:items];
-        if([self.settings[VGAnimatedRefresh] boolValue]) {
+        if([self.configuration[VGAnimatedRefresh] boolValue]) {
             _offset = nil;
             [self deleteItems:_items animated:YES];
             [self insertItems:items atIndex:_items.count animated:YES];
         } else {
             [_items removeAllObjects];
             _offset = nil;
-            if([self.settings[VGReloadOnRefresh] boolValue]) {
+            if([self.configuration[VGReloadOnRefresh] boolValue]) {
                 [_items addObjectsFromArray:items];
                 [self reload];
             } else {
@@ -130,15 +189,14 @@ NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
                 [self insertItems:items atIndex:_items.count animated:NO];
             }
         }
+        [[self refreshControl] stopAnimating];
     } else {
+        [[self infiniteControl] stopAnimating];
         [self insertItems:items atIndex:_items.count animated:YES];
     }
     [self notifyDidLoadWithItems:items];
     _isRefreshing = NO;
     _isLoading = NO;
-    if([self.scrollView respondsToSelector:@selector(finishInfiniteScroll)]) {
-        [self.scrollView finishInfiniteScroll];
-    }
 }
 
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {

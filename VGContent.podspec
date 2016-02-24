@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
     'VGContent' => ['Pod/Assets/*.png']
   }
 
-  s.dependency 'UIScrollView-InfiniteScroll', '~> 0.7.2'
+  s.dependency 'VGInfiniteControl'
   s.dependency 'iCarousel'
 end

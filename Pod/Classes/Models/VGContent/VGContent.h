@@ -72,6 +72,11 @@ extern NSString *const VGActionShow;
 }
 
 /**
+ Content settings.
+ */
+@property (nonatomic, strong, readonly) NSMutableDictionary *configuration;
+
+/**
  Reference to view.
  */
 @property (nonatomic, weak) UIView *view;
@@ -103,6 +108,11 @@ extern NSString *const VGActionShow;
  General method to init VGContent.
  */
 - (instancetype)initWithView:(UIView *)view;
+
+/**
+ 
+ */
+- (instancetype)initWithView:(UIView *)view configuration:(NSDictionary *)configuration;
 
 /**
  General method to init VGContent.

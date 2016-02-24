@@ -22,8 +22,8 @@
     ]
   },
   "dependencies": {
-    "UIScrollView-InfiniteScroll": [
-      "~> 0.7.2"
+    "VGInfiniteControl": [
+
     ],
     "iCarousel": [
 
