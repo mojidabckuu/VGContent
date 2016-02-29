@@ -75,6 +75,10 @@ extern NSString *const VGInfiniteControlClass;
 @property (nonatomic, assign, readonly) BOOL isRefreshing;
 
 /**
+ */
+@property (nonatomic, assign, readonly, getter=isCanceled) BOOL canceled;
+
+/**
  Indicator shows that content did load all the data.
  */
 @property (nonatomic, assign) BOOL isAllLoaded;
@@ -82,12 +86,12 @@ extern NSString *const VGInfiniteControlClass;
 /**
  Current content offset.
  */
-@property (nonatomic, strong) id offset;
+@property (nullable, nonatomic, strong) id offset;
 
 /**
  Length helper. Default is 20
  */
-@property (nonatomic, strong) NSNumber *length;
+@property (nonnull, nonatomic, strong) NSNumber *length;
 
 ///---------------------
 /// @name Loading management
@@ -100,7 +104,7 @@ extern NSString *const VGInfiniteControlClass;
  Call `loadItems`.
  */
 - (void)refresh;
-- (void)initialize;
+
 /**
  Method that start load more items process.
  Raise notification that will load items.

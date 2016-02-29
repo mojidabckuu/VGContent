@@ -45,10 +45,13 @@ Class NSClassFromAnyObject(id anyObject) {
 @synthesize isAllLoaded = _isAllLoaded;
 @synthesize isLoading = _isLoading;
 
+@synthesize offset = _offset;
+
 #pragma mark - Setup methods
 
 - (void)setup {
     self.isAllLoaded = NO;
+    _offset = @0;
     [super setup];
     [self setupControls];
 }
@@ -58,7 +61,7 @@ Class NSClassFromAnyObject(id anyObject) {
         id UIRefreshControlClass = self.configuration[VGPullToRefreshControlClass];
         Class realClass = NSClassFromAnyObject(UIRefreshControlClass);
         NSAssert(realClass, @"Pull to refresh class doesn't exist");
-        if(![self.scrollView containsViewWithClass:realClass]) {
+        if(![self.scrollView containsViewWithClass:realClass] && !(realClass == NSClassFromString(@"UIRefreshControl") && ![self.view isKindOfClass:[UITableView class]])) {
             UIControl<VGAnimableControl> *pullToRefreshControl = [[realClass alloc] init];
             NSAssert([pullToRefreshControl conformsToProtocol:@protocol(VGAnimableControl)], @"Control should respond to VGAnimable protocol");
             pullToRefreshControl.tintColor = self.configuration[VGRefreshControlTintColor];
@@ -80,20 +83,16 @@ Class NSClassFromAnyObject(id anyObject) {
     }
 }
 
-- (void)initialize {
-    [self setIsAllLoaded:self.isAllLoaded];
-}
-
 #pragma mark - Accessors
 
 - (id)offset {
     if(!_offset) {
         id item = [_items lastObject];
-        NSNumber *offset = @0;
+        NSNumber *offset = nil;
         if([item respondsToSelector:@selector(identifier)]) {
             offset = [item valueForKeyPath:@"identifier"];
         }
-        return _isRefreshing ? @0 : offset;
+        return _isRefreshing ? nil : offset;
     }
     return _offset;
 }
@@ -137,6 +136,10 @@ Class NSClassFromAnyObject(id anyObject) {
     [[self infiniteControl] setEnabled:!isAllLoaded];
 }
 
+- (void)setOffset:(id)offset {
+    _offset = offset;
+}
+
 #pragma mark - VGURLContent management
 
 - (void)loadItems {
@@ -146,8 +149,11 @@ Class NSClassFromAnyObject(id anyObject) {
     if (_isRefreshing) {
         return;
     }
+    _canceled = NO;
     _isRefreshing = YES;
-    [[self infiniteControl] startAnimating];
+    if(!self.items.count) {
+        [[self infiniteControl] startAnimating];
+    }
     [self notifyWillLoad];
     [self loadItems];
 }
@@ -156,12 +162,16 @@ Class NSClassFromAnyObject(id anyObject) {
     if(_isLoading) {
         return;
     }
+    _canceled = NO;
     _isLoading = YES;
     [self notifyWillLoad];
     [self loadItems];
 }
 
 - (void)cancel {
+    [[self infiniteControl] stopAnimating];
+    [[self refreshControl] stopAnimating];
+    _canceled = YES;
 }
 
 #pragma mark - URL fetching management
@@ -171,30 +181,38 @@ Class NSClassFromAnyObject(id anyObject) {
         [self notifyDidFailWithError:error];
         return;
     }
-    if (_isRefreshing) { // TODO: handle situations when can infinite scroll with search string.
+    if (_isRefreshing && !_canceled) { // TODO: handle situations when can infinite scroll with search string.
         [[self infiniteControl] stopAnimating];
         self.originalItems = [NSMutableArray arrayWithArray:items];
         if([self.configuration[VGAnimatedRefresh] boolValue]) {
-            _offset = nil;
-            [self deleteItems:_items animated:YES];
-            [self insertItems:items atIndex:_items.count animated:YES];
+            if(!_canceled) {
+                _offset = nil;
+                [self deleteItems:_items animated:YES];
+                [self insertItems:items atIndex:_items.count animated:YES];
+            }
         } else {
-            [_items removeAllObjects];
-            _offset = nil;
-            if([self.configuration[VGReloadOnRefresh] boolValue]) {
-                [_items addObjectsFromArray:items];
-                [self reload];
-            } else {
-                [self reload];
-                [self insertItems:items atIndex:_items.count animated:NO];
+            if(!_canceled) {
+                [_items removeAllObjects];
+                _offset = nil;
+                if([self.configuration[VGReloadOnRefresh] boolValue]) {
+                    [_items addObjectsFromArray:items];
+                    [self reload];
+                } else {
+                    [self reload];
+                    [self insertItems:items atIndex:_items.count animated:NO];
+                }
             }
         }
         [[self refreshControl] stopAnimating];
     } else {
         [[self infiniteControl] stopAnimating];
-        [self insertItems:items atIndex:_items.count animated:YES];
+        if(!_canceled) {
+            [self insertItems:items atIndex:_items.count animated:YES];
+        }
     }
-    [self notifyDidLoadWithItems:items];
+    if(!_canceled) {
+        [self notifyDidLoadWithItems:items];
+    }
     _isRefreshing = NO;
     _isLoading = NO;
 }
@@ -202,7 +220,7 @@ Class NSClassFromAnyObject(id anyObject) {
 - (void)fetchLoadedItems:(NSArray *)items pageSize:(NSInteger)pageSize error:(NSError *)error {
     self.filteredItems = nil;
     [self fetchLoadedItems:items error:error];
-    self.isAllLoaded = items.count < pageSize;
+    self.isAllLoaded = _canceled ? self.isAllLoaded : items.count < pageSize;
 }
 
 #pragma mark - Notifiers
