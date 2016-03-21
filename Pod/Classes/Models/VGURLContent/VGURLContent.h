@@ -61,7 +61,7 @@ extern NSString *const VGInfiniteControlClass;
 /**
  An object who responds to data delegate methods `VGURLContentDelegate`.
  */
-@property (nonatomic, assign) id<VGURLContentDataDelegate> dataDelegate;
+@property (nonatomic, weak) id<VGURLContentDataDelegate> dataDelegate;
 
 /**
  Indicator shows that content is loading data.
