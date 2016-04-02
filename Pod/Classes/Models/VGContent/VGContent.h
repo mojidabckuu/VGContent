@@ -48,6 +48,8 @@ extern NSString *const VGActionShow;
 
 @protocol VGContentActionsProtocol <NSObject>
 
+@optional
+
 /**
  Select management
  */
@@ -102,6 +104,8 @@ extern NSString *const VGActionShow;
  An object which responds to `VGContentDelegate`.
  */
 @property (nonatomic, weak) id<VGContentDelegate> delegate;
+
+@property (nonatomic, weak) id<VGContentActionsProtocol> actionsDelegate;
 
 #pragma mark - Lifecycle
 /**

@@ -213,6 +213,14 @@ NSString *const VGActionShow = @"VGActionShow";
     @throw [NSException exceptionWithName:@"Unimplemented method" reason:@"This method is not overriden" userInfo:nil];
 }
 
+#pragma mark - Actions
+
+- (void)raiseActionWithKey:(NSString *)key view:(UIView *)view {
+    if([self.actionsDelegate respondsToSelector:@selector(raiseActionWithKey:view:)]) {
+        [self.actionsDelegate raiseActionWithKey:key view:view];
+    }
+}
+
 #pragma mark - VGContentSearch protocol
 
 - (void)searchWithString:(NSString *)string {
