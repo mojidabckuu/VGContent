@@ -217,7 +217,7 @@ NSString *const VGActionShow = @"VGActionShow";
 
 - (void)raiseActionWithKey:(NSString *)key view:(UIView *)view {
     if([self.actionsDelegate respondsToSelector:@selector(raiseActionWithKey:view:)]) {
-        [self.actionsDelegate raiseActionWithKey:key view:view];
+        [self.actionsDelegate content:self raisedActionWithKey:key item:[self itemWithView:view]];
     }
 }
 

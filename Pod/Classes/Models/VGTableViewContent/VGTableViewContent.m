@@ -280,4 +280,12 @@
     return registered;
 }
 
+- (id)itemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)view];
+    if(indexPath) {
+        return [self itemAtIndex:indexPath.row];
+    }
+    return nil;
+}
+
 @end

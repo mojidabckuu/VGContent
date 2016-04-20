@@ -216,5 +216,12 @@
     return registered;
 }
 
+- (id)itemWithView:(UIView *)view {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:(UICollectionViewCell *)view];
+    if(indexPath) {
+        return [self itemAtIndex:indexPath.row];
+    }
+    return nil;
+}
 
 @end
