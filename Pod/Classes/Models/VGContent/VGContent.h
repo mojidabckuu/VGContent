@@ -48,6 +48,26 @@ extern NSString *const VGActionShow;
 
 @protocol VGContentActionsProtocol <NSObject>
 
+@optional
+
+/**
+ Select management
+ */
+- (void)content:(VGContent *)content raisedSelectItemWithView:(UIView *)view;
+- (void)content:(VGContent *)content raisedDeselectItemWithView:(UIView *)view;
+
+/**
+ Add/Delete management
+ */
+- (void)content:(VGContent *)content raisedAddItemWithView:(UIView *)view;
+- (void)content:(VGContent *)content raisedDeleteItemWithView:(UIView *)view;
+
+- (void)content:(VGContent *)content raisedActionWithKey:(NSString *)key item:(id)item;
+
+@end
+
+@protocol VGContentActionsSpawnProtocol <NSObject>
+
 /**
  Select management
  */
@@ -67,7 +87,7 @@ extern NSString *const VGActionShow;
 /**
  `VGContent` is class that manages items and their behaviour.
  */
-@interface VGContent :  NSObject <VGContentProtocol, VGContentSearchProtocol, VGContentActionsProtocol> {
+@interface VGContent :  NSObject <VGContentProtocol, VGContentSearchProtocol, VGContentActionsSpawnProtocol> {
     NSMutableArray *_items;
 }
 
@@ -102,6 +122,8 @@ extern NSString *const VGActionShow;
  An object which responds to `VGContentDelegate`.
  */
 @property (nonatomic, weak) id<VGContentDelegate> delegate;
+
+@property (nonatomic, weak) id<VGContentActionsProtocol> actionsDelegate;
 
 #pragma mark - Lifecycle
 /**
@@ -140,5 +162,7 @@ extern NSString *const VGActionShow;
  Register cells.
  */
 - (BOOL)registerCellIdentifier:(NSString *)cellIdentifier;
+
+- (id)itemWithView:(UIView *)view;
 
 @end
