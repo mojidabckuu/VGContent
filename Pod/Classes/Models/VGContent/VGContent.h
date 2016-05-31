@@ -125,6 +125,10 @@ extern NSString *const VGActionShow;
  */
 - (void)setup;
 
+#pragma mark - Mangement
+
+- (void)clear;
+
 #pragma mark - Utils
 /**
  Utils method

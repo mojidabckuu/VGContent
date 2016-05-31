@@ -240,6 +240,13 @@ NSString *const VGActionShow = @"VGActionShow";
     self.filteredItems = nil;
 }
 
+#pragma mark - Mangement
+
+- (void)clear {
+    [self.items removeAllObjects];
+    [self reload];
+}
+
 #pragma mark - Utils
 
 - (NSArray *)indexPathsWithItems:(NSArray *)items {
