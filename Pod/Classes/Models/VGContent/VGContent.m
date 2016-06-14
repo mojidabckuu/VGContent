@@ -142,7 +142,7 @@ NSString *const VGActionShow = @"VGActionShow";
 }
 
 - (void)deleteItem:(id)item animated:(BOOL)animated {
-    if(item) {
+    if(item && [_items containsObject:item]) {
         [self deleteItems:@[item] animated:animated];
     }
 }
