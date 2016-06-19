@@ -179,6 +179,12 @@ Class NSClassFromAnyObject(id anyObject) {
 - (void)fetchLoadedItems:(NSArray *)items error:(NSError *)error {
     if(error) {
         [self notifyDidFailWithError:error];
+        [[self refreshControl] stopAnimating];
+        [[self infiniteControl] stopAnimating];
+        self.isAllLoaded = true;
+        self.isAllLoaded = false;
+        _isRefreshing = NO;
+        _isLoading = NO;
         return;
     }
     if (_isRefreshing && !_canceled) { // TODO: handle situations when can infinite scroll with search string.
