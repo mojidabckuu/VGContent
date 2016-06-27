@@ -13,7 +13,7 @@
 /**
  `NSArray` of original items.
  */
-@property (nonatomic, strong, nullable) NSMutableArray *originalItems;
+@property (nonatomic, strong, nullable) NSArray *originalItems;
 
 /**
  `NSArray` of fildeted items.

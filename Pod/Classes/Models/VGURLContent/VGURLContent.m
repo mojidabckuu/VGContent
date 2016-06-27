@@ -189,7 +189,6 @@ Class NSClassFromAnyObject(id anyObject) {
     }
     if (_isRefreshing && !_canceled) { // TODO: handle situations when can infinite scroll with search string.
         [[self infiniteControl] stopAnimating];
-        self.originalItems = [NSMutableArray arrayWithArray:items];
         if([self.configuration[VGAnimatedRefresh] boolValue]) {
             if(!_canceled) {
                 _offset = nil;
