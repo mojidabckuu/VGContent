@@ -143,18 +143,17 @@
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;
     } else {
-        if(!self.annotationBindings.count) {
-            return nil;
-        }
         MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:self.cellIdentifier];
         if(!annotationView) {
-            NSString *annotationClassString = NSStringFromClass(annotation.class);
-            NSAssert(self.annotationBindings[annotationClassString] != nil, @"You haven't corresponding annotation view class from this annotation.");
-            NSString *annotationViewClassString = self.annotationBindings[annotationClassString];
-            Class annotationViewClass = NSClassFromString(annotationViewClassString);
+            NSString *annotationViewClassString = self.annotationBindings[NSStringFromClass(annotation.class)];
+            Class annotationViewClass = NSClassFromString(annotationViewClassString) ?: MKPinAnnotationView.class;
             annotationView = [[annotationViewClass alloc] initWithAnnotation:annotation reuseIdentifier:self.cellIdentifier];
             annotationView.draggable = self.allowDragging;
             annotationView.canShowCallout = self.canShowCallout;
+            if([annotationView isKindOfClass:[MKPinAnnotationView class]]) {
+                MKPinAnnotationView *pinView = (MKPinAnnotationView *)annotationView;
+                pinView.animatesDrop = TRUE;
+            }
         } else {
             annotationView.annotation = annotation;
         }
