@@ -163,7 +163,8 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
     id<MKAnnotation> annotation = view.annotation;
-    id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+    id hash = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+    id item = [[_items filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"hash = %@", hash]] firstObject];
     if([self.delegate respondsToSelector:@selector(content:didSelectItem:action:)]) {
         [self.delegate content:self didSelectItem:item action:VGActionShow];
     } else if([self.delegate respondsToSelector:@selector(content:didSelectItem:)]) {
@@ -174,11 +175,11 @@
 - (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
     if([self.delegate respondsToSelector:@selector(content:didDeselectItem:)]) {
         id<MKAnnotation> annotation = view.annotation;
-        id item = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+        id hash = [[self.annotationsBindings allKeysForObject:annotation] firstObject];
+        id item = [[_items filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"hash = %@", hash]] firstObject];
         [self.delegate content:self didDeselectItem:item];
     }
 }
-
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState {
     if ([self.delegate respondsToSelector:@selector(content:didDragItem:)]) {
         if (newState == MKAnnotationViewDragStateNone){
