@@ -216,7 +216,7 @@ NSString *const VGActionShow = @"VGActionShow";
 #pragma mark - Actions
 
 - (void)raiseActionWithKey:(NSString *)key view:(UIView *)view {
-    if([self.actionsDelegate respondsToSelector:@selector(raiseActionWithKey:view:)]) {
+    if([self.actionsDelegate respondsToSelector:@selector(content:raisedActionWithKey:item:)]) {
         [self.actionsDelegate content:self raisedActionWithKey:key item:[self itemWithView:view]];
     }
 }
