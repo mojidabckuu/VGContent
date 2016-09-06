@@ -19,7 +19,7 @@
 
 @end
 
-@interface VGCarouselContent : VGURLContent
+@interface VGCarouselContent : VGURLContent<iCarouselDelegate, iCarouselDataSource>
 
 @property (nonatomic, weak, readonly) iCarousel *carousel;
 @property (nonatomic, assign) id<VGCarouselContentDelegate> delegate;
