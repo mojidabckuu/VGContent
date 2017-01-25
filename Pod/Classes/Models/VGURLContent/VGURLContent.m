@@ -8,7 +8,7 @@
 
 #import "VGURLContent.h"
 
-#import <UIScrollView-InfiniteScroll/UIScrollView+InfiniteScroll.h>
+#import <UIScrollView_InfiniteScroll/UIScrollView+InfiniteScroll.h>
 
 NSString *const VGAnimatedRefresh = @"VGAnimatedRefresh";
 NSString *const VGReloadOnRefresh = @"VGReloadOnRefresh";
